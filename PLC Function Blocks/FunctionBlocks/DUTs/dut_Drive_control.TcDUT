@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_Drive_control" Id="{77fb175a-f626-42bc-8ab4-2d99c8d4b0b9}">
+    <Declaration><![CDATA[TYPE dut_Drive_control :
+STRUCT
+	Max_drive_speed:INT;
+	Max_drive_torque:INT;
+	Speed_S_func_scans:INT;
+	Current_S_func_scans:INT;
+	No_start_time:TIME;
+	Motor_fed_delay:TIME;
+	Stall_time:TIME;
+	Stall_speed:INT;
+	Torque_ctrl_max_speed:INT;
+	Brake_apply_speed:INT;
+	Trail_brake_speed:INT;
+	De_energise_to_trail:BOOL;
+	Single_lever_control:BOOL;
+	Stall_current:INT;
+	Backout_min_speed:INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

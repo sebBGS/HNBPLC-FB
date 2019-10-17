@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_Brake" Id="{e1fb26c1-3abe-4e21-9914-1d2d5be93c20}">
+    <Declaration><![CDATA[TYPE dut_Brake :
+STRUCT
+	Lh_off:BOOL;(*Left brake off signal - usually from left spring nest*)
+	Lh_rubbing:BOOL; (*Left brake rubbing signal - usually from left spring nest*)
+	Lh_on:BOOL; (*Left brake on signal - usually from left spring nest*)
+	Lh_wear:BOOL; (*Left brake wear signal - usually from left spring nest*)
+	Rh_off:BOOL; (*Right brake on signal - usually from right spring nest*)
+	Rh_rubbing:BOOL; (*Right brake rubbing signal - usually from right spring nest*)
+	Rh_on:BOOL; (*Right brake on signal - usually from right spring nest*)
+	Rh_wear:BOOL; (*Right brake wear signal - usually from Right spring nest*)
+	Lever_on:BOOL; (*Brake lever on limit switch*)
+	Lever_off:BOOL; (*Brake lever off - normally from same limit switch as "Lever_on"*)
+	Lever_fully_off:BOOL; (*Brake lever fully off limit switch. Necessary for automatic winders.*)
+	Maintenance_switch:BOOL; (*Brake maintenance switch (can be on driver's desk or in control panels).*)
+	Maintenance_mode:BOOL;
+	Lh_test:BOOL; (*Left brake test switch - normally on driver's desk. Often the same switch as Lh_dump.*)
+	Rh_test:BOOL; (*Right brake test switch - normally on driver's desk. Often the same switch as Rh_dump.*)
+	Lh_dump:BOOL; (*Left brake dump switch - normally on driver's desk. Often the same switch as Lh_test.*)
+	Rh_dump:BOOL; (*Right brake dump switch - normally on driver's desk. Often the same switch as Rh_test.*)
+	Proved_on:BOOL;
+	Proved_on_500ms:BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

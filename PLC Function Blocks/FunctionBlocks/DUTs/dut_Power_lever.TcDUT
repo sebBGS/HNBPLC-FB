@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_Power_lever" Id="{9a0906ae-3bb5-4baa-a639-b1e33f132cf0}">
+    <Declaration><![CDATA[TYPE dut_Power_lever :
+STRUCT
+	Neutral:BOOL;
+	Forward:BOOL;
+	Reverse:BOOL;
+	Button:BOOL;
+	Raw:INT;
+	Linear:INT;
+	Cubic:INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

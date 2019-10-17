@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_Clutch" Id="{9fcc1706-5176-4a0c-aa22-2ea520209c02}">
+    <Declaration><![CDATA[TYPE dut_Clutch :
+STRUCT
+	Lh_in:BOOL;
+	Lh_out:BOOL;
+	Rh_in:BOOL;
+	Rh_out:BOOL;
+	Single_drum:BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

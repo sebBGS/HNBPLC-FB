@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_Mode" Id="{1ad6c3cd-366a-4bff-ad77-200544f20c57}">
+    <Declaration><![CDATA[TYPE dut_Mode :
+STRUCT
+	Manual:BOOL;
+	Auto:BOOL;
+	Auto_go:BOOL;
+	Men:BOOL;
+	Material:BOOL;
+	Rope_capping:BOOL;
+	Brake_maintenance:BOOL;
+	Manual_switch:BOOL;
+	Auto_switch:BOOL;
+	Men_switch:BOOL;
+	Material_switch:BOOL;
+	Rope_capping_switch:BOOL;
+	Rock:BOOL;
+	Single_lever_control:BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

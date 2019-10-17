@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Refactors>
+  <Renames>
+    <RenamedType>
+      <Type guid="e34b4705-dfa7-4658-8b2f-8456d297f4c4">SAFETY</Type>
+      <From>Safety</From>
+      <To>dut_Safety</To>
+    </RenamedType>
+  </Renames>
+</Refactors>

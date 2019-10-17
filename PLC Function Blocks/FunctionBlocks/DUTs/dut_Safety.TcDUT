@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_Safety" Id="{e34b4705-dfa7-4658-8b2f-8456d297f4c4}">
+    <Declaration><![CDATA[TYPE dut_Safety :
+STRUCT
+	Sc1:BOOL;
+	Sc2:BOOL;
+	Busc1:BOOL;
+	Busc2:BOOL;
+	Backup_safety_trip:BOOL;
+	Main_safety_trip:BOOL;
+	Lily_func_trip:BOOL;
+	Lily_app_fault:BOOL;
+	Backup_control_trip:BOOL;
+	Control_trip:BOOL;
+	Control_stop:BOOL;
+	Lockout:BOOL;
+	Enforced_slow:BOOL;
+	Alarm:BOOL;
+	All_clear:BOOL;
+	Reset_button:BOOL;
+	Reset_interlocks:BOOL;
+	Reset:BOOL;
+	Safe_for_power:BOOL;
+	Bridge_present:BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

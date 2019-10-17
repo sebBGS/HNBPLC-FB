@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_hmi_Drive_control" Id="{4f3becf2-e316-4f6a-bb3a-675e5e83bbe9}">
+    <Declaration><![CDATA[TYPE dut_hmi_Drive_control :
+STRUCT
+	Speed_ref:INT;
+	Torque_ref:INT;
+	Torque_prediction:INT;
+	Speed_scale:INT;
+	Driver_ref_final:INT;
+	Status:WORD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_hmi_Power_lever" Id="{f085cb97-81fa-4c1c-b7d0-165ac213393c}">
+    <Declaration><![CDATA[TYPE dut_hmi_Power_lever :
+STRUCT
+	Status:WORD;
+	Raw:INT;
+	Linear:INT;
+	Cubic:INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
