@@ -6,5 +6,10 @@
       <From>Safety</From>
       <To>dut_Safety</To>
     </RenamedType>
+    <RenamedType>
+      <Type guid="20fc2634-4036-4e30-9618-c8d92addbfec">DRIVE_CONTROL</Type>
+      <From>Drive_control</From>
+      <To>Drive_contro</To>
+    </RenamedType>
   </Renames>
 </Refactors>
