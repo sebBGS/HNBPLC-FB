@@ -1,0 +1,13 @@
+{
+    "CHUNKING_OF_LARGE_REQUESTS": false,
+    "FILTER": {},
+    "RUNTIMES": {
+        "PLC_test": {
+            "ENABLED": true,
+            "NETID": "192.168.1.196",
+            "PORT": 851,
+            "SYMBOLS": {}
+        }
+    },
+    "TIMEOUT": "PT1S"
+}

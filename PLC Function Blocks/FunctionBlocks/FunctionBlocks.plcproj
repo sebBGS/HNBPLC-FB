@@ -48,6 +48,9 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\Control.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\BIT_TO_WORD_V0.TcPOU">
       <SubType>Code</SubType>
     </Compile>
