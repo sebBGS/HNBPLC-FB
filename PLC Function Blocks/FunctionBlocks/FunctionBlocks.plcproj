@@ -17,6 +17,9 @@
     <LibraryReferences>{89fb73c4-dec0-4ab3-ab8d-54e9fef3910a}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DUTs\dut_Auto_rock.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\dut_Brake.TcDUT">
       <SubType>Code</SubType>
     </Compile>
@@ -26,10 +29,16 @@
     <Compile Include="DUTs\dut_Drive_control.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\dut_hmi_Analogue.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\dut_hmi_Drive_control.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\dut_hmi_Power_lever.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\dut_Least_gate.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\dut_Mode.TcDUT">
@@ -51,6 +60,18 @@
     <Compile Include="POUs\Control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FBs\Analogue.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\Analogue_xcheck.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\Auto_rock.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\Backout.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\BIT_TO_WORD_V0.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -60,7 +81,16 @@
     <Compile Include="POUs\FBs\Clutch.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FBs\Disc_brake.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\Drive_control.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\Least_gate_element.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\Least_gate_result.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\Lincon.TcPOU">
@@ -72,10 +102,19 @@
     <Compile Include="POUs\FBs\Power_lever.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FBs\Raw_to_scaled.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\Ref_ramp.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\Standard_stuff.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\Trip_control.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\Window.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\WORD_TO_BIT_V0.TcPOU">

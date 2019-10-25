@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="Trip_control" Id="{02324fae-b49c-4eae-9c9b-e6d2ad5d4166}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK Trip_control
+VAR_INPUT
+	Category:REAL;
+	First_up:BOOL;
+	Fault0:BOOL;
+	Fault1:BOOL;
+	Fault2:BOOL;
+	Fault3:BOOL;
+	Fault4:BOOL;
+	Fault5:BOOL;
+	Fault6:BOOL;
+	Fault7:BOOL;
+	Fault8:BOOL;
+	Fault9:BOOL;
+	Fault10:BOOL;
+	Fault11:BOOL;
+	Fault12:BOOL;
+	Fault13:BOOL;
+	Fault14:BOOL;
+	Fault15:BOOL;
+	Reset:BOOL;
+	Inhibit:BOOL;
+	Block_ID:REAL;
+END_VAR
+VAR_OUTPUT
+	Trip_present:BOOL;
+	Trip0:BOOL;
+	Trip1:BOOL;
+	Trip2:BOOL;
+	Trip3:BOOL;
+	Trip4:BOOL;
+	Trip5:BOOL;
+	Trip6:BOOL;
+	Trip7:BOOL;
+	Trip8:BOOL;
+	Trip9:BOOL;
+	Trip10:BOOL;
+	Trip11:BOOL;
+	Trip12:BOOL;
+	Trip13:BOOL;
+	Trip14:BOOL;
+	Trip15:BOOL;
+END_VAR
+VAR_IN_OUT
+END_VAR
+VAR
+END_VAR
+{warning "TODO: Trip_control has not been done and needs to be gone over with Bret."}]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <LineIds Name="Trip_control">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

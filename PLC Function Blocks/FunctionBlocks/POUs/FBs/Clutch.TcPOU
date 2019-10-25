@@ -14,7 +14,6 @@ VAR_INPUT
 	Allowed_travel_when_out:DINT; (*Amount of travel allowed while engaging/disengaging a clutch*)
 END_VAR
 VAR_OUTPUT
-	Clutch_data:dut_Clutch; (*Clutch data structure*)
 	tr_Lh_in_and_out:BOOL; (*Left hand clutch in and out switches both energised*)
 	tr_Rh_in_and_out:BOOL; (*Right hand clutch in and out switches both energised*)
 	tr_Lh_out_movement:BOOL; (*Movement was detected on the left hand drum when the left clutch was out*)
@@ -23,9 +22,6 @@ VAR_OUTPUT
 	tr_Rh_not_in_movement:BOOL; (*Movement was detected on the right hand drum when the right clutch was not in*)
 	cs_Too_much_travel_clutching:BOOL; (*There was too much drum travel while engaging/disengaging a clutch*)
 	hmi_Status:WORD; (*Status bits for HMI*)
-END_VAR
-VAR_IN_OUT
-	Safety_data:dut_Safety; (*Data structure with safety and reset data*)
 END_VAR
 VAR
 	TON_0: TON;
@@ -36,9 +32,6 @@ VAR
 	RS_0: RS;
 	Rh_start_depth: DINT;
 	RS_1: RS;
-	Clutch_data_m: Clutch_data_m;
-	Clutch_faults: Clutch_faults;
-	Too_much_travel: Too_much_travel;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -288,7 +281,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"Clutch_data.Lh_in"</v>
+                        <v n="Text">"GVL.Clutch.Lh_in"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">105L</v>
                       </o>
@@ -336,7 +329,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"Clutch_data.Rh_in"</v>
+                        <v n="Text">"GVL.Clutch.Rh_in"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">83L</v>
                       </o>
@@ -559,7 +552,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"Clutch_data.Lh_out"</v>
+                        <v n="Text">"GVL.Clutch.Lh_out"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">96L</v>
                       </o>
@@ -607,7 +600,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"Clutch_data.Rh_out"</v>
+                        <v n="Text">"GVL.Clutch.Rh_out"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">118L</v>
                       </o>
@@ -750,7 +743,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"Clutch_data.Single_drum"</v>
+                        <v n="Text">"GVL.Clutch.Single_drum"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">20L</v>
                       </o>
@@ -1203,7 +1196,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"Clutch_data.Single_drum"</v>
+                        <v n="Text">"GVL.Clutch.Single_drum"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">140L</v>
                       </o>
@@ -5075,7 +5068,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"Safety_data.Reset_interlocks"</v>
+                        <v n="Text">"GVL.Safety.Reset_interlocks"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">98L</v>
                       </o>
@@ -5847,7 +5840,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"Safety_data.Reset_interlocks"</v>
+                        <v n="Text">"GVL.Safety.Reset_interlocks"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">178L</v>
                       </o>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_hmi_Analogue" Id="{2003ebf0-55bc-4c2a-a795-cfd07c1d5fac}">
+    <Declaration><![CDATA[TYPE dut_hmi_Analogue :
+STRUCT
+	Value:REAL;
+	Per_thousand:REAL;
+	Colour:INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

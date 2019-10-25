@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_Least_gate" Id="{79f18018-1eda-43c8-aef6-3e628bb4a0fc}">
+    <Declaration><![CDATA[TYPE dut_Least_gate :
+STRUCT
+	Min_allowed_speed:REAL;
+	Description:STRING[16];
+	Rope_cap_mode:BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
