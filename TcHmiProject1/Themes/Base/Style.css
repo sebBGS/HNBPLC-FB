@@ -34,3 +34,12 @@ html {
 .tchmi-datagrid-template-cell {
     background: #000000;
 }
+.tchmi-datagrid-template-placeholder {
+    background: #235497;
+}
+.tchmi-datagrid-template-header-wrapper {
+    background: #235497;
+}
+.tchmi-datagrid-template-cell {
+    color: #DDDDDD;
+}
