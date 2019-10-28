@@ -42,6 +42,7 @@ VAR
 	Lever_scaling: Lever_scaling;
 	Power_lever_data_m: Power_lever_data;
 	Power_lever_faults: Power_lever_faults;
+	BIT_TO_WORD_V0_0: BIT_TO_WORD_V0;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[Lever_scaling();
@@ -4379,7 +4380,6 @@ VAR_INPUT
 END_VAR
 
 VAR
-	BIT_TO_WORD_V0_0: BIT_TO_WORD_V0;
 END_VAR]]></Declaration>
       <Implementation>
         <CFC>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_Auto_rock" Id="{ff7248a6-7071-4d79-9608-949bfdc5807f}">
+    <Declaration><![CDATA[TYPE dut_Auto_rock :
+STRUCT
+	Status:WORD;
+	Command:WORD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
