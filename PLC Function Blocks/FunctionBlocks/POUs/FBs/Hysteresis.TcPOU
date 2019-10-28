@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="Hysteresis" Id="{e7dbce2b-3037-48fa-810a-c4124cd6b3cc}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK Hysteresis
+VAR_INPUT
+	Val: REAL;
+	OnVal: REAL;
+	OffVal: REAL;
+END_VAR
+VAR_OUTPUT
+	Out: BOOL;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF Val < OffVal THEN
+	Out := 0;
+ELSIF Val > OnVal THEN
+	Out := 1;
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="Hysteresis">
+      <LineId Id="9" Count="0" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="17" Count="0" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="16" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -7,14 +7,14 @@
     <AvailablePlatforms>TwinCAT HMI</AvailablePlatforms>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <TcHmiCreatorVersion>(1.5,1.10]</TcHmiCreatorVersion>
-    <HmiTitle>Please enter your Title...</HmiTitle>
+    <HmiTitle>HNB Winder</HmiTitle>
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
-    <Name>PLC HMI</Name>
-    <HmiCommunicationRouterPort>10101</HmiCommunicationRouterPort>
+    <Name>TcHmiProject1</Name>
+    <HmiCommunicationRouterPort>10103</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
-    <HmiCommunicationServerPort>3000</HmiCommunicationServerPort>
-    <HmiInitial>1.10.1336.354</HmiInitial>
+    <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
+    <HmiInitial>1.10.1336.340</HmiInitial>
     <HmiRecent>1.10.1336.340</HmiRecent>
   </PropertyGroup>
   <PropertyGroup>
@@ -25,7 +25,7 @@
   <Import Project="$(TwinCATHmi_Targets)" />
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>0920d932-aa74-48d4-9bc0-87cb2c3f2e4b</ProjectGuid>
+    <ProjectGuid>63e9fe20-1180-4fd1-9d36-eac97f851d64</ProjectGuid>
     <RootNamespace>TwinCAT3HmiProject</RootNamespace>
     <AssemblyName>TwinCAT3HmiProject</AssemblyName>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
@@ -104,7 +104,7 @@
     <Folder Include="Themes\Base\" />
     <Folder Include="Fonts" />
     <Folder Include="Server">
-      <WorkingDirectory>PLC HMI</WorkingDirectory>
+      <WorkingDirectory>TcHmiProject1</WorkingDirectory>
     </Folder>
     <Folder Include="Server\Extensions" />
     <Content Include=".tfignore">
@@ -118,6 +118,9 @@
     <Content Include=".hmipkgs\packages.hmipkgs">
       <SubType>Content</SubType>
       <Visible>true</Visible>
+    </Content>
+    <Content Include="Main.content">
+      <SubType>Content</SubType>
     </Content>
     <Content Include="FavIcon.ico">
       <SubType>Content</SubType>
@@ -134,9 +137,6 @@
     <Content Include="Server\Extensions\ADS\ADS.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\ADS\ADS.Config.Netbook.json">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Server\Extensions\ADS\ADS.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
@@ -144,9 +144,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\Extensions\TcHmiEventLogger\TcHmiEventLogger.Config.default.json">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Server\Extensions\TcHmiEventLogger\TcHmiEventLogger.Config.Netbook.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\Extensions\TcHmiEventLogger\TcHmiEventLogger.Config.remote.json">
@@ -158,9 +155,6 @@
     <Content Include="Server\Extensions\TcHmiLua\TcHmiLua.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiLua\TcHmiLua.Config.Netbook.json">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Server\Extensions\TcHmiLua\TcHmiLua.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
@@ -168,9 +162,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\Extensions\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.default.json">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Server\Extensions\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.Netbook.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\Extensions\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.remote.json">
@@ -182,9 +173,6 @@
     <Content Include="Server\Extensions\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.Netbook.json">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Server\Extensions\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
@@ -192,9 +180,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\Extensions\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.default.json">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Server\Extensions\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.Netbook.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\Extensions\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.remote.json">
@@ -206,9 +191,6 @@
     <Content Include="Server\Extensions\TcHmiSrv\TcHmiSrv.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSrv\TcHmiSrv.Config.Netbook.json">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Server\Extensions\TcHmiSrv\TcHmiSrv.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
@@ -216,9 +198,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\Extensions\TcHmiUserManagement\TcHmiUserManagement.Config.default.json">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Server\Extensions\TcHmiUserManagement\TcHmiUserManagement.Config.Netbook.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\Extensions\TcHmiUserManagement\TcHmiUserManagement.Config.remote.json">
