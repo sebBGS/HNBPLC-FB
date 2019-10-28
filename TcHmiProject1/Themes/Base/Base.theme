@@ -58,7 +58,10 @@
           "color": "rgba(66, 66, 66, 1)"
         },
         "ProgressForegroundColor": {
-          "color": "rgba(204, 119, 52, 1)"
+          "color": "rgba(229, 111, 37, 1)"
+        },
+        "ValueColor": {
+          "color": "rgba(113, 161, 226, 1)"
         }
       },
       "themedResources": {}
