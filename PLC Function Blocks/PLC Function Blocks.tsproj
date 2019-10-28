@@ -10,9 +10,12 @@
 		</System>
 		<Plc>
 			<Project GUID="{E8606FA0-111B-4DA6-B6A5-4A076C979865}" Name="FunctionBlocks" PrjFilePath="FunctionBlocks\FunctionBlocks.plcproj" TmcFilePath="FunctionBlocks\FunctionBlocks.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="FunctionBlocks\FunctionBlocks.tmc">
 					<Name>FunctionBlocks Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<TaskPouOids>
+						<TaskPouOid Prio="20" OTCID="#x08502001"/>
+					</TaskPouOids>
 				</Instance>
 			</Project>
 		</Plc>
