@@ -263,3 +263,5 @@ __pycache__/
 *.pyc
 /.engineering_servers/PLC HMI/TcHmiSrv.pid
 /.engineering_servers/TcHmiProject1/TcHmiSrv.pid
+/.engineering_servers/TcHmiProject1/historize.db
+/.engineering_servers/TcHmiProject1/historize.db-journal
