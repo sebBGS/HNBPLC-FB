@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Refactors>
+  <Renames>
+    <RenamedType>
+      <Type guid="e34b4705-dfa7-4658-8b2f-8456d297f4c4">SAFETY</Type>
+      <From>Safety</From>
+      <To>dut_Safety</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="20fc2634-4036-4e30-9618-c8d92addbfec">DRIVE_CONTROL</Type>
+      <From>Drive_control</From>
+      <To>Drive_contro</To>
+    </RenamedType>
+  </Renames>
+</Refactors>
