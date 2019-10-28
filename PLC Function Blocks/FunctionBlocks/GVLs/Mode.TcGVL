@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <GVL Name="Mode" Id="{455376f4-7438-4a23-ad9f-468fd5572486}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	Manual:BOOL;
+	Auto:BOOL;
+	Auto_go:BOOL;
+	Men:BOOL;
+	Material:BOOL;
+	Rope_capping:BOOL;
+	Brake_maintenance:BOOL;
+	Manual_switch:BOOL;
+	Auto_switch:BOOL;
+	Men_switch:BOOL;
+	Material_switch:BOOL;
+	Rope_capping_switch:BOOL;
+	Rock:BOOL;
+	Single_lever_control:BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

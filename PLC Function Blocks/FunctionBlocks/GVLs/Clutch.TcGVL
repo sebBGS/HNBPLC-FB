@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
-  <GVL Name="GVL" Id="{c6edceb1-dcfd-40d2-850a-731dab31d70d}">
+  <GVL Name="Clutch" Id="{a0bd0f36-a135-4ad8-9939-5693397818bb}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
+	Lh_in:BOOL;
+	Lh_out:BOOL;
+	Rh_in:BOOL;
+	Rh_out:BOOL;
+	Single_drum:BOOL;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

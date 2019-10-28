@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
-  <POU Name="Analogue_xcheck" Id="{9a4723e3-eda6-405f-aaeb-af8b2fe787e5}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK Analogue_xcheck
+  <POU Name="FB_Analogue_xcheck" Id="{9a4723e3-eda6-405f-aaeb-af8b2fe787e5}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Analogue_xcheck
 VAR_INPUT
 	In1:REAL;
 	In2:REAL;
@@ -16,10 +16,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Analogue_xcheck_m();]]></ST>
+      <ST><![CDATA[Analogue_xcheck();]]></ST>
     </Implementation>
-    <Method Name="Analogue_xcheck_m" Id="{cf7d7fb7-1222-4740-a074-4576c879cc4b}">
-      <Declaration><![CDATA[METHOD Analogue_xcheck_m
+    <Method Name="Analogue_xcheck" Id="{cf7d7fb7-1222-4740-a074-4576c879cc4b}">
+      <Declaration><![CDATA[METHOD Analogue_xcheck
 VAR_INPUT
 END_VAR
 ]]></Declaration>
@@ -1651,7 +1651,7 @@ END_VAR
         </CFC>
       </Implementation>
     </Method>
-    <LineIds Name="Analogue_xcheck">
+    <LineIds Name="FB_Analogue_xcheck">
       <LineId Id="9" Count="0" />
     </LineIds>
   </POU>

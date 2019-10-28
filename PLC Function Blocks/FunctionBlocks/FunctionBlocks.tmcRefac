@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Refactors>
+  <Renames>
+    <RenamedType>
+      <Type guid="7994f1f8-4814-4f45-8931-1ef83acd9447">ANALOGUE</Type>
+      <From>Analogue</From>
+      <To>FB_Analogue</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="9a4723e3-eda6-405f-aaeb-af8b2fe787e5">ANALOGUE_XCHECK</Type>
+      <From>Analogue_xcheck</From>
+      <To>FB_Analogue_xcheck</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="4847b433-edf1-4a76-bd58-66bd69400c3d">AUTO_ROCK</Type>
+      <From>Auto_rock</From>
+      <To>FB_Auto_rock</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="9a5fecb9-7ff1-4f14-bf3a-a287dd5735fd">BACKOUT</Type>
+      <From>Backout</From>
+      <To>FB_Backout</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="2c3ea628-83f8-4386-bfed-caf9960d70f3">BIT_TO_WORD_V0</Type>
+      <From>BIT_TO_WORD_V0</From>
+      <To>FB_BIT_TO_WORD_V0</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="8299c612-9708-4d8b-9a02-4771041e89b7">BRAKE</Type>
+      <From>Brake</From>
+      <To>FB_Brake</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="b7a093e0-243f-430e-afed-272cb59f6ae8">CLUTCH</Type>
+      <From>Clutch</From>
+      <To>FB_Clutch</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="979e2970-fb6e-4c17-b656-0f02b5a10666">DISC_BRAKE</Type>
+      <From>Disc_brake</From>
+      <To>FB_Disc_brake</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="15181611-30f7-4610-a263-4784b55c7bdf">DOUBLE_DRUM</Type>
+      <From>Double_drum</From>
+      <To>FB_Double_drum</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="b4a159ff-53f5-4aca-a809-ec7186bb5eaa">DRIVE_CONTROL</Type>
+      <From>Drive_control</From>
+      <To>FB_Drive_control</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="fa2e3ebe-5cbe-40bb-9103-e3031cea6602">LEAST_GATE_ELEMENT</Type>
+      <From>Least_gate_element</From>
+      <To>FB_Least_gate_element</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="26794877-9f52-43c5-bf11-c96710170722">LEAST_GATE_RESULT</Type>
+      <From>Least_gate_result</From>
+      <To>FB_Least_gate_result</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="5dfe4370-8e73-4ee7-bda7-e92777189b08">LINCON</Type>
+      <From>Lincon</From>
+      <To>FB_Lincon</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="b9c44bc0-8485-40f2-ab8f-779455cede2d">MODE</Type>
+      <From>Mode</From>
+      <To>FB_Mode</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="046c8a01-a8a9-4534-a6e7-75fa9037e7a8">POWER_LEVER</Type>
+      <From>Power_lever</From>
+      <To>FB_Power_lever</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="d214735a-a480-4ae2-bc21-7049593f3b3f">RAW_TO_SCALED</Type>
+      <From>Raw_to_scaled</From>
+      <To>FB_Raw_to_scaled</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="608e08de-3205-4600-9ab4-8b35700b6efb">REF_RAMP</Type>
+      <From>Ref_ramp</From>
+      <To>FB_Ref_ramp</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="4cc38c31-b175-43ff-8b69-fa30cceab370">STANDARD_STUFF</Type>
+      <From>Standard_stuff</From>
+      <To>FB_Standard_stuff</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="02324fae-b49c-4eae-9c9b-e6d2ad5d4166">TRIP_CONTROL</Type>
+      <From>Trip_control</From>
+      <To>FB_Trip_control</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="63b8565e-5435-4e4f-abdc-d4ff3128c167">WINDOW</Type>
+      <From>Window</From>
+      <To>FB_Window</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="e17574a5-9fe1-4a5c-824e-f1f5d9397f86">WORD_TO_BIT_V0</Type>
+      <From>WORD_TO_BIT_V0</From>
+      <To>FB_WORD_TO_BIT_V0</To>
+    </RenamedType>
+  </Renames>
+</Refactors>

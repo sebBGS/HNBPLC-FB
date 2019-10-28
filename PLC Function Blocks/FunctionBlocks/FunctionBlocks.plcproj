@@ -50,7 +50,27 @@
     <Compile Include="DUTs\dut_Safety.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="GVLs\Brakes.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="GVLs\Clutch.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
     <Compile Include="GVLs\GVL.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="GVLs\Mode.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="GVLs\Power_lever.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="GVLs\Safety.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
@@ -60,64 +80,67 @@
     <Compile Include="POUs\Control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Analogue.TcPOU">
+    <Compile Include="POUs\FBs\FB_Analogue.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Analogue_xcheck.TcPOU">
+    <Compile Include="POUs\FBs\FB_Analogue_xcheck.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Auto_rock.TcPOU">
+    <Compile Include="POUs\FBs\FB_Auto_rock.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Backout.TcPOU">
+    <Compile Include="POUs\FBs\FB_Backout.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\BIT_TO_WORD_V0.TcPOU">
+    <Compile Include="POUs\FBs\FB_BIT_TO_WORD_V0.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Brake.TcPOU">
+    <Compile Include="POUs\FBs\FB_Brake.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Clutch.TcPOU">
+    <Compile Include="POUs\FBs\FB_Clutch.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Disc_brake.TcPOU">
+    <Compile Include="POUs\FBs\FB_Disc_brake.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Drive_control.TcPOU">
+    <Compile Include="POUs\FBs\FB_Double_drum.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Least_gate_element.TcPOU">
+    <Compile Include="POUs\FBs\FB_Drive_control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Least_gate_result.TcPOU">
+    <Compile Include="POUs\FBs\FB_Least_gate_element.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Lincon.TcPOU">
+    <Compile Include="POUs\FBs\FB_Least_gate_result.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Mode.TcPOU">
+    <Compile Include="POUs\FBs\FB_Lincon.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Power_lever.TcPOU">
+    <Compile Include="POUs\FBs\FB_Mode.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Raw_to_scaled.TcPOU">
+    <Compile Include="POUs\FBs\FB_Power_lever.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Ref_ramp.TcPOU">
+    <Compile Include="POUs\FBs\FB_Raw_to_scaled.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Standard_stuff.TcPOU">
+    <Compile Include="POUs\FBs\FB_Ref_ramp.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Trip_control.TcPOU">
+    <Compile Include="POUs\FBs\FB_Standard_stuff.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\Window.TcPOU">
+    <Compile Include="POUs\FBs\FB_Trip_control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\WORD_TO_BIT_V0.TcPOU">
+    <Compile Include="POUs\FBs\FB_Window.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_WORD_TO_BIT_V0.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\MAIN.TcPOU">

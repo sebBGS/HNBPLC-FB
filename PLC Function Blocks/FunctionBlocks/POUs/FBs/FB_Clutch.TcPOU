@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
-  <POU Name="Clutch" Id="{b7a093e0-243f-430e-afed-272cb59f6ae8}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK Clutch
+  <POU Name="FB_Clutch" Id="{b7a093e0-243f-430e-afed-272cb59f6ae8}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Clutch
 VAR_INPUT
 	Lh_in:BOOL; (*Left hand clutch in switch*)
 	Lh_out:BOOL; (*Left hand clutch out switch*)
@@ -35,17 +35,17 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Clutch_data_m();
+      <ST><![CDATA[Clutch_data();
 Clutch_faults();
 Too_much_travel();]]></ST>
     </Implementation>
-    <Method Name="Clutch_data_m" Id="{fbc9329b-cdb5-41d3-be6d-4e780531c171}">
-      <Declaration><![CDATA[METHOD Clutch_data_m
+    <Method Name="Clutch_data" Id="{fbc9329b-cdb5-41d3-be6d-4e780531c171}">
+      <Declaration><![CDATA[METHOD Clutch_data
 VAR_INPUT
 END_VAR
 
 VAR
-	BIT_TO_WORD_V0_0: BIT_TO_WORD_V0;
+	BIT_TO_WORD_V0_0: FB_BIT_TO_WORD_V0;
 END_VAR]]></Declaration>
       <Implementation>
         <CFC>
@@ -281,7 +281,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Clutch.Lh_in"</v>
+                        <v n="Text">"Clutch.Lh_in"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">105L</v>
                       </o>
@@ -329,7 +329,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Clutch.Rh_in"</v>
+                        <v n="Text">"Clutch.Rh_in"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">83L</v>
                       </o>
@@ -552,7 +552,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Clutch.Lh_out"</v>
+                        <v n="Text">"Clutch.Lh_out"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">96L</v>
                       </o>
@@ -600,7 +600,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Clutch.Rh_out"</v>
+                        <v n="Text">"Clutch.Rh_out"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">118L</v>
                       </o>
@@ -743,7 +743,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Clutch.Single_drum"</v>
+                        <v n="Text">"Clutch.Single_drum"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">20L</v>
                       </o>
@@ -1156,7 +1156,7 @@ END_VAR]]></Declaration>
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"BIT_TO_WORD_V0"</v>
+                            <v n="Text">"FB_BIT_TO_WORD_V0"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">172L</v>
                           </o>
@@ -1196,7 +1196,7 @@ END_VAR]]></Declaration>
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Clutch.Single_drum"</v>
+                        <v n="Text">"Clutch.Single_drum"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">140L</v>
                       </o>
@@ -1358,7 +1358,7 @@ END_VAR]]></Declaration>
                     <o>
                       <v n="ConnectionId">219L</v>
                       <o n="StartPoint" t="CFCPoint">
-                        <v n="X">50</v>
+                        <v n="X">51</v>
                         <v n="Y">14</v>
                         <v n="IsJoint">false</v>
                         <v n="Flags">0</v>
@@ -1370,30 +1370,14 @@ END_VAR]]></Declaration>
                     <o>
                       <l2 n="InnerList" cet="CFCPoint">
                         <o>
-                          <v n="X">50</v>
+                          <v n="X">51</v>
                           <v n="Y">14</v>
                           <v n="IsJoint">false</v>
                           <v n="Flags">0</v>
                         </o>
-                      </l2>
-                    </o>
-                    <o>
-                      <v n="ConnectionId">218L</v>
-                      <o n="StartPoint" t="CFCPoint">
-                        <v n="X">39</v>
-                        <v n="Y">18</v>
-                        <v n="IsJoint">false</v>
-                        <v n="Flags">0</v>
-                      </o>
-                      <v n="Unroutable">true</v>
-                      <n n="CorrespondingPageId" />
-                      <v n="Locked">false</v>
-                    </o>
-                    <o>
-                      <l2 n="InnerList" cet="CFCPoint">
                         <o>
-                          <v n="X">39</v>
-                          <v n="Y">18</v>
+                          <v n="X">50</v>
+                          <v n="Y">14</v>
                           <v n="IsJoint">false</v>
                           <v n="Flags">0</v>
                         </o>
@@ -1726,6 +1710,34 @@ END_VAR]]></Declaration>
                           <v n="Y">6</v>
                           <v n="IsJoint">false</v>
                           <v n="Flags">0</v>
+                        </o>
+                      </l2>
+                    </o>
+                    <o>
+                      <v n="ConnectionId">218L</v>
+                      <o n="StartPoint" t="CFCPoint">
+                        <v n="X">37</v>
+                        <v n="Y">18</v>
+                        <v n="IsJoint">false</v>
+                        <v n="Flags">0</v>
+                      </o>
+                      <v n="Unroutable">false</v>
+                      <n n="CorrespondingPageId" />
+                      <v n="Locked">false</v>
+                    </o>
+                    <o>
+                      <l2 n="InnerList" cet="CFCPoint">
+                        <o>
+                          <v n="X">37</v>
+                          <v n="Y">18</v>
+                          <v n="IsJoint">false</v>
+                          <v n="Flags">68</v>
+                        </o>
+                        <o>
+                          <v n="X">39</v>
+                          <v n="Y">18</v>
+                          <v n="IsJoint">false</v>
+                          <v n="Flags">97</v>
                         </o>
                       </l2>
                     </o>
@@ -5068,7 +5080,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Safety.Reset_interlocks"</v>
+                        <v n="Text">"Safety.Reset_interlocks"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">98L</v>
                       </o>
@@ -5840,7 +5852,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Safety.Reset_interlocks"</v>
+                        <v n="Text">"Safety.Reset_interlocks"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">178L</v>
                       </o>
@@ -6876,7 +6888,7 @@ END_VAR
         </CFC>
       </Implementation>
     </Method>
-    <LineIds Name="Clutch">
+    <LineIds Name="FB_Clutch">
       <LineId Id="46" Count="1" />
       <LineId Id="9" Count="0" />
     </LineIds>
