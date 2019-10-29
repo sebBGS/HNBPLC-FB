@@ -40,6 +40,10 @@
     {
       "url": "Main.content",
       "preload": false
+    },
+    {
+      "url": "Speed_profile.content",
+      "preload": false
     }
   ],
   "views": [

@@ -119,6 +119,9 @@
       <SubType>Content</SubType>
       <Visible>true</Visible>
     </Content>
+    <Content Include="Images\yellow_arrow.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Main.content">
       <SubType>Content</SubType>
     </Content>
@@ -204,6 +207,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\Extensions\TcHmiUserManagement\TcHmiUserManagement.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Speed_profile.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Themes\Base\Base.theme">
