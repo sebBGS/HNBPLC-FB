@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_hmi_Depth" Id="{39a8ac36-2dfb-44bc-8d03-b7f58c4520dd}">
+    <Declaration><![CDATA[TYPE dut_hmi_Depth :
+STRUCT
+	Raw_count:REAL;
+	Corrected_count:REAL;
+	Raw_depth:REAL;
+	Calibrated_depth:REAL;
+	Compensated_depth:REAL;
+	Offset:REAL;
+	Speed:REAL;
+	Status:WORD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

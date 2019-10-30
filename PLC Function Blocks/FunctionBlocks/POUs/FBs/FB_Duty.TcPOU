@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="FB_Duty" Id="{c615800c-6aff-4054-a819-82837687ec39}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Duty
+VAR_INPUT
+	DutyA_times:REAL; (*Times that Device A must run*)
+	DeviceA_running:BOOL; (*Device A contactor feedback(running signal)*)
+	DeviceA_switch:BOOL;
+	DeviceA_ns:BOOL; (*Device A No Start - Switch duty to B*)
+	Force_dutyA:BOOL;
+	DutyB_times:REAL; (*Time that Device B must run*)
+	Device_B_running:BOOL; (*Device B contactor feedback(running signal)*)
+	DeviceB_switch:BOOL;
+	DeviceB_ns:BOOL; (*Device B No Start - Switch duty to A*)
+	Force_dutyB:BOOL;
+END_VAR
+VAR_OUTPUT
+	DutyA:BOOL; (*Device A output*)
+	DutyB:BOOL; (*Device B output*)
+END_VAR
+VAR
+	DeviceA_runtime:REAL;
+	DeviceA_running_GT_1s:BOOL;
+	DA_runtime:TIME;
+	DeviceB_runtime:REAL;
+	DeviceB_running_GT_1s:BOOL;
+	DB_runtime:TIME;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="Duty" Id="{b7053c32-ef2d-4a69-b166-1a8af6b0ae45}">
+      <Declaration><![CDATA[METHOD Duty
+VAR_INPUT
+END_VAR
+{warning "TODO: 'FE' online 14 is not defined"}
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[IF NOT DeviceA_switch THEN
+	DeviceA_runtime :=0;
+end_if;
+ 
+if NOT DeviceB_switch then
+	DeviceB_runtime :=0;
+end_if;
+
+if NOT Force_dutyA and NOT Force_dutyB then
+	if DeviceA_switch then
+		if DeviceA_runtime < DutyA_times & NOT DutyB then
+			DutyA := True;
+		end_if;
+		if FE(DeviceA_running_GT_1s) then
+			DeviceA_runtime := DeviceA_runtime +1;
+		end_if;
+		if DeviceA_runtime >= DutyA_times and NOT Force_dutyA then
+			DutyA := False;
+			DeviceA_runtime := 0;
+		end_if;
+
+	end_if;
+
+
+	if DeviceB_switch then
+		if DeviceB_runtime < DutyB_times & NOT DutyA then
+			DutyB := True;
+		end_if;
+		if FE(DeviceB_running_GT_1s) then
+			DeviceB_runtime := DeviceB_runtime +1;
+		end_if;
+		if DeviceB_runtime >= DutyB_times and NOT Force_dutyB then
+			DutyB := False;
+			DeviceB_runtime := 0;
+		end_if;
+	end_if;
+
+end_if;
+
+if (Force_dutyA and DeviceA_switch) or (DeviceA_switch and NOT DeviceB_switch)  then
+	DutyA := True;
+	DutyB := False;
+	DeviceA_runtime := 0;
+	DeviceB_runtime := 0;
+end_if;
+
+if Force_dutyB and DeviceB_switch  or (DeviceB_switch and NOT DeviceA_switch) then
+	DutyB := True;
+	DutyA := False;
+	DeviceA_runtime := 0;
+	DeviceB_runtime := 0;
+end_if;
+
+
+
+
+
+
+(* Time delay the run feedback so "No Starts" do not increment the Duty Counters*)
+FBI_2 (IN := DeviceA_running,
+       PT := t#2s,
+       Q => DeviceA_running_GT_1s,
+       ET => DA_runtime);
+
+FBI_3 (IN := DeviceB_running,
+       PT := t#2s,
+       Q => DeviceB_running_GT_1s,
+       ET => DB_runtime);]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_Duty">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Duty.Duty">
+      <LineId Id="6" Count="66" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
