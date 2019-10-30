@@ -1,0 +1,10 @@
+{
+    "historizedSymbolList": {
+        "PLC1.Globals.Speed": {
+            "interval": "PT0.1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 10000
+        }
+    }
+}
