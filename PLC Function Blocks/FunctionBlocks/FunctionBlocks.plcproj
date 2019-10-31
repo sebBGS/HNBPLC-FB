@@ -32,6 +32,9 @@
     <Compile Include="DUTs\dut_hmi_Analogue.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\dut_hmi_Depth.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\dut_hmi_Drive_control.TcDUT">
       <SubType>Code</SubType>
     </Compile>
@@ -84,6 +87,9 @@
     <Compile Include="POUs\Control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FBs\FB_Escort_monitoring.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\FB_Analogue.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -114,6 +120,12 @@
     <Compile Include="POUs\FBs\FB_Drive_control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FBs\FB_Duty.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_Encoder_depth.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\FB_Least_gate_element.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -142,6 +154,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Trip_control.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_Valve_monitor.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Window.TcPOU">
