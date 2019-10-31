@@ -11,7 +11,7 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10103</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10104</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.340</HmiInitial>
@@ -83,6 +83,51 @@
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
+    <Content Include="Imports\Images\calibrate_inactive.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\manual_operation_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\scope_stop_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\startpage_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\toolbox_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\warning_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LoadSettings.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LoadSettings.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Settings.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Logo_option_2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\PLC_run.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\start_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\trafficLight.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControl1.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControl1.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include=".hmipkgs" />
     <Folder Include="Libraries" />
     <Folder Include="Images" />
@@ -136,6 +181,9 @@
     <Content Include="Fonts\Roboto-Condensed-webfont.woff">
       <SubType>Content</SubType>
       <Visible>true</Visible>
+    </Content>
+    <Content Include="Menu.content">
+      <SubType>Content</SubType>
     </Content>
     <Content Include="Server\Extensions\ADS\ADS.Config.default.json">
       <SubType>Content</SubType>
