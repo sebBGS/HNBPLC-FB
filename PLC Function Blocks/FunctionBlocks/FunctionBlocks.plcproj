@@ -83,6 +83,9 @@
     <Compile Include="POUs\Control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FBs\FB_Escort_monitoring.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\FB_Analogue.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -144,6 +147,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Trip_control.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_Valve_monitor.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Window.TcPOU">

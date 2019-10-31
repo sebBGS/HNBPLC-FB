@@ -106,5 +106,10 @@
       <From>WORD_TO_BIT_V0</From>
       <To>FB_WORD_TO_BIT_V0</To>
     </RenamedType>
+    <RenamedType>
+      <Type guid="e0bab0e0-eb95-4538-8f03-d429982552ac">ESCORT_MONITORING</Type>
+      <From>Escort_monitoring</From>
+      <To>FB_Escort_monitoring</To>
+    </RenamedType>
   </Renames>
 </Refactors>
