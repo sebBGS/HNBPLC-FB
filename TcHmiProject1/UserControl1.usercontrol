@@ -1,0 +1,26 @@
+﻿<div id="UserControl1" data-tchmi-type="tchmi-user-control" 
+     data-tchmi-top="0" data-tchmi-left="0" 
+     data-tchmi-width="50" data-tchmi-height="250" data-tchmi-width-unit="px" data-tchmi-height-unit="px"
+     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
+
+<div id="TcHmiImage_2" data-tchmi-type="tchmi-image" data-tchmi-height="150" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px"  data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="300" data-tchmi-width-unit="px" data-tchmi-is-enabled="True" data-tchmi-creator-visibility="Collapsed">
+
+</div>
+
+<div id="TcHmiPolygon_1" data-tchmi-type="tchmi-polygon" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-points="25,5 5,25 45,25 25,5 25,200" data-tchmi-scale-mode="ScaleToFill" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="5" data-tchmi-width="50" data-tchmi-height="250">
+
+
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(224, 38, 38, 1)"
+}
+</script>
+</div>
+
+</div>

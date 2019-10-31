@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px"
+	 height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<g id="hintergrund">
+	<g opacity="0.5">
+		<rect y="0" fill="#FFFFFF" width="80" height="80"/>
+	</g>
+</g>
+<g id="grid" display="none">
+</g>
+<g id="pfade">
+	<g>
+		
+			<polyline fill="none" stroke="#AAAAAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			35.614,27.4 48.214,40 35.614,52.6 		"/>
+		
+			<line fill="none" stroke="#AAAAAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="33.832" y1="39.999" x2="48.212" y2="39.999"/>
+		
+			<line fill="none" stroke="#AAAAAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="18.499" y1="39.998" x2="33.152" y2="39.998"/>
+		
+			<circle fill="none" stroke="#AAAAAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="56.666" cy="39.998" r="4.835"/>
+	</g>
+</g>
+</svg>

@@ -1,13 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{b245f8ee-2ee0-404f-a6e1-23510d042c82}">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="MAIN" Id="{b245f8ee-2ee0-404f-a6e1-23510d042c82}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	FB_TP0: FB_Torque_prediction;
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[FB_TP0();]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

@@ -35,10 +35,22 @@
       "type": "Stylesheet"
     }
   ],
-  "userControls": [],
+  "userControls": [
+    {
+      "url": "UserControl1.usercontrol"
+    }
+  ],
   "content": [
     {
       "url": "Main.content",
+      "preload": false
+    },
+    {
+      "url": "Menu.content",
+      "preload": false
+    },
+    {
+      "url": "Settings.content",
       "preload": false
     },
     {
@@ -52,7 +64,11 @@
       "preload": false
     }
   ],
-  "userFunctions": [],
+  "userFunctions": [
+    {
+      "url": "LoadSettings.js"
+    }
+  ],
   "symbols": {
     "internal": {
       "Amps": {
@@ -63,6 +79,12 @@
       },
       "sSettings": {
         "value": "",
+        "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      },
+      "sPageName": {
+        "value": "Main Page",
         "type": "tchmi:general#/definitions/String",
         "persist": false,
         "readonly": false
