@@ -22,7 +22,7 @@
 }
 </script>
 
-<div id="TcHmiRegion" data-tchmi-type="tchmi-region" data-tchmi-height="700" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="68" data-tchmi-top-unit="px" data-tchmi-width="1366" data-tchmi-width-unit="px" data-tchmi-target-content="Main.content">
+<div id="TcHmiRegion" data-tchmi-type="tchmi-region" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="68" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-target-content="Speed_profile.content">
 
 </div>
 

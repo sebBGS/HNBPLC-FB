@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
-  <POU Name="Disc_brake" Id="{979e2970-fb6e-4c17-b656-0f02b5a10666}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK Disc_brake
+  <POU Name="FB_Disc_brake" Id="{979e2970-fb6e-4c17-b656-0f02b5a10666}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Disc_brake
 VAR_INPUT
 	S1:REAL; (*Raw analogue value from proxmity transducer in brake caliper module 1*)
 	S2:REAL; (*Raw analogue value from proxmity transducer in brake caliper module 2*)
@@ -50,8 +50,8 @@ VAR
 	Off2:BOOL;
 	S1_rubbing:BOOL;
 	S2_rubbing:BOOL;
-	Raw_to_scaled_0: Raw_to_scaled;
-	Raw_to_scaled_1: Raw_to_scaled;
+	Raw_to_scaled_0: FB_Raw_to_scaled;
+	Raw_to_scaled_1: FB_Raw_to_scaled;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -133,7 +133,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Maintenance_mode"</v>
+                        <v n="Text">"Brakes.Maintenance_mode"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">64L</v>
                       </o>
@@ -739,7 +739,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Maintenance_mode"</v>
+                        <v n="Text">"Brakes.Maintenance_mode"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">164L</v>
                       </o>
@@ -1060,7 +1060,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Maintenance_mode"</v>
+                        <v n="Text">"Brakes.Maintenance_mode"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">78L</v>
                       </o>
@@ -1272,7 +1272,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Maintenance_mode"</v>
+                        <v n="Text">"Brakes.Maintenance_mode"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">225L</v>
                       </o>
@@ -2238,7 +2238,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Maintenance_mode"</v>
+                        <v n="Text">"Brakes.Maintenance_mode"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">262L</v>
                       </o>
@@ -2522,7 +2522,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Maintenance_mode"</v>
+                        <v n="Text">"Brakes.Maintenance_mode"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">292L</v>
                       </o>
@@ -11861,7 +11861,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Maintenance_mode"</v>
+                        <v n="Text">"Brakes.Maintenance_mode"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">35L</v>
                       </o>
@@ -13247,7 +13247,7 @@ END_VAR]]></Declaration>
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"Raw_to_scaled"</v>
+                            <v n="Text">"FB_Raw_to_scaled"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">151L</v>
                           </o>
@@ -13539,7 +13539,7 @@ END_VAR]]></Declaration>
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"Raw_to_scaled"</v>
+                            <v n="Text">"FB_Raw_to_scaled"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">80L</v>
                           </o>
@@ -13870,7 +13870,7 @@ END_VAR]]></Declaration>
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"Raw_to_scaled"</v>
+                            <v n="Text">"FB_Raw_to_scaled"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">14L</v>
                           </o>
@@ -14022,7 +14022,7 @@ END_VAR]]></Declaration>
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"Raw_to_scaled"</v>
+                            <v n="Text">"FB_Raw_to_scaled"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">127L</v>
                           </o>
@@ -15407,7 +15407,7 @@ END_VAR]]></Declaration>
         </CFC>
       </Implementation>
     </Method>
-    <LineIds Name="Disc_brake">
+    <LineIds Name="FB_Disc_brake">
       <LineId Id="9" Count="0" />
       <LineId Id="57" Count="2" />
     </LineIds>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
-  <POU Name="Window" Id="{63b8565e-5435-4e4f-abdc-d4ff3128c167}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK Window
+  <POU Name="FB_Window" Id="{63b8565e-5435-4e4f-abdc-d4ff3128c167}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Window
 VAR_INPUT
 	Minimum:REAL;
 	X:REAL;
@@ -14,10 +14,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Window_m();]]></ST>
+      <ST><![CDATA[Window();]]></ST>
     </Implementation>
-    <Method Name="Window_m" Id="{06f34b8d-b8c3-4b5f-b952-e2bf6be2e546}">
-      <Declaration><![CDATA[METHOD Window_m
+    <Method Name="Window" Id="{06f34b8d-b8c3-4b5f-b952-e2bf6be2e546}">
+      <Declaration><![CDATA[METHOD Window
 VAR_INPUT
 END_VAR
 ]]></Declaration>
@@ -709,7 +709,7 @@ END_VAR
         </CFC>
       </Implementation>
     </Method>
-    <LineIds Name="Window">
+    <LineIds Name="FB_Window">
       <LineId Id="9" Count="0" />
     </LineIds>
   </POU>

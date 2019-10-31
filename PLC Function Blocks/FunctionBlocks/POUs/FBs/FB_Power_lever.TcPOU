@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
-  <POU Name="Power_lever" Id="{046c8a01-a8a9-4534-a6e7-75fa9037e7a8}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK Power_lever
+  <POU Name="FB_Power_lever" Id="{046c8a01-a8a9-4534-a6e7-75fa9037e7a8}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Power_lever
 VAR_INPUT
 	Forward:BOOL; (*Lever notch 1 forward*)
 	Reverse:BOOL; (*Lever notch 1 reverse*)
@@ -42,7 +42,7 @@ VAR
 	Lever_scaling: Lever_scaling;
 	Power_lever_data_m: Power_lever_data;
 	Power_lever_faults: Power_lever_faults;
-	BIT_TO_WORD_V0_0: BIT_TO_WORD_V0;
+	BIT_TO_WORD_V0_0: FB_BIT_TO_WORD_V0;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[Lever_scaling();
@@ -5810,7 +5810,7 @@ END_VAR]]></Declaration>
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"BIT_TO_WORD_V0"</v>
+                            <v n="Text">"FB_BIT_TO_WORD_V0"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">348L</v>
                           </o>
@@ -12692,7 +12692,7 @@ END_VAR
         </CFC>
       </Implementation>
     </Method>
-    <LineIds Name="Power_lever">
+    <LineIds Name="FB_Power_lever">
       <LineId Id="9" Count="0" />
       <LineId Id="54" Count="1" />
     </LineIds>

@@ -1,4 +1,4 @@
-﻿<div id="Content1" data-tchmi-type="tchmi-content" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1366" data-tchmi-height="694" data-tchmi-zindex="1" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-height-unit="px">
+﻿<div id="Content1" data-tchmi-type="tchmi-content" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-zindex="1" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width-unit="%" data-tchmi-height-unit="%">
 
 <div id="TcHmiEventGrid" data-tchmi-type="tchmi-event-grid" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="112" data-tchmi-left-unit="px" data-tchmi-show-menu-bar="False" data-tchmi-top="480" data-tchmi-top-unit="px" data-tchmi-width="1142" data-tchmi-width-unit="px" data-tchmi-zindex="1" data-tchmi-grid-font-size="14" data-tchmi-header-font-size="14">
 <script data-tchmi-target-attribute="data-tchmi-filter" type="application/json">

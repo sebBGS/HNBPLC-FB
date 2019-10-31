@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
-  <POU Name="Auto_rock" Id="{4847b433-edf1-4a76-bd58-66bd69400c3d}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK Auto_rock
+  <POU Name="FB_Auto_rock" Id="{4847b433-edf1-4a76-bd58-66bd69400c3d}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Auto_rock
 VAR_INPUT
 	Safety_interlock:BOOL;
 	Lh_depth:REAL;
@@ -44,23 +44,23 @@ END_VAR
 VAR
 	Auto_requirements_fault:BOOL;
 	Rock_cycle_bypass_hmi:BOOL;
-	Window_0: Window;
-	Window_1: Window;
+	Window_0: FB_Window;
+	Window_1: FB_Window;
 	R_TRIG_0: R_TRIG;
 	R_TRIG_1: R_TRIG;
 	TOF_0: TOF;
 	F_TRIG_0: F_TRIG;
-	BIT_TO_WORD_V0_0: BIT_TO_WORD_V0;
-	WORD_TO_BIT_V0_0: WORD_TO_BIT_V0;
+	BIT_TO_WORD_V0_0: FB_BIT_TO_WORD_V0;
+	WORD_TO_BIT_V0_0: FB_WORD_TO_BIT_V0;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[Zones();
 Auto_mode();
 Despatch();
-Trail_brakes_m();
+Trail_brakes();
 Auto_trips();
-HMI_data_m();]]></ST>
+HMI_data();]]></ST>
     </Implementation>
     <Method Name="Auto_mode" Id="{92b2812f-7f97-4d7e-9c77-d5cd38e31fe7}">
       <Declaration><![CDATA[METHOD Auto_mode
@@ -486,7 +486,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Lh_on"</v>
+                        <v n="Text">"Brakes.Lh_on"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">36L</v>
                       </o>
@@ -557,7 +557,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Mode.Auto_switch"</v>
+                        <v n="Text">"Mode.Auto_switch"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">122L</v>
                       </o>
@@ -793,7 +793,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Rh_on"</v>
+                        <v n="Text">"Brakes.Rh_on"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">39L</v>
                       </o>
@@ -839,7 +839,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Clutch.Rh_in"</v>
+                        <v n="Text">"Clutch.Rh_in"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">135L</v>
                       </o>
@@ -908,7 +908,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Power_lever.Neutral"</v>
+                        <v n="Text">"Power_leverNeutral"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">148L</v>
                       </o>
@@ -931,7 +931,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Lever_on"</v>
+                        <v n="Text">"Brakes.Lever_on"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">152L</v>
                       </o>
@@ -977,7 +977,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Lever_fully_off"</v>
+                        <v n="Text">"Brakes.Lever_fully_off"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">156L</v>
                       </o>
@@ -1137,7 +1137,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Clutch.Lh_in"</v>
+                        <v n="Text">"Clutch.Lh_in"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">139L</v>
                       </o>
@@ -1160,7 +1160,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Mode.Rock"</v>
+                        <v n="Text">"Mode.Rock"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">143L</v>
                       </o>
@@ -1183,7 +1183,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Rh_dump"</v>
+                        <v n="Text">"Brakes.Rh_dump"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">164L</v>
                       </o>
@@ -1208,7 +1208,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Mode.Auto"</v>
+                        <v n="Text">"Mode.Auto"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">185L</v>
                       </o>
@@ -1517,7 +1517,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Lh_dump"</v>
+                        <v n="Text">"Brakes.Lh_dump"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">160L</v>
                       </o>
@@ -2660,7 +2660,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Mode.Auto_switch"</v>
+                        <v n="Text">"Mode.Auto_switch"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">142L</v>
                       </o>
@@ -3179,7 +3179,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Power_lever.Forward"</v>
+                        <v n="Text">"Power_leverForward"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">124L</v>
                       </o>
@@ -3278,7 +3278,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Power_lever.Reverse"</v>
+                        <v n="Text">"Power_leverReverse"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">83L</v>
                       </o>
@@ -3363,7 +3363,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Mode.Auto_switch"</v>
+                        <v n="Text">"Mode.Auto_switch"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">36L</v>
                       </o>
@@ -3667,7 +3667,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Mode.Auto_switch"</v>
+                        <v n="Text">"Mode.Auto_switch"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">75L</v>
                       </o>
@@ -4452,7 +4452,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Lh_on"</v>
+                        <v n="Text">"Brakes.Lh_on"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">69L</v>
                       </o>
@@ -4475,7 +4475,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Rh_on"</v>
+                        <v n="Text">"Brakes.Rh_on"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">66L</v>
                       </o>
@@ -6743,7 +6743,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Lh_on"</v>
+                        <v n="Text">"Brakes.Lh_on"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">151L</v>
                       </o>
@@ -6960,7 +6960,7 @@ END_VAR
                       <o n="Text" t="CFCText">
                         <v n="Bounds">"0, 0, 0, 0"</v>
                         <n n="ElementGroupId" />
-                        <v n="Text">"GVL.Brakes.Rh_on"</v>
+                        <v n="Text">"Brakes.Rh_on"</v>
                         <v n="Modifiable">true</v>
                         <v n="Id">154L</v>
                       </o>
@@ -10279,8 +10279,8 @@ END_VAR
         </CFC>
       </Implementation>
     </Method>
-    <Method Name="HMI_data_m" Id="{6a5e0cc7-e463-4e2c-b4ec-30d5e3cc37e0}">
-      <Declaration><![CDATA[METHOD HMI_data_m
+    <Method Name="HMI_data" Id="{6a5e0cc7-e463-4e2c-b4ec-30d5e3cc37e0}">
+      <Declaration><![CDATA[METHOD HMI_data
 VAR_INPUT
 END_VAR
 ]]></Declaration>
@@ -10848,7 +10848,7 @@ END_VAR
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"BIT_TO_WORD_V0"</v>
+                            <v n="Text">"FB_BIT_TO_WORD_V0"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">16L</v>
                           </o>
@@ -11301,7 +11301,7 @@ END_VAR
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"WORD_TO_BIT_V0"</v>
+                            <v n="Text">"FB_WORD_TO_BIT_V0"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">103L</v>
                           </o>
@@ -11650,7 +11650,7 @@ END_VAR
                     <o>
                       <v n="ConnectionId">146L</v>
                       <o n="StartPoint" t="CFCPoint">
-                        <v n="X">23</v>
+                        <v n="X">24</v>
                         <v n="Y">31</v>
                         <v n="IsJoint">false</v>
                         <v n="Flags">0</v>
@@ -11661,6 +11661,12 @@ END_VAR
                     </o>
                     <o>
                       <l2 n="InnerList" cet="CFCPoint">
+                        <o>
+                          <v n="X">24</v>
+                          <v n="Y">31</v>
+                          <v n="IsJoint">false</v>
+                          <v n="Flags">0</v>
+                        </o>
                         <o>
                           <v n="X">23</v>
                           <v n="Y">31</v>
@@ -11700,7 +11706,7 @@ END_VAR
                     <o>
                       <v n="ConnectionId">95L</v>
                       <o n="StartPoint" t="CFCPoint">
-                        <v n="X">23</v>
+                        <v n="X">24</v>
                         <v n="Y">6</v>
                         <v n="IsJoint">false</v>
                         <v n="Flags">0</v>
@@ -11711,6 +11717,12 @@ END_VAR
                     </o>
                     <o>
                       <l2 n="InnerList" cet="CFCPoint">
+                        <o>
+                          <v n="X">24</v>
+                          <v n="Y">6</v>
+                          <v n="IsJoint">false</v>
+                          <v n="Flags">0</v>
+                        </o>
                         <o>
                           <v n="X">23</v>
                           <v n="Y">6</v>
@@ -11777,8 +11789,8 @@ END_VAR
         </CFC>
       </Implementation>
     </Method>
-    <Method Name="Trail_brakes_m" Id="{72ee8853-6792-4147-9490-9c35f5b7bc74}">
-      <Declaration><![CDATA[METHOD Trail_brakes_m
+    <Method Name="Trail_brakes" Id="{72ee8853-6792-4147-9490-9c35f5b7bc74}">
+      <Declaration><![CDATA[METHOD Trail_brakes
 VAR_INPUT
 END_VAR
 ]]></Declaration>
@@ -13430,7 +13442,7 @@ END_VAR
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"Window"</v>
+                            <v n="Text">"FB_Window"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">50L</v>
                           </o>
@@ -13544,7 +13556,7 @@ END_VAR
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"Window"</v>
+                            <v n="Text">"FB_Window"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">12L</v>
                           </o>
@@ -13681,7 +13693,7 @@ END_VAR
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"Window"</v>
+                            <v n="Text">"FB_Window"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">77L</v>
                           </o>
@@ -13873,7 +13885,7 @@ END_VAR
                           <o>
                             <v n="Bounds">"0, 0, 0, 0"</v>
                             <n n="ElementGroupId" />
-                            <v n="Text">"Window"</v>
+                            <v n="Text">"FB_Window"</v>
                             <v n="Modifiable">true</v>
                             <v n="Id">88L</v>
                           </o>
@@ -14622,7 +14634,7 @@ END_VAR
         </CFC>
       </Implementation>
     </Method>
-    <LineIds Name="Auto_rock">
+    <LineIds Name="FB_Auto_rock">
       <LineId Id="9" Count="0" />
       <LineId Id="49" Count="4" />
     </LineIds>

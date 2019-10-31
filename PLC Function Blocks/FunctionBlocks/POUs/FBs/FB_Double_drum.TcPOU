@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="FB_Double_drum" Id="{15181611-30f7-4610-a263-4784b55c7bdf}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Double_drum
+VAR_INPUT
+	Lh_raw_depth:REAL; (*Raw left hand drum depth*)
+	Rh_raw_depth:REAL; (*Raw right hand drum depth*)
+	Lh_speed:REAL; (*Left drum speed in mm/s*)
+	Rh_speed:REAL; (*Right drum speed in mm/s*)
+	Tacho_speed:REAL; (*Tacho speed in mm/s*)
+	Speed_ref:REAL; (*Speed reference output to drive in mm/s*)
+	Lh_going_up:BOOL; (*Left conveyance moving in the upward direction (forward)*)
+	Rh_going_up:BOOL; (*Right conveyance moving in the upward direction (forward)*)
+	Lh_movement:BOOL; (*Movement detected on left drum since the brakes were last applied*)
+	Rh_movement:BOOL; (*Movement detected on right drum since the brakes were last applied*)
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Double_drum_values();
+Speed_crosschecks();
+Depth_crosscheck();]]></ST>
+    </Implementation>
+    <Method Name="Double_drum_values" Id="{075d2d44-2c09-4e1b-8ea3-fb6f3465e061}">
+      <Declaration><![CDATA[METHOD Double_drum_values
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <CFC>
+          <XmlArchive>
+            <Data>
+              <o xml:space="preserve" t="CFCImplementationObject">
+                <o n="Items" t="CFCItemList">
+                  <l2 n="InnerList" />
+                </o>
+                <n n="ParameterInitializationMethodGenerator" />
+                <o n="RoutingPathTable" t="CFCRoutingPathTable">
+                  <d2 n="InnerDictionary" />
+                </o>
+                <v n="AutoSizeCanvas">true</v>
+                <v n="CanvasWidth">2</v>
+                <v n="CanvasHeight">2</v>
+              </o>
+            </Data>
+            <TypeList>
+              <Type n="Boolean">System.Boolean</Type>
+              <Type n="CFCImplementationObject">{32d3375e-c010-41e2-9e43-b2fbf4f2b374}</Type>
+              <Type n="CFCItemList">{cd57ba20-558b-4b98-96c1-73c6000c3087}</Type>
+              <Type n="CFCRoutingPathTable">{4b8bcc79-5980-4868-b49e-005a8148859b}</Type>
+              <Type n="Int32">System.Int32</Type>
+            </TypeList>
+          </XmlArchive>
+        </CFC>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_Double_drum">
+      <LineId Id="9" Count="2" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
