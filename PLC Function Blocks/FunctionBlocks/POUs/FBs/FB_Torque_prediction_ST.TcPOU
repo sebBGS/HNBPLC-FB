@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="FB_Torque_prediction_ST" Id="{121525ac-afdd-4a57-bdd6-f051485a00d4}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Torque_prediction_ST
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	Lh_full: BOOL;
+	Lh_half: BOOL;
+	Equal: BOOL;
+	Rh_half: BOOL;
+	Rh_full: BOOL;
+	
+	Lh_full_selected: BOOL;
+	Lh_half_selected: BOOL;
+	Equal_selected: BOOL;
+	Rh_half_selected: BOOL;
+	Rh_full_selected: BOOL;
+	
+	R_TRIG0: R_TRIG;
+	R_TRIG1: R_TRIG;
+	R_TRIG2: R_TRIG;
+	R_TRIG3: R_TRIG;
+	R_TRIG4: R_TRIG;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[R_TRIG0(CLK:= Torque_prediction.Lh_full_request, Q=> Lh_full_selected);
+R_TRIG1(CLK:= Torque_prediction.Lh_half_request, Q=> Lh_half_selected);
+R_TRIG2(CLK:= Torque_prediction.Equal_request, Q=> Equal_selected);
+R_TRIG3(CLK:= Torque_prediction.Rh_half_request, Q=> Rh_half_selected);
+R_TRIG4(CLK:= Torque_prediction.Rh_full_request, Q=> Rh_full_selected);
+
+IF Lh_full_selected THEN
+	Torque_prediction.Lh_full := 1;
+	Torque_prediction.Lh_half := 0;
+	Torque_prediction.Equal := 0;
+	Torque_prediction.Rh_half := 0;
+	Torque_prediction.Rh_full := 0;
+ELSIF Lh_half_selected THEN
+	Torque_prediction.Lh_full := 0;
+	Torque_prediction.Lh_half := 1;
+	Torque_prediction.Equal := 0;
+	Torque_prediction.Rh_half := 0;
+	Torque_prediction.Rh_full := 0;
+ELSIF Equal_selected THEN
+	Torque_prediction.Lh_full := 0;
+	Torque_prediction.Lh_half := 0;
+	Torque_prediction.Equal := 1;
+	Torque_prediction.Rh_half := 0;
+	Torque_prediction.Rh_full := 0;
+ELSIF Rh_half_selected THEN
+	Torque_prediction.Lh_full := 0;
+	Torque_prediction.Lh_half := 0;
+	Torque_prediction.Equal := 0;
+	Torque_prediction.Rh_half := 1;
+	Torque_prediction.Rh_full := 0;
+ELSIF Rh_full_selected THEN
+	Torque_prediction.Lh_full := 0;
+	Torque_prediction.Lh_half := 0;
+	Torque_prediction.Equal := 0;
+	Torque_prediction.Rh_half := 0;
+	Torque_prediction.Rh_full := 1;
+END_IF
+
+Torque_prediction.Lh_full_request := 0;
+Torque_prediction.Lh_half_request := 0;
+Torque_prediction.Equal_request := 0;
+Torque_prediction.Rh_half_request := 0;
+Torque_prediction.Rh_full_request := 0;
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Torque_prediction_ST">
+      <LineId Id="9" Count="0" />
+      <LineId Id="17" Count="3" />
+      <LineId Id="26" Count="0" />
+      <LineId Id="25" Count="0" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="42" Count="3" />
+      <LineId Id="47" Count="16" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="70" Count="5" />
+      <LineId Id="28" Count="0" />
+      <LineId Id="77" Count="5" />
+      <LineId Id="76" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

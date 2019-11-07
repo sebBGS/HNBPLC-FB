@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_Dol_Starter" Id="{c390ee9e-2cbc-4ab0-80a3-e622eae418e4}">
+    <Declaration><![CDATA[TYPE dut_Dol_Starter :
+STRUCT
+	Input_word:WORD; (*0=Switch, 1=Run, 2=Trip, 3=NoStart, 4=Estop, 5=IL1, 6=IL2, 7=IL3*)
+	Output_word:WORD;
+	Hrs:REAL;
+	Minutes:REAL;
+	Sec:REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

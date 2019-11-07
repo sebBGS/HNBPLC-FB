@@ -26,6 +26,9 @@
     <Compile Include="DUTs\dut_Clutch.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\dut_Dol_Starter.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\dut_Drive_control.TcDUT">
       <SubType>Code</SubType>
     </Compile>
@@ -51,6 +54,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\dut_Safety.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\dut_TPD32_base_settings.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GVLs\Brakes.TcGVL">
@@ -85,6 +91,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\Control.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_Brake_Oil_pump.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_Ctl_cmd_u.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_DOL_Control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Escort_monitoring.TcPOU">
@@ -126,6 +141,9 @@
     <Compile Include="POUs\FBs\FB_Encoder_depth.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FBs\FB_Fast_brake.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\FB_Least_gate_element.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -151,6 +169,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Torque_prediction.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_Torque_prediction_ST.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_TPD_CANopen.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_TP_with_stop.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Trip_control.TcPOU">

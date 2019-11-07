@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="FB_Brake_Oil_pump" Id="{d9719d8f-ebbd-413b-a586-b463899a0318}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Brake_Oil_pump
+VAR_INPUT
+	Run_cmd:BOOL;
+	Stop_cmd:BOOL;
+	Bop1_switch:BOOL;
+	Bop1_tripped:BOOL;
+	Bop1_running:BOOL;
+	Bop1_use_internal_es:BOOL;
+	Bop1_ext_estop:BOOL;
+	Bop2_switch:BOOL;
+	Bop2_tripped:BOOL;
+	Bop2_running:BOOL;
+	Bop2_use_internal_es:BOOL;
+	Bop2_ext_estop:BOOL;
+	Bop1_interlock:BOOL;
+	Bop2_interlock:BOOL;
+	Common_interlock:BOOL;
+	Bridge1:BOOL;
+	Bridge2:BOOL;
+	Bridge3:BOOL;
+	Pause_time:TIME;
+	Reset:BOOL;
+	Duty_bop1:REAL;
+	Duty_bop2:REAL;
+	Bop1_Reg455:REAL;
+	Bop2_Reg455:REAL;
+END_VAR
+VAR_OUTPUT
+	Bop1_run:BOOL;
+	Bop2_run:BOOL;
+	Bop1_ns_trip:BOOL;
+	Bop1_es_trip:BOOL;
+	Bop1_contactor_stuck:BOOL;
+	Bop2_ns_trip:BOOL;
+	Bop2_es_trip:BOOL;
+	Bop2_contactor_stuck:BOOL;
+	Start_output:BOOL;
+	Bop1_Reg704:REAL;
+	Bop1_Reg703:REAL;
+	Bop1_Avg_curr:REAL;
+	Bop2_Reg704:REAL;
+	Bop2_Reg703:REAL;
+	Bop2_Avg_curr:REAL;
+END_VAR
+VAR_IN_OUT
+	Bop1_data:dut_Dol_Starter;
+	Bop2_data:dut_Dol_Starter;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Brake_oil_pump();]]></ST>
+    </Implementation>
+    <Method Name="Brake_oil_pump" Id="{00820402-07fb-43f2-840a-20acfcbd2696}">
+      <Declaration><![CDATA[METHOD Brake_oil_pump
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <CFC>
+          <XmlArchive>
+            <Data>
+              <o xml:space="preserve" t="CFCImplementationObject">
+                <o n="Items" t="CFCItemList">
+                  <l2 n="InnerList" />
+                </o>
+                <n n="ParameterInitializationMethodGenerator" />
+                <o n="RoutingPathTable" t="CFCRoutingPathTable">
+                  <d2 n="InnerDictionary" />
+                </o>
+                <v n="AutoSizeCanvas">true</v>
+                <v n="CanvasWidth">0</v>
+                <v n="CanvasHeight">0</v>
+              </o>
+            </Data>
+            <TypeList>
+              <Type n="Boolean">System.Boolean</Type>
+              <Type n="CFCImplementationObject">{32d3375e-c010-41e2-9e43-b2fbf4f2b374}</Type>
+              <Type n="CFCItemList">{cd57ba20-558b-4b98-96c1-73c6000c3087}</Type>
+              <Type n="CFCRoutingPathTable">{4b8bcc79-5980-4868-b49e-005a8148859b}</Type>
+              <Type n="Int32">System.Int32</Type>
+            </TypeList>
+          </XmlArchive>
+        </CFC>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_Brake_Oil_pump">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

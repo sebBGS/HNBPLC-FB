@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="FB_Ctl_cmd_u" Id="{c757868d-f833-44e6-9704-e3a5e0bd8e19}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Ctl_cmd_u
+VAR_INPUT
+	Reg_455:INT;
+	Run_fwd:BOOL;
+	Run_rev:BOOL;
+	Rst_flt:BOOL;
+	Rst_warn:BOOL;
+	Ther_ov_test:BOOL;
+	Trip_tst:BOOL;
+END_VAR
+VAR_OUTPUT
+	Reg_704:INT;
+	Reg_703:INT;
+	Ready:BOOL;
+	Closed:BOOL;
+	Tripped:BOOL;
+	Fault:BOOL;
+	Alarm:BOOL;
+	Rst_auth:BOOL;
+	Starting:BOOL;
+	Running:BOOL;
+	Avg_curr:REAL;
+END_VAR
+VAR
+END_VAR
+{warning "TODO: SHRZ_INT function does not exist in this version of ST. I don't know what the equivalent is"}
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(* Command treatment *)
+IF Run_fwd THEN Run_fwd S= Reg_704.0;
+ELSE Run_fwd R= Reg_704.0;
+END_IF;
+     
+IF Run_rev THEN Run_rev S= Reg_704.1;
+ELSE Run_rev R= Reg_704.1;
+END_IF;
+     
+IF Rst_flt THEN Rst_flt S=Reg_704.3;
+ELSE Rst_flt R= Reg_704.3;
+END_IF;
+     
+IF Ther_ov_test THEN Ther_ov_test S= Reg_704.5;
+ELSE Ther_ov_test R= Reg_704.5;
+END_IF;
+     
+IF Trip_tst THEN Trip_tst S= Reg_704.12;
+ELSE Trip_tst R= Reg_704.12;
+END_IF;
+
+IF Rst_warn THEN Rst_warn S= Reg_703.3;
+ELSE Rst_warn R= Reg_703.3;
+END_IF;
+
+(* Controltreatment *)
+Ready := Reg_455.0;
+Closed := Reg_455.1;
+Fault := Reg_455.2;
+Alarm := Reg_455.3;
+Tripped := Reg_455.4;
+Rst_auth := Reg_455.5;
+Running := Reg_455.7;
+Starting := Reg_455.15;
+Avg_curr := Reg_455 AND 16128;
+Avg_curr := SHRZ_INT(Avg_curr,8);
+Avg_curr := Avg_curr * 318 / 100;]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Ctl_cmd_u">
+      <LineId Id="29" Count="35" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

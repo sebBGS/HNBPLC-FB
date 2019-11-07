@@ -111,5 +111,15 @@
       <From>Escort_monitoring</From>
       <To>FB_Escort_monitoring</To>
     </RenamedType>
+    <RenamedType>
+      <Type guid="121525ac-afdd-4a57-bdd6-f051485a00d4">FB_TORQUE_PREDICTION</Type>
+      <From>FB_Torque_prediction</From>
+      <To>FB_Torque_prediction_ST</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="aba12aa0-774e-4307-bc34-d6e83193ae31">FB_TPD</Type>
+      <From>FB_TPD</From>
+      <To>FB_TPD_CANopen</To>
+    </RenamedType>
   </Renames>
 </Refactors>
