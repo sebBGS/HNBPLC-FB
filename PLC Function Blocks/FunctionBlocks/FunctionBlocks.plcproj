@@ -144,6 +144,9 @@
     <Compile Include="POUs\FBs\FB_Fast_brake.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FBs\FB_Lag_filter.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\FB_Least_gate_element.TcPOU">
       <SubType>Code</SubType>
     </Compile>

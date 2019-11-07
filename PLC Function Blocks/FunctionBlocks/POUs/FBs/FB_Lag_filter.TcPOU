@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="FB_Lag_filter" Id="{fc03950e-7a0e-4c4f-8e5e-e5c24060ece1}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Lag_filter
+VAR_INPUT
+	In: REAL;
+	Time_const: TIME;
+END_VAR
+VAR_OUTPUT
+	Out: REAL;
+END_VAR
+VAR	
+	Scan_time: REAL;
+	T: REAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Scan_time:= UINT_TO_REAL(_TaskInfo[1].CycleTime) / 10.0;
+T:= TIME_TO_REAL(Time_const);
+
+Out:= Out + T * (In - Out) / (T - Scan_time);
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Lag_filter">
+      <LineId Id="9" Count="0" />
+      <LineId Id="17" Count="0" />
+      <LineId Id="20" Count="0" />
+      <LineId Id="18" Count="0" />
+      <LineId Id="16" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
