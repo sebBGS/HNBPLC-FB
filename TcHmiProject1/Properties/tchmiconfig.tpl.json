@@ -37,7 +37,7 @@
   ],
   "userControls": [
     {
-      "url": "UserControl1.usercontrol"
+      "url": "ButtonWithLamp.usercontrol"
     }
   ],
   "content": [
@@ -67,6 +67,12 @@
   "userFunctions": [
     {
       "url": "LoadSettings.js"
+    },
+    {
+      "url": "Functions/fnInvisible.js"
+    },
+    {
+      "url": "Functions/FormatReal.js"
     }
   ],
   "symbols": {

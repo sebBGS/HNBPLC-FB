@@ -138,6 +138,9 @@
     <Compile Include="POUs\FBs\FB_Mode.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FBs\FB_Moving_average.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\FB_Power_lever.TcPOU">
       <SubType>Code</SubType>
     </Compile>

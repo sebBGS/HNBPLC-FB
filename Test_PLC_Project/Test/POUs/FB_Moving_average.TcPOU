@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="FB_Moving_average" Id="{cc1678d2-24a6-4224-94e3-0f7b70532a0d}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Moving_average
+VAR_INPUT
+	New_sample: REAL;
+	Num_samples: INT;
+END_VAR
+VAR_OUTPUT
+	Out: REAL;
+END_VAR
+VAR CONSTANT
+	Array_size: INT := 300;	
+END_VAR
+VAR
+	Samples: ARRAY[0..(Array_size - 1)] OF REAL;
+	i: INT;
+	Sum: REAL;
+	Pulse: BOOL;
+	Toggle: BOOL;
+	TON0: TON;
+	TOF0: TOF;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(* Generate a pulse every 10ms *)
+TOF0(IN:= Pulse, PT:= T#5MS, Q=> Toggle, ET=> );
+TON0(IN:= Toggle, PT:= T#5MS, Q=> Pulse, ET=> );
+
+(* Shift all the array elements one position and add them up while doing so *)
+Sum:= 0;
+FOR i:= Array_size - Num_samples TO Array_size - 2 DO
+	Samples[i]:= Samples[i + 1];
+	Sum:= Sum + Samples[i];
+END_FOR
+
+(* Insert the new sample into the array and add it to the sum *)
+Samples[Array_size - 1]:= New_sample;
+Sum:= Sum + New_sample;
+
+(* Calculate the average *)
+Out:= Sum / INT_TO_REAL(Num_samples);]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Moving_average">
+      <LineId Id="61" Count="0" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="33" Count="0" />
+      <LineId Id="62" Count="0" />
+      <LineId Id="59" Count="0" />
+      <LineId Id="26" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="29" Count="0" />
+      <LineId Id="28" Count="0" />
+      <LineId Id="64" Count="0" />
+      <LineId Id="63" Count="0" />
+      <LineId Id="30" Count="1" />
+      <LineId Id="66" Count="0" />
+      <LineId Id="65" Count="0" />
+      <LineId Id="32" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

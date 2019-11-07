@@ -3,14 +3,29 @@
   <POU Name="MAIN" Id="{669ec0ec-14f4-4f97-93d0-387805f25cf8}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	TP0: FB_Torque_prediction;
+	TP0: FB_Torque_prediction;	
+	MA0: FB_Moving_average;
+	
+	X: REAL:= 0;
+	Y: REAL;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[TP0();]]></ST>
+      <ST><![CDATA[TP0();
+
+MA0(New_sample:= X, Num_samples:= 200, Out=> Y);
+X:= X + 0.01;
+IF X >= 100 THEN
+	X:= 0.0;
+END_IF
+]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="18" Count="3" />
+      <LineId Id="17" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
