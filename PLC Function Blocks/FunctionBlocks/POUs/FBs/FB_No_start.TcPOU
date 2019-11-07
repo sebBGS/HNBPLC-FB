@@ -25,10 +25,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Main();]]></ST>
+      <ST><![CDATA[M_Main();]]></ST>
     </Implementation>
-    <Method Name="Main" Id="{f949ef21-8f17-428f-80ce-287468964702}">
-      <Declaration><![CDATA[METHOD Main
+    <Method Name="M_Main" Id="{f949ef21-8f17-428f-80ce-287468964702}">
+      <Declaration><![CDATA[METHOD M_Main
 VAR_INPUT
 END_VAR
 ]]></Declaration>

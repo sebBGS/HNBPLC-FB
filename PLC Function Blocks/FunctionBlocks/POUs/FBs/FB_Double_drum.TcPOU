@@ -45,12 +45,12 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Double_drum_values();
-Speed_crosschecks();
-Depth_crosscheck();]]></ST>
+      <ST><![CDATA[M_Double_drum_values();
+M_Speed_crosschecks();
+M_Depth_crosscheck();]]></ST>
     </Implementation>
-    <Method Name="Depth_crosscheck" Id="{bb7dfb9b-988e-4bc8-8c75-807a7ec7cd6f}">
-      <Declaration><![CDATA[METHOD Depth_crosscheck
+    <Method Name="M_Depth_crosscheck" Id="{bb7dfb9b-988e-4bc8-8c75-807a7ec7cd6f}">
+      <Declaration><![CDATA[METHOD M_Depth_crosscheck
 VAR_INPUT
 END_VAR
 ]]></Declaration>
@@ -1696,8 +1696,8 @@ END_VAR
         </CFC>
       </Implementation>
     </Method>
-    <Method Name="Double_drum_values" Id="{075d2d44-2c09-4e1b-8ea3-fb6f3465e061}">
-      <Declaration><![CDATA[METHOD Double_drum_values
+    <Method Name="M_Double_drum_values" Id="{075d2d44-2c09-4e1b-8ea3-fb6f3465e061}">
+      <Declaration><![CDATA[METHOD M_Double_drum_values
 VAR_INPUT
 END_VAR
 ]]></Declaration>
@@ -4556,8 +4556,8 @@ END_VAR
         </CFC>
       </Implementation>
     </Method>
-    <Method Name="Speed_crosschecks" Id="{aee97c59-0506-4c16-8ea0-2deb56421f3a}">
-      <Declaration><![CDATA[METHOD Speed_crosschecks
+    <Method Name="M_Speed_crosschecks" Id="{aee97c59-0506-4c16-8ea0-2deb56421f3a}">
+      <Declaration><![CDATA[METHOD M_Speed_crosschecks
 VAR_INPUT
 END_VAR
 {warning "TODO: Address SW0 needs to be replaced with the proper address"}
@@ -4607,7 +4607,7 @@ END_IF;]]></ST>
     <LineIds Name="FB_Double_drum">
       <LineId Id="9" Count="2" />
     </LineIds>
-    <LineIds Name="FB_Double_drum.Speed_crosschecks">
+    <LineIds Name="FB_Double_drum.M_Speed_crosschecks">
       <LineId Id="6" Count="37" />
       <LineId Id="5" Count="0" />
     </LineIds>

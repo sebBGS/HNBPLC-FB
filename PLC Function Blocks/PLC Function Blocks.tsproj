@@ -11,6 +11,9 @@
 				<Task Id="3" CreateSymbols="true" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
+				<Task Id="2" Priority="1" CycleTime="100000" AmsPort="351" AdtTasks="true">
+					<Name>Task 2</Name>
+				</Task>
 			</Tasks>
 		</System>
 		<Plc>

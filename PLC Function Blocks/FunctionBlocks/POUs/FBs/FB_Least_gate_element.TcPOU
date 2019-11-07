@@ -17,10 +17,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Least_gate_element();]]></ST>
+      <ST><![CDATA[M_Least_gate_element();]]></ST>
     </Implementation>
-    <Method Name="Least_gate_element" Id="{5e4cbec7-f44e-4a81-b6cc-b7c86861d6cb}">
-      <Declaration><![CDATA[METHOD Least_gate_element
+    <Method Name="M_Least_gate_element" Id="{5e4cbec7-f44e-4a81-b6cc-b7c86861d6cb}">
+      <Declaration><![CDATA[METHOD M_Least_gate_element
 VAR_INPUT
 END_VAR
 ]]></Declaration>

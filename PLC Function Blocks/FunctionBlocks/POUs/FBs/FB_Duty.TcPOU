@@ -28,10 +28,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[M_Duty();]]></ST>
     </Implementation>
-    <Method Name="Duty" Id="{b7053c32-ef2d-4a69-b166-1a8af6b0ae45}">
-      <Declaration><![CDATA[METHOD Duty
+    <Method Name="M_Duty" Id="{b7053c32-ef2d-4a69-b166-1a8af6b0ae45}">
+      <Declaration><![CDATA[METHOD M_Duty
 VAR_INPUT
 END_VAR
 {warning "TODO: 'FE' online 14 is not defined"}
@@ -110,7 +110,7 @@ FBI_3 (IN := DeviceB_running,
     <LineIds Name="FB_Duty">
       <LineId Id="9" Count="0" />
     </LineIds>
-    <LineIds Name="FB_Duty.Duty">
+    <LineIds Name="FB_Duty.M_Duty">
       <LineId Id="6" Count="66" />
       <LineId Id="5" Count="0" />
     </LineIds>
