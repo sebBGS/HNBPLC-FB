@@ -83,6 +83,21 @@
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
+    <Content Include="CodeBehind1.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\fnInvisible.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\fnInvisible.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\FormatReal.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\FormatReal.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\calibrate_inactive.svg">
       <SubType>Content</SubType>
     </Content>
@@ -122,10 +137,10 @@
     <Content Include="Imports\Images\trafficLight.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControl1.usercontrol">
+    <Content Include="ButtonWithLamp.usercontrol">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControl1.usercontrol.json">
+    <Content Include="ButtonWithLamp.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
     <Folder Include=".hmipkgs" />
@@ -136,6 +151,7 @@
     <Folder Include="Imports\Images" />
     <Folder Include="Imports\Videos" />
     <Folder Include="Localization" />
+    <Folder Include="Functions" />
     <Folder Include="Server\Extensions\ADS" />
     <Folder Include="Server\Extensions\TcHmiEventLogger" />
     <Folder Include="Server\Extensions\TcHmiLua" />

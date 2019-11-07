@@ -1,0 +1,39 @@
+﻿{
+  "function": {
+    "name": "FormatReal",
+    "displayName": "FormatReal",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "arguments": [
+      {
+        "name": "par1",
+        "displayName": "par1",
+        "type": "tchmi:general#/definitions/String",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "Decimals",
+        "displayName": "Decimals",
+        "type": "tchmi:general#/definitions/INT",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

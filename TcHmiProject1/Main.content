@@ -1,6 +1,5 @@
-﻿<div id="Content1" data-tchmi-type="tchmi-content" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="700" data-tchmi-zindex="1" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width-unit="%" data-tchmi-height-unit="px">
-
-<div id="TcHmiEventGrid" data-tchmi-type="tchmi-event-grid" data-tchmi-height="185" data-tchmi-height-unit="px" data-tchmi-left="113" data-tchmi-left-unit="px" data-tchmi-show-menu-bar="False" data-tchmi-top="500" data-tchmi-top-unit="px" data-tchmi-width="1143" data-tchmi-width-unit="px" data-tchmi-zindex="1" data-tchmi-grid-font-size="14" data-tchmi-header-font-size="14">
+﻿<div id="Content1" data-tchmi-type="tchmi-content" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="700" data-tchmi-zindex="3" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width-unit="%" data-tchmi-height-unit="px">
+<div id="TcHmiEventGrid" data-tchmi-type="tchmi-event-grid" data-tchmi-height="185" data-tchmi-height-unit="px" data-tchmi-left="113" data-tchmi-left-unit="px" data-tchmi-show-menu-bar="False" data-tchmi-top="500" data-tchmi-top-unit="px" data-tchmi-width="1143" data-tchmi-width-unit="px" data-tchmi-zindex="3" data-tchmi-grid-font-size="14" data-tchmi-header-font-size="14">
 <script data-tchmi-target-attribute="data-tchmi-filter" type="application/json">
 [
   {
@@ -67,7 +66,7 @@
 </script>
 </div>
 
-<div id="TcHmiRadialGauge" data-tchmi-type="tchmi-radial-gauge" data-tchmi-base-animation-time="1000" data-tchmi-height="408" data-tchmi-height-unit="px" data-tchmi-label-range="1000" data-tchmi-left="480" data-tchmi-left-unit="px" data-tchmi-show-labels="True" data-tchmi-show-ticks="True" data-tchmi-show-value-text="True" data-tchmi-start-from-zero="True" data-tchmi-top="-23" data-tchmi-top-unit="px" data-tchmi-width="408" data-tchmi-width-unit="px" data-tchmi-min-value="-5000" data-tchmi-max-value="5000" data-tchmi-sub-tick-position="Outside" data-tchmi-unit="Amps" data-tchmi-value="2354" data-tchmi-label-font-size="18" data-tchmi-unit-font-size="16" data-tchmi-value-font-size="40" data-tchmi-value-font-weight="Bold" data-tchmi-zindex="1">
+<div id="TcHmiRadialGauge" data-tchmi-type="tchmi-radial-gauge" data-tchmi-base-animation-time="1000" data-tchmi-height="408" data-tchmi-height-unit="px" data-tchmi-label-range="1000" data-tchmi-left="480" data-tchmi-left-unit="px" data-tchmi-show-labels="True" data-tchmi-show-ticks="True" data-tchmi-show-value-text="True" data-tchmi-start-from-zero="True" data-tchmi-top="-23" data-tchmi-top-unit="px" data-tchmi-width="408" data-tchmi-width-unit="px" data-tchmi-min-value="-5000" data-tchmi-max-value="5000" data-tchmi-sub-tick-position="Outside" data-tchmi-unit="Amps" data-tchmi-value="2354" data-tchmi-label-font-size="18" data-tchmi-unit-font-size="16" data-tchmi-value-font-size="40" data-tchmi-value-font-weight="Bold" data-tchmi-zindex="3">
 <script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
 [
   {
@@ -122,7 +121,7 @@
 </script>
 </div>
 
-<div id="TcHmiButton_2" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="594" data-tchmi-left-unit="px" data-tchmi-text="Torque\nPrediction On" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="1" data-tchmi-text-font-size="14">
+<div id="TcHmiButton_2" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="599" data-tchmi-left-unit="px" data-tchmi-text="Torque\nPrediction On" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="14">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -146,55 +145,7 @@
 </script>
 </div>
 
-<div id="TcHmiButton_1" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1191" data-tchmi-left-unit="px" data-tchmi-text="Right\nFull" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="7" data-tchmi-text-font-size="14">
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_1.onPressed",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "TcHmi.View.load('View1.view');"
-        ],
-        "injectContextObject": true,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ],
-    "displayName": "LoadView"
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(214, 214, 214, 1)"
-}
-</script>
-
-
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 1,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-</div>
-
-<div id="TcHmiRectangle" data-tchmi-type="tchmi-rectangle" data-tchmi-height="113" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="1">
+<div id="TcHmiRectangle" data-tchmi-type="tchmi-rectangle" data-tchmi-height="113" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
@@ -219,7 +170,7 @@
 </script>
 </div>
 
-<div id="TcHmiTextblock" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-text="Right Depth" data-tchmi-top="13" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="1">
+<div id="TcHmiTextblock" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-text="Right Depth" data-tchmi-top="13" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -229,7 +180,7 @@
 </script>
 </div>
 
-<div id="TcHmiTextblock_1" data-tchmi-type="tchmi-textblock" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="934" data-tchmi-left-unit="px" data-tchmi-text="987.52 m" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="50" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_1" data-tchmi-type="tchmi-textblock" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="934" data-tchmi-left-unit="px" data-tchmi-text="987.52 m" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="50" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -237,69 +188,9 @@
   "color": "rgba(255, 255, 255, 1)"
 }
 </script>
-</div>Pilz Safety PLC			
-				
-"Safety Processor
-PSSu H PLC1 FS SN SD"				
-				
-" PSSu E F 
-4DI"	Safe In 1	1	Safety3A Feedback	
-		2	Safety3B Feedback	
-		3	Back out footswitch	
-		4		
-" PSSu E F 
-4DI"	Safe In 2	1	Left clutch in	
-		2	Right clutch in	
-		3	Left calibration switch	
-		4	Right calibration switch	
-" PSSu E F 
-4DI"	Safe In 3	1	Login switch	
-		2	Confirm pushbutton	
-		3		
-		4		
- PSSu E F 4DO	Safe Out 1	1	Safety3A	
-		2	Safety3B	
-		3		
-		4		
- PSSu E F ABS SSI				
-				
- PSSu E F ABS SSI				
-				
- PSSu E F ABS SSI				
-				
- PSSu E F ABS SSIPilz Safety PLC			
-				
-"Safety Processor
-PSSu H PLC1 FS SN SD"				
-				
-" PSSu E F 
-4DI"	Safe In 1	1	Safety3A Feedback	
-		2	Safety3B Feedback	
-		3	Back out footswitch	
-		4		
-" PSSu E F 
-4DI"	Safe In 2	1	Left clutch in	
-		2	Right clutch in	
-		3	Left calibration switch	
-		4	Right calibration switch	
-" PSSu E F 
-4DI"	Safe In 3	1	Login switch	
-		2	Confirm pushbutton	
-		3		
-		4		
- PSSu E F 4DO	Safe Out 1	1	Safety3A	
-		2	Safety3B	
-		3		
-		4		
- PSSu E F ABS SSI				
-				
- PSSu E F ABS SSI				
-				
- PSSu E F ABS SSI				
-				
- PSSu E F ABS SSI
+</div>
 
-<div id="TcHmiRectangle_1" data-tchmi-type="tchmi-rectangle" data-tchmi-height="113" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_1" data-tchmi-type="tchmi-rectangle" data-tchmi-height="113" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
@@ -309,7 +200,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_2" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="Left Depth" data-tchmi-top="13" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_2" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="Left Depth" data-tchmi-top="13" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -319,7 +210,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="116" data-tchmi-left-unit="px" data-tchmi-text="37.59 m" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="323" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="50" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="116" data-tchmi-left-unit="px" data-tchmi-text="37.59 m" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="323" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="50" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -329,7 +220,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiRectangle_2" data-tchmi-type="tchmi-rectangle" data-tchmi-height="98" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-top="133" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_2" data-tchmi-type="tchmi-rectangle" data-tchmi-height="98" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-top="133" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
@@ -339,7 +230,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-text="Right Speed" data-tchmi-top="136" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-text="Right Speed" data-tchmi-top="136" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -349,7 +240,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_5" data-tchmi-type="tchmi-textblock" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="934" data-tchmi-left-unit="px" data-tchmi-text="-5.36 m/s" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="40" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_5" data-tchmi-type="tchmi-textblock" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="934" data-tchmi-left-unit="px" data-tchmi-text="-5.36 m/s" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="40" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -359,15 +250,15 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiRectangle_4" data-tchmi-type="tchmi-rectangle" data-tchmi-height="20" data-tchmi-height-unit="px" data-tchmi-left="1337" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="19" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_4" data-tchmi-type="tchmi-rectangle" data-tchmi-height="20" data-tchmi-height-unit="px" data-tchmi-left="1337" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="19" data-tchmi-width-unit="px" data-tchmi-zindex="3">
 
 </div>
 
-<div id="TcHmiRectangle_5" data-tchmi-type="tchmi-rectangle" data-tchmi-height="20" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="19" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_5" data-tchmi-type="tchmi-rectangle" data-tchmi-height="20" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="19" data-tchmi-width-unit="px" data-tchmi-zindex="3">
 
 </div>
 
-<div id="TcHmiRectangle_6" data-tchmi-type="tchmi-rectangle" data-tchmi-height="680" data-tchmi-height-unit="px" data-tchmi-left="39" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_6" data-tchmi-type="tchmi-rectangle" data-tchmi-height="680" data-tchmi-height-unit="px" data-tchmi-left="39" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -383,7 +274,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiRectangle_7" data-tchmi-type="tchmi-rectangle" data-tchmi-height="98" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="133" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_7" data-tchmi-type="tchmi-rectangle" data-tchmi-height="98" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="133" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
@@ -393,7 +284,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_6" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="Left Speed" data-tchmi-top="136" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_6" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="Left Speed" data-tchmi-top="136" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -403,7 +294,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_7" data-tchmi-type="tchmi-textblock" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="117" data-tchmi-left-unit="px" data-tchmi-text="5.29 m/s" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="40" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_7" data-tchmi-type="tchmi-textblock" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="117" data-tchmi-left-unit="px" data-tchmi-text="5.29 m/s" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="40" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -419,7 +310,7 @@ PSSu H PLC1 FS SN SD"
   "color": "rgba(0, 0, 0, 1)"
 }
 </script>
-<div id="TcHmiRectangle_8" data-tchmi-type="tchmi-rectangle" data-tchmi-height="195" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="495" data-tchmi-top-unit="px" data-tchmi-width="1148" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="0">
+<div id="TcHmiRectangle_8" data-tchmi-type="tchmi-rectangle" data-tchmi-height="195" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="495" data-tchmi-top-unit="px" data-tchmi-width="1148" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="2">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -441,7 +332,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiRectangle_9" data-tchmi-type="tchmi-rectangle" data-tchmi-height="136" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="242" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_9" data-tchmi-type="tchmi-rectangle" data-tchmi-height="136" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="242" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
@@ -451,7 +342,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_8" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="Left Allowed Speed" data-tchmi-top="245" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_8" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="Left Allowed Speed" data-tchmi-top="245" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -461,7 +352,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="117" data-tchmi-left-unit="px" data-tchmi-text="6.41 m/s" data-tchmi-top="276" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="40" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="117" data-tchmi-left-unit="px" data-tchmi-text="6.41 m/s" data-tchmi-top="276" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="40" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -471,7 +362,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiRectangle_10" data-tchmi-type="tchmi-rectangle" data-tchmi-height="136" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-top="242" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_10" data-tchmi-type="tchmi-rectangle" data-tchmi-height="136" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-top="242" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
@@ -481,7 +372,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-text="Right Allowed Speed" data-tchmi-top="245" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-text="Right Allowed Speed" data-tchmi-top="245" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -491,7 +382,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_11" data-tchmi-type="tchmi-textblock" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="934" data-tchmi-left-unit="px" data-tchmi-text="-7.53 m/s" data-tchmi-top="276" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="40" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_11" data-tchmi-type="tchmi-textblock" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="934" data-tchmi-left-unit="px" data-tchmi-text="-7.53 m/s" data-tchmi-top="276" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="40" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -501,7 +392,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-text="Accel out of bottom" data-tchmi-top="335" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-text="Accel out of bottom" data-tchmi-top="335" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -511,7 +402,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_13" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="112" data-tchmi-left-unit="px" data-tchmi-text="Accel out of bank" data-tchmi-top="335" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="1">
+<div id="TcHmiTextblock_13" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="112" data-tchmi-left-unit="px" data-tchmi-text="Accel out of bank" data-tchmi-top="335" data-tchmi-top-unit="px" data-tchmi-width="329" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -520,130 +411,10 @@ PSSu H PLC1 FS SN SD"
 }
 </script>
 </div>
-
-<div id="TcHmiButton_3" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1124" data-tchmi-left-unit="px" data-tchmi-text="Right\nHalf" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="6" data-tchmi-text-font-size="14">
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_3.onPressed",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "TcHmi.View.load('View1.view');"
-        ],
-        "injectContextObject": true,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ],
-    "displayName": "LoadView"
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(214, 214, 214, 1)"
-}
-</script>
+<div id="TcHmiButton_5" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="990" data-tchmi-left-unit="px" data-tchmi-text="Left\nHalf" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="6" data-tchmi-text-font-size="14" data-tchmi-state-symbol="%s%PLC1.Torque_prediction.Lh_half_request%/s%">
 
 
 
-
-
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 1,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-</div>
-
-<div id="TcHmiButton_4" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1057" data-tchmi-left-unit="px" data-tchmi-text="Equal" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="5" data-tchmi-text-font-size="14">
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_4.onPressed",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "TcHmi.View.load('View1.view');"
-        ],
-        "injectContextObject": true,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ],
-    "displayName": "LoadView"
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(214, 214, 214, 1)"
-}
-</script>
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "rgba(96, 96, 96, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 1,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-</div>
-
-<div id="TcHmiButton_5" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="990" data-tchmi-left-unit="px" data-tchmi-text="Left\nHalf" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="4" data-tchmi-text-font-size="14">
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_5.onPressed",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "TcHmi.View.load('View1.view');"
-        ],
-        "injectContextObject": true,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ],
-    "displayName": "LoadView"
-  }
-]
-</script>
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
@@ -687,41 +458,13 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiButton_6" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="923" data-tchmi-left-unit="px" data-tchmi-text="Left\nFull" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="14">
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_6.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%s%PLC1.Torque_prediction.Lh_full_request%/s%",
-        "valueType": "tchmi:general#/definitions/BOOL",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:general#/definitions/BOOL",
-          "value": true
-        },
-        "asyncWait": true
-      }
-    ],
-    "displayName": "Lh full"
-  }
-]
-</script>
+<div id="TcHmiButton_6" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="923" data-tchmi-left-unit="px" data-tchmi-text="Left\nFull" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="5" data-tchmi-text-font-size="14" data-tchmi-state-symbol="%s%PLC1.Torque_prediction.Lh_full_request%/s%" data-tchmi-visibility="%f%%s%PLC1.Torque_prediction.Lh_full%/s%? 'Hidden' : 'Visible';%/f%">
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(214, 214, 214, 1)"
 }
 </script>
-
-
-
-
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
@@ -739,7 +482,7 @@ PSSu H PLC1 FS SN SD"
 
 </div>
 
-<div id="TcHmiTextblock_14" data-tchmi-type="tchmi-textblock" data-tchmi-height="16" data-tchmi-height-unit="px" data-tchmi-left="833" data-tchmi-left-unit="px" data-tchmi-text="1572 A" data-tchmi-top="447" data-tchmi-top-unit="px" data-tchmi-width="71" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-font-size="20" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1" data-tchmi-background-image-horizontal-alignment="Center">
+<div id="TcHmiTextblock_14" data-tchmi-type="tchmi-textblock" data-tchmi-height="16" data-tchmi-height-unit="px" data-tchmi-left="838" data-tchmi-left-unit="px" data-tchmi-text="1572 A" data-tchmi-top="447" data-tchmi-top-unit="px" data-tchmi-width="71" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-font-size="20" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3" data-tchmi-background-image-horizontal-alignment="Center">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -749,7 +492,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextblock_15" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="708" data-tchmi-left-unit="px" data-tchmi-text="Predicted Current:" data-tchmi-top="434" data-tchmi-top-unit="px" data-tchmi-width="130" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="1" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmiTextblock_15" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="713" data-tchmi-left-unit="px" data-tchmi-text="Predicted Current:" data-tchmi-top="434" data-tchmi-top-unit="px" data-tchmi-width="130" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="3" data-tchmi-text-vertical-alignment="Center">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -759,7 +502,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiRectangle_11" data-tchmi-type="tchmi-rectangle" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="704" data-tchmi-left-unit="px" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="1" data-tchmi-background-image-horizontal-alignment="Right">
+<div id="TcHmiRectangle_11" data-tchmi-type="tchmi-rectangle" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="709" data-tchmi-left-unit="px" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="3" data-tchmi-background-image-horizontal-alignment="Right">
 
 
 <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
@@ -769,7 +512,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiRectangle_12" data-tchmi-type="tchmi-rectangle" data-tchmi-height="21" data-tchmi-height-unit="px" data-tchmi-left="39" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_12" data-tchmi-type="tchmi-rectangle" data-tchmi-height="21" data-tchmi-height-unit="px" data-tchmi-left="39" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -806,7 +549,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiRectangle_13" data-tchmi-type="tchmi-rectangle" data-tchmi-height="659" data-tchmi-height-unit="px" data-tchmi-left="1266" data-tchmi-left-unit="px" data-tchmi-top="11" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="2">
+<div id="TcHmiRectangle_13" data-tchmi-type="tchmi-rectangle" data-tchmi-height="659" data-tchmi-height-unit="px" data-tchmi-left="1266" data-tchmi-left-unit="px" data-tchmi-top="11" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="4">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -843,7 +586,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiRectangle_14" data-tchmi-type="tchmi-rectangle" data-tchmi-height="680" data-tchmi-height-unit="px" data-tchmi-left="1266" data-tchmi-left-unit="px" data-tchmi-top="11" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_14" data-tchmi-type="tchmi-rectangle" data-tchmi-height="680" data-tchmi-height-unit="px" data-tchmi-left="1266" data-tchmi-left-unit="px" data-tchmi-top="11" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -859,73 +602,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiButton_7" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="633" data-tchmi-left-unit="px" data-tchmi-text="Regulator\nHealthy" data-tchmi-top="303" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="False" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto" data-tchmi-text-font-family="" data-tchmi-text-font-style="Auto">
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_7.onPressed",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "TcHmi.View.load('View1.view');"
-        ],
-        "injectContextObject": true,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ],
-    "displayName": "LoadView"
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(255, 255, 255, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "angle": 0.0,
-  "stopPoints": [
-    {
-      "color": "rgba(34, 125, 0, 1)",
-      "stop": "0%"
-    },
-    {
-      "color": "rgba(76, 196, 32, 1)",
-      "stop": "100%"
-    }
-  ]
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "rgba(76, 196, 32, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-</div>
-
-<div id="TcHmiButton_8" data-tchmi-type="tchmi-button" data-tchmi-height="90" data-tchmi-height-unit="px" data-tchmi-left="735" data-tchmi-left-unit="px" data-tchmi-text="Right\nBrake\nOff" data-tchmi-top="308" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto">
+<div id="TcHmiButton_8" data-tchmi-type="tchmi-button" data-tchmi-height="90" data-tchmi-height-unit="px" data-tchmi-left="735" data-tchmi-left-unit="px" data-tchmi-text="Right\nBrake\nOff" data-tchmi-top="308" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="5" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -981,7 +658,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiButton_9" data-tchmi-type="tchmi-button" data-tchmi-height="90" data-tchmi-height-unit="px" data-tchmi-left="551" data-tchmi-left-unit="px" data-tchmi-text="Left\nBrake\nOff" data-tchmi-top="308" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto">
+<div id="TcHmiButton_9" data-tchmi-type="tchmi-button" data-tchmi-height="90" data-tchmi-height-unit="px" data-tchmi-left="551" data-tchmi-left-unit="px" data-tchmi-text="Left\nBrake\nOff" data-tchmi-top="308" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="5" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1037,7 +714,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiButton_10" data-tchmi-type="tchmi-button" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="817" data-tchmi-left-unit="px" data-tchmi-text="Right\nClutch\nIn" data-tchmi-top="313" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto">
+<div id="TcHmiButton_10" data-tchmi-type="tchmi-button" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="817" data-tchmi-left-unit="px" data-tchmi-text="Right\nClutch\nIn" data-tchmi-top="313" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="5" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1093,7 +770,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiButton_11" data-tchmi-type="tchmi-button" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="469" data-tchmi-left-unit="px" data-tchmi-text="Right\nClutch\nIn" data-tchmi-top="313" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto">
+<div id="TcHmiButton_11" data-tchmi-type="tchmi-button" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="469" data-tchmi-left-unit="px" data-tchmi-text="Right\nClutch\nIn" data-tchmi-top="313" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="5" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1149,11 +826,11 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="ButtonGrid" data-tchmi-type="tchmi-grid" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="464" data-tchmi-width-unit="px" data-tchmi-zindex="8" data-tchmi-grid-column-index="1">
+<div id="ButtonGrid" data-tchmi-type="tchmi-grid" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="464" data-tchmi-width-unit="px" data-tchmi-zindex="10" data-tchmi-grid-column-index="1">
 <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
 [
   {
-    "width": 25.0,
+    "width": 24.0,
     "widthUnit": "%",
     "widthMode": "Value",
     "maxWidth": null,
@@ -1163,7 +840,7 @@ PSSu H PLC1 FS SN SD"
     "overflow": false
   },
   {
-    "width": 25.0,
+    "width": 24.0,
     "widthUnit": "%",
     "widthMode": "Value",
     "maxWidth": null,
@@ -1173,7 +850,7 @@ PSSu H PLC1 FS SN SD"
     "overflow": false
   },
   {
-    "width": 25.0,
+    "width": 24.0,
     "widthUnit": "%",
     "widthMode": "Value",
     "maxWidth": null,
@@ -1183,7 +860,7 @@ PSSu H PLC1 FS SN SD"
     "overflow": false
   },
   {
-    "width": 25.0,
+    "width": 28.0,
     "widthUnit": "%",
     "widthMode": "Value",
     "maxWidth": null,
@@ -1207,7 +884,7 @@ PSSu H PLC1 FS SN SD"
 ]
 </script>
 
-<div id="TcHmiButton_18" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Creep\nSpeed" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="1" data-tchmi-text-font-size="14" data-tchmi-left="0" data-tchmi-text-font-size-unit="px" data-tchmi-grid-column-index="1">
+<div id="TcHmiButton_18" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Creep\nSpeed" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="14" data-tchmi-left="0" data-tchmi-text-font-size-unit="px" data-tchmi-grid-column-index="1">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1229,9 +906,31 @@ PSSu H PLC1 FS SN SD"
   }
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "angle": 0.0,
+  "stopPoints": [
+    {
+      "color": "rgba(8, 45, 96, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(35, 84, 151, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(46, 107, 190, 1)"
+}
+</script>
 </div>
 
-<div id="TcHmiButton_19" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Rope\nCapping Off" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="1" data-tchmi-text-font-size="14" data-tchmi-left="0" data-tchmi-text-font-size-unit="px" data-tchmi-grid-column-index="2">
+<div id="TcHmiButton_19" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Rope\nCapping Off" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="14" data-tchmi-left="0" data-tchmi-text-font-size-unit="px" data-tchmi-grid-column-index="2">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1261,7 +960,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiButton_22" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Brake Maintenance Off" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto" data-tchmi-grid-column-index="3" data-tchmi-text-font-size-unit="px">
+<div id="TcHmiButton_22" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Brake\nMaintenance Off" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="5" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto" data-tchmi-grid-column-index="3" data-tchmi-text-font-size-unit="px">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1317,7 +1016,7 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiButton_21" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Not\nEnabled" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto" data-tchmi-text-font-size-unit="px">
+<div id="TcHmiButton_21" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Not\nEnabled" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="5" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto" data-tchmi-text-font-size-unit="px">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1484,16 +1183,246 @@ PSSu H PLC1 FS SN SD"
 </script>
 </div>
 
-<div id="TcHmiTextbox" data-tchmi-type="tchmi-textbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="182" data-tchmi-left-unit="px" data-tchmi-text="TcHmiTextbox" data-tchmi-top="385" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
-<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+<div id="TcHmiButton_24" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="990" data-tchmi-left-unit="px" data-tchmi-text="Left\nHalf" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="6" data-tchmi-text-font-size="14" data-tchmi-state-symbol="%s%PLC1.Torque_prediction.Lh_half_request%/s%" data-tchmi-visibility="%f%%s%PLC1.Torque_prediction.Lh_half%/s%? 'Hidden' : 'Visible';%/f%">
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "top": 3,
-  "right": 3,
-  "bottom": 3,
-  "left": 3
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
 }
 </script>
 
+
+</div>>{
+  "angle": 180.0,
+  "stopPoints": [
+    {
+      "color": "rgba(186, 80, 14, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(229, 111, 37, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+
+<div id="TcHmiButton_25" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="923" data-tchmi-left-unit="px" data-tchmi-text="Left\nFull" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="0" data-tchmi-text-font-size="14" data-tchmi-state-symbol="%s%PLC1.Torque_prediction.Lh_full_request%/s%">
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "angle": 180.0,
+  "stopPoints": [
+    {
+      "color": "rgba(186, 80, 14, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(229, 111, 37, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(224, 123, 62, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+
+<div id="TcHmiRectangle_17" data-tchmi-type="tchmi-rectangle" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="633" data-tchmi-left-unit="px" data-tchmi-top="303" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="3">
+
+
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(34, 125, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(76, 196, 32, 1)"
+}
+</script>
+</div>
+
+<div id="TcHmiTextblock_72" data-tchmi-type="tchmi-textblock" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="633" data-tchmi-left-unit="px" data-tchmi-text="Field\nCurrent" data-tchmi-top="310" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="17" data-tchmi-text-font-weight="Normal" data-tchmi-zindex="3">
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(76, 196, 32, 1)"
+}
+</script>
+</div>
+
+<div id="TcHmiTextblock_73" data-tchmi-type="tchmi-textblock" data-tchmi-height="39" data-tchmi-height-unit="px" data-tchmi-left="631" data-tchmi-left-unit="px" data-tchmi-text="316 A" data-tchmi-top="358" data-tchmi-top-unit="px" data-tchmi-width="102" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3">
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+</div>
+
+<div id="UserControl1_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1191" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Right\nFull" data-tchmi-ontext="Right\nFull" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.Rh_full%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Rh_full_request%/s%">
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-onbackgroundcolor" type="application/json">
+{
+  "angle": 180.0,
+  "stopPoints": [
+    {
+      "color": "rgba(186, 80, 14, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(229, 111, 37, 1)",
+      "stop": "99.74%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
+{
+  "color": "rgba(224, 123, 62, 1)"
+}
+</script>
+</div>
+
+<div id="UserControl1_2" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1124" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Right\nHalf" data-tchmi-ontext="Right\nHalf" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.Rh_half%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Rh_half_request%/s%">
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-onbackgroundcolor" type="application/json">
+{
+  "angle": 180.0,
+  "stopPoints": [
+    {
+      "color": "rgba(186, 80, 14, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(229, 111, 37, 1)",
+      "stop": "99.74%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
+{
+  "color": "rgba(224, 123, 62, 1)"
+}
+</script>
+</div>
+
+<div id="UserControl1_3" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1057" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Equal" data-tchmi-ontext="Equal" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.Equal%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Equal_request%/s%">
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-onbackgroundcolor" type="application/json">
+{
+  "angle": 180.0,
+  "stopPoints": [
+    {
+      "color": "rgba(186, 80, 14, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(229, 111, 37, 1)",
+      "stop": "99.74%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
+{
+  "color": "rgba(224, 123, 62, 1)"
+}
+</script>
 </div>
 
 </div>

@@ -2,6 +2,11 @@
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4023.119">
 	<Project ProjectGUID="{D7888C32-8F29-4150-AC7C-70420C2CE2AD}" Target64Bit="true" TargetConnectionTimeout="3" ShowHideConfigurations="#x106">
 		<System>
+			<Licenses>
+				<Target>
+					<ManualSelect>{27326EE5-AB30-4084-B15B-8CCA96CCBF0B}</ManualSelect>
+				</Target>
+			</Licenses>
 			<Tasks>
 				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>

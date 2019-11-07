@@ -56,7 +56,18 @@
     "editable": true,
     "horizontalAlignment": "Center",
     "verticalAlignment": "Center",
-    "format": null
+    "format": {
+      "objectType": "Function",
+      "active": true,
+      "fn": "FormatReal",
+      "fnParams": [
+        {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/INT",
+          "value": 2
+        }
+      ]
+    }
   },
   {
     "name": "Unit",
@@ -100,12 +111,38 @@
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%s%sp[0]::Code%/s%",
+        "symbolExpression": "%s%PLC1.sp.Settings[0]::Code%/s%",
         "valueType": "tchmi:general#/definitions/String",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:general#/definitions/String",
           "value": "S0"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "\n\nTcHmi.Symbol.writeEx('%s%PLC1.sp.Setting[1]::Code%/s%', 'Test', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        // Handle success... \n    } else {\n        // Handle error... \n    }\n});"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "TcHmiDatagrid.onDataChanged",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.sp.Settings%/s%",
+        "valueType": "tchmi:server#/definitions/PLC1.ARRAY (1..100) OF S_Setting",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%ctrl%TcHmiDatagrid::SrcData%/ctrl%"
         },
         "asyncWait": true
       }
