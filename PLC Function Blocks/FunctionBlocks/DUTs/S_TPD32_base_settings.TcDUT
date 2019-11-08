@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
-  <DUT Name="dut_TPD32_base_settings" Id="{c77d4575-220d-4215-8e46-2b5a3a93054a}">
-    <Declaration><![CDATA[TYPE dut_TPD32_base_settings :
+  <DUT Name="S_TPD32_base_settings" Id="{c77d4575-220d-4215-8e46-2b5a3a93054a}">
+    <Declaration><![CDATA[TYPE S_TPD32_base_settings :
 STRUCT
 	Motor_base_rpm:REAL; (*Rated rpm of the motor*)
 	Max_output_voltage:REAL; (*Maximum DC armature voltage*)

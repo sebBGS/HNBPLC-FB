@@ -29,7 +29,7 @@
     <Compile Include="DUTs\dut_Dol_Starter.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\dut_Drive_control.TcDUT">
+    <Compile Include="DUTs\S_Drive_control_settings.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\dut_hmi_Analogue.TcDUT">
@@ -56,7 +56,10 @@
     <Compile Include="DUTs\dut_Safety.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\dut_TPD32_base_settings.TcDUT">
+    <Compile Include="DUTs\S_TPD32_base_settings.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\S_General_settings.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GVLs\Brakes.TcGVL">
@@ -83,14 +86,15 @@
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
+    <Compile Include="GVLs\sp.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
     <Compile Include="GVLs\Torque_prediction.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
     <Compile Include="PlcTask.TcTTO">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\Control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Brake_oil_pump.TcPOU">
@@ -142,6 +146,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Fast_brake.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_Hysteresis.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Lag_filter.TcPOU">

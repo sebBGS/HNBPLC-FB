@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="FB_Hysteresis" Id="{9ab13096-d9d9-4d3a-80dd-5708fa4e5ce0}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Hysteresis
+VAR_INPUT
+	In: REAL;
+	On_val: REAL;
+	Off_val: REAL;
+END_VAR
+VAR_OUTPUT
+	Out: BOOL;
+END_VAR
+VAR	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF In > On_val THEN
+	Out:= TRUE;
+END_IF
+IF In < Off_val THEN
+	Out:= FALSE;
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Hysteresis">
+      <LineId Id="9" Count="0" />
+      <LineId Id="15" Count="1" />
+      <LineId Id="18" Count="1" />
+      <LineId Id="17" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
