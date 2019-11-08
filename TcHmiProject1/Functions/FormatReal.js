@@ -11,7 +11,7 @@
 
     var FormatReal = function (par1,Decimals) {
         f = parseFloat(par1);
-        return f.toFixed(Decimals);
+        return f.toFixed(Decimals) + " m/s";
     };
     
     TcHmi.Functions.registerFunction('FormatReal', FormatReal);

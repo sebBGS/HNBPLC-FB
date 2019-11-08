@@ -19,7 +19,7 @@ END_VAR
       <ST><![CDATA[Scan_time:= UINT_TO_REAL(_TaskInfo[fbGetCurTaskIdx.index].CycleTime) / 10.0;
 T:= TIME_TO_REAL(Time_const);
 
-Out:= Out + T * (In - Out) / (T - Scan_time);
+Out:= Out + (In - Out) * Scan_Time / (T - Scan_time);
 ]]></ST>
     </Implementation>
     <LineIds Name="FB_Lag_filter">
