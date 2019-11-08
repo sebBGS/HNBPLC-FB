@@ -49,8 +49,8 @@ M_Analogue_HMI();]]></ST>
       <Declaration><![CDATA[METHOD M_Analogue
 VAR_INPUT
 END_VAR
-{warning "TODO: the LEAD LAG filter needs to be looked at by Bret so that he can make sure it does what he needs it to."}
-{warning "TODO: the HYST FB needs to be looked at by Bret so that he can make sure it does what he needs it to."}]]></Declaration>
+{warning 'TODO: the LEAD LAG filter needs to be looked at by Bret so that he can make sure it does what he needs it to.'}
+{warning 'TODO: the HYST FB needs to be looked at by Bret so that he can make sure it does what he needs it to.'}]]></Declaration>
       <Implementation>
         <CFC>
           <XmlArchive>

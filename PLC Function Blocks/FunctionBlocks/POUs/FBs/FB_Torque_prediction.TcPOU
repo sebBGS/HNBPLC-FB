@@ -48,7 +48,7 @@ END_VAR
       <Declaration><![CDATA[METHOD M_Torque_prediction
 VAR_INPUT
 END_VAR
-{warning "TODO: Lead Lag Filter needs to be made to work correctly."}]]></Declaration>
+{warning 'TODO: Lead Lag Filter needs to be made to work correctly.'}]]></Declaration>
       <Implementation>
         <CFC>
           <XmlArchive>

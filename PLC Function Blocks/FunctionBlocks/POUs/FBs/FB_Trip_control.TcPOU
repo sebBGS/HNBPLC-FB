@@ -48,7 +48,7 @@ VAR_IN_OUT
 END_VAR
 VAR
 END_VAR
-{warning "TODO: Trip_control has not been done and needs to be gone over with Bret."}]]></Declaration>
+{warning 'TODO: Trip_control has not been done and needs to be gone over with Bret.'}]]></Declaration>
     <Implementation>
       <ST><![CDATA[]]></ST>
     </Implementation>

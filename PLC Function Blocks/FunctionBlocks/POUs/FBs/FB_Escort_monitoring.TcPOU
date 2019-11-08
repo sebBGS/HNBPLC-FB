@@ -67,7 +67,7 @@ END_VAR
       <Declaration><![CDATA[METHOD M_Escort_valves
 VAR_INPUT
 END_VAR
-{warning "TODO: Address %S7 needs to be correctly addressed}]]></Declaration>
+{warning 'TODO: Address %S7 needs to be correctly addressed'}]]></Declaration>
       <Implementation>
         <CFC>
           <XmlArchive>

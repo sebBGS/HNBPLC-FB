@@ -29,7 +29,7 @@ END_VAR
       <Declaration><![CDATA[METHOD M_Fast_brake
 VAR_INPUT
 END_VAR
-{warning "TODO: HYSTERESIS block needs to be figured out and made to work correctly."}]]></Declaration>
+{warning 'TODO: HYSTERESIS block needs to be figured out and made to work correctly.'}]]></Declaration>
       <Implementation>
         <CFC>
           <XmlArchive>

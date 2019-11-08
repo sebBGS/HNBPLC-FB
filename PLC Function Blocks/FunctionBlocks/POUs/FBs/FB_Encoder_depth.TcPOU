@@ -89,7 +89,7 @@ M_HMI_data();
       <Declaration><![CDATA[METHOD M_Corrected_count
 VAR_INPUT
 END_VAR
-{warning "TODO: THe last two FB's in this method seem incomplete - no output!}]]></Declaration>
+{warning 'TODO: THe last two FBs in this method seem incomplete - no output!'}]]></Declaration>
       <Implementation>
         <CFC>
           <XmlArchive>
@@ -19143,11 +19143,14 @@ END_VAR
       <Declaration><![CDATA[METHOD M_Speed
 VAR_INPUT
 END_VAR
-{warning "TODO:%SW0 address needs to be addressed correctly"}
+VAR
+	fbGetCurTaskIdx  : GETCURTASKINDEX;
+END_VAR
+{warning 'TODO: Task info cycle time is being converted from UDINT to REAL with possible data loss.'}
 ]]></Declaration>
       <Implementation>
         <ST><![CDATA[Speed := (Depth_history[0] - Depth_history[Speed_ave_intervals]) * 1000 
-	/ (%SW0 * Scans_per_update * Speed_ave_intervals);]]></ST>
+	/ (_TaskInfo[fbGetCurTaskIdx.index].CycleTime * Scans_per_update * Speed_ave_intervals);]]></ST>
       </Implementation>
     </Method>
     <LineIds Name="FB_Encoder_depth">

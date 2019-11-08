@@ -4560,13 +4560,27 @@ END_VAR
       <Declaration><![CDATA[METHOD M_Speed_crosschecks
 VAR_INPUT
 END_VAR
-{warning "TODO: Address SW0 needs to be replaced with the proper address"}
-{warning "TODO: ROL_ARINT is not recognised as a function here"}]]></Declaration>
+VAR
+	fbGetCurTaskIdx  : GETCURTASKINDEX;
+	nIndex : DINT;
+	nUpper : DINT;
+	nLower : DINT;
+END_VAR
+{warning 'TODO: CycleTime here is implicitly converted from UDINT to REAL causing possible data loss.'}
+{warning 'TODO: Ive re-written ROL_ARINT, please check @Bret'}]]></Declaration>
       <Implementation>
-        <ST><![CDATA[System_response_scans := System_response_time / %SW0;
+        <ST><![CDATA[System_response_scans := System_response_time / _TaskInfo[fbGetCurTaskIdx.index].CycleTime;
 
 (* Delay the speed reference to cater for the system response time *)	
-ROL_ARINT(1, Speed_ref_delay_history);	
+//ROL_ARINT(1, Speed_ref_delay_history);
+
+nUpper := UPPER_BOUND(Speed_ref_delay_history, 1);
+nIndex := nUpper;
+
+FOR nLower := LOWER_BOUND(Speed_ref_delay_history, 1) TO nUpper DO
+	Speed_ref_delay_history[nIndex+1] := Speed_ref_delay_history[nIndex];
+	nIndex := nIndex-1;
+END_FOR
 Speed_ref_delay_history[0] := Speed_ref;
 Speed_ref_delayed := Speed_ref_delay_history[System_response_scans];
 
@@ -4608,7 +4622,14 @@ END_IF;]]></ST>
       <LineId Id="9" Count="2" />
     </LineIds>
     <LineIds Name="FB_Double_drum.M_Speed_crosschecks">
-      <LineId Id="6" Count="37" />
+      <LineId Id="6" Count="3" />
+      <LineId Id="62" Count="2" />
+      <LineId Id="56" Count="0" />
+      <LineId Id="52" Count="0" />
+      <LineId Id="54" Count="0" />
+      <LineId Id="65" Count="0" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="10" Count="33" />
       <LineId Id="5" Count="0" />
     </LineIds>
   </POU>
