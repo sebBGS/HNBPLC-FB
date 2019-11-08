@@ -42,14 +42,13 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[M_Torque_prediction();]]></ST>
     </Implementation>
-    <Method Name="Torque_prediction" Id="{0700cdde-7f63-49e9-aeec-b52112c22d99}">
-      <Declaration><![CDATA[METHOD Torque_prediction
+    <Method Name="M_Torque_prediction" Id="{0700cdde-7f63-49e9-aeec-b52112c22d99}">
+      <Declaration><![CDATA[METHOD M_Torque_prediction
 VAR_INPUT
 END_VAR
-{warning "TODO: Address %SW0 needs to be addressed correctly"}
-{warning "TODO: Lead Lag Filter needs to be made to work correctly."}]]></Declaration>
+{warning 'TODO: Lead Lag Filter needs to be made to work correctly.'}]]></Declaration>
       <Implementation>
         <CFC>
           <XmlArchive>
@@ -2080,6 +2079,29 @@ END_VAR
                       <v n="Forced">false</v>
                       <v n="OwningPageId">-1L</v>
                       <v n="Id">327L</v>
+                    </o>
+                    <o t="CFCInputElement">
+                      <o n="Output" t="CFCOutputPin">
+                        <v n="Bounds">"0, 0, 0, 0"</v>
+                        <n n="ElementGroupId" />
+                        <v n="Negated">false</v>
+                        <v n="SetReset" t="SetReset">None</v>
+                        <v n="SetResetRef" t="SetResetRef">None</v>
+                        <v n="PretendsToBeConnected">false</v>
+                        <v n="Id">862L</v>
+                      </o>
+                      <o n="Text" t="CFCText">
+                        <v n="Bounds">"0, 0, 0, 0"</v>
+                        <n n="ElementGroupId" />
+                        <v n="Text">"???"</v>
+                        <v n="Modifiable">true</v>
+                        <v n="Id">863L</v>
+                      </o>
+                      <v n="PageArea">3</v>
+                      <v n="Bounds">"48, 50, 0, 0"</v>
+                      <n n="ElementGroupId" />
+                      <v n="OwningPageId">-1L</v>
+                      <v n="Id">861L</v>
                     </o>
                     <o t="CFCOutputElement">
                       <o n="Input" t="CFCInputPinWithSetReset">

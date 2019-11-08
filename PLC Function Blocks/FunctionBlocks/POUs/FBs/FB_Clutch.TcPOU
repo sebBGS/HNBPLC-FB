@@ -35,12 +35,12 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Clutch_data();
-Clutch_faults();
-Too_much_travel();]]></ST>
+      <ST><![CDATA[M_Clutch_data();
+M_Clutch_faults();
+M_Too_much_travel();]]></ST>
     </Implementation>
-    <Method Name="Clutch_data" Id="{fbc9329b-cdb5-41d3-be6d-4e780531c171}">
-      <Declaration><![CDATA[METHOD Clutch_data
+    <Method Name="M_Clutch_data" Id="{fbc9329b-cdb5-41d3-be6d-4e780531c171}">
+      <Declaration><![CDATA[METHOD M_Clutch_data
 VAR_INPUT
 END_VAR
 
@@ -1777,8 +1777,8 @@ END_VAR]]></Declaration>
         </CFC>
       </Implementation>
     </Method>
-    <Method Name="Clutch_faults" Id="{3012f220-18ae-4f9f-8169-363c8fff1f4a}">
-      <Declaration><![CDATA[METHOD Clutch_faults
+    <Method Name="M_Clutch_faults" Id="{3012f220-18ae-4f9f-8169-363c8fff1f4a}">
+      <Declaration><![CDATA[METHOD M_Clutch_faults
 VAR_INPUT
 END_VAR
 ]]></Declaration>
@@ -4172,8 +4172,8 @@ END_VAR
         </CFC>
       </Implementation>
     </Method>
-    <Method Name="Too_much_travel" Id="{6e6efc1e-b899-4739-9f3a-95f717dbd697}">
-      <Declaration><![CDATA[METHOD Too_much_travel
+    <Method Name="M_Too_much_travel" Id="{6e6efc1e-b899-4739-9f3a-95f717dbd697}">
+      <Declaration><![CDATA[METHOD M_Too_much_travel
 VAR_INPUT
 END_VAR
 ]]></Declaration>

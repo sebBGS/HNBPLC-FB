@@ -12,7 +12,7 @@ STRUCT
 	Rh_on:BOOL; (*Right brake on signal - usually from right spring nest*)
 	Rh_wear:BOOL; (*Right brake wear signal - usually from Right spring nest*)
 	Lever_on:BOOL; (*Brake lever on limit switch*)
-	Lever_off:BOOL; (*Brake lever off - normally from same limit switch as "Lever_on"*)
+	Lever_off:BOOL; (*Brake lever off - normally from same limit switch as 'Lever_on'*)
 	Lever_fully_off:BOOL; (*Brake lever fully off limit switch. Necessary for automatic winders.*)
 	Maintenance_switch:BOOL; (*Brake maintenance switch (can be on driver's desk or in control panels).*)
 	Maintenance_mode:BOOL;

@@ -14,10 +14,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Window();]]></ST>
+      <ST><![CDATA[M_Window();]]></ST>
     </Implementation>
-    <Method Name="Window" Id="{06f34b8d-b8c3-4b5f-b952-e2bf6be2e546}">
-      <Declaration><![CDATA[METHOD Window
+    <Method Name="M_Window" Id="{06f34b8d-b8c3-4b5f-b952-e2bf6be2e546}">
+      <Declaration><![CDATA[METHOD M_Window
 VAR_INPUT
 END_VAR
 ]]></Declaration>

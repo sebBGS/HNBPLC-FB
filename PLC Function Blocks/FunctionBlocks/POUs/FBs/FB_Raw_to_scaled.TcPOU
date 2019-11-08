@@ -16,10 +16,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Raw_to_scaled();]]></ST>
+      <ST><![CDATA[M_Raw_to_scaled();]]></ST>
     </Implementation>
-    <Method Name="Raw_to_scaled" Id="{ab641ad7-b679-4a1a-8c6c-b4c8eb50fc66}">
-      <Declaration><![CDATA[METHOD Raw_to_scaled
+    <Method Name="M_Raw_to_scaled" Id="{ab641ad7-b679-4a1a-8c6c-b4c8eb50fc66}">
+      <Declaration><![CDATA[METHOD M_Raw_to_scaled
 VAR_INPUT
 END_VAR
 ]]></Declaration>

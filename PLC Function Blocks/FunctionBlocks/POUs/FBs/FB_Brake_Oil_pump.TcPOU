@@ -56,10 +56,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Brake_oil_pump();]]></ST>
+      <ST><![CDATA[M_Brake_oil_pump();]]></ST>
     </Implementation>
-    <Method Name="Brake_oil_pump" Id="{00820402-07fb-43f2-840a-20acfcbd2696}">
-      <Declaration><![CDATA[METHOD Brake_oil_pump
+    <Method Name="M_Brake_oil_pump" Id="{00820402-07fb-43f2-840a-20acfcbd2696}">
+      <Declaration><![CDATA[METHOD M_Brake_oil_pump
 VAR_INPUT
 END_VAR
 ]]></Declaration>

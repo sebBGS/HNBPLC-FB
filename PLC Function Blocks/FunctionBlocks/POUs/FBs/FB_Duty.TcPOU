@@ -9,7 +9,7 @@ VAR_INPUT
 	DeviceA_ns:BOOL; (*Device A No Start - Switch duty to B*)
 	Force_dutyA:BOOL;
 	DutyB_times:REAL; (*Time that Device B must run*)
-	Device_B_running:BOOL; (*Device B contactor feedback(running signal)*)
+	DeviceB_running:BOOL; (*Device B contactor feedback(running signal)*)
 	DeviceB_switch:BOOL;
 	DeviceB_ns:BOOL; (*Device B No Start - Switch duty to A*)
 	Force_dutyB:BOOL;
@@ -25,17 +25,21 @@ VAR
 	DeviceB_runtime:REAL;
 	DeviceB_running_GT_1s:BOOL;
 	DB_runtime:TIME;
+	FE_bit_A :BOOL;
+	FE_bit_B :BOOL;
+	F_TRIG_0: F_TRIG;
+	F_TRIG_1: F_TRIG;
+	TON_2 : TON;
+	TON_3 : TON;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[M_Duty();]]></ST>
     </Implementation>
-    <Method Name="Duty" Id="{b7053c32-ef2d-4a69-b166-1a8af6b0ae45}">
-      <Declaration><![CDATA[METHOD Duty
+    <Method Name="M_Duty" Id="{b7053c32-ef2d-4a69-b166-1a8af6b0ae45}">
+      <Declaration><![CDATA[METHOD M_Duty
 VAR_INPUT
-END_VAR
-{warning "TODO: 'FE' online 14 is not defined"}
-]]></Declaration>
+END_VAR]]></Declaration>
       <Implementation>
         <ST><![CDATA[IF NOT DeviceA_switch THEN
 	DeviceA_runtime :=0;
@@ -47,10 +51,11 @@ end_if;
 
 if NOT Force_dutyA and NOT Force_dutyB then
 	if DeviceA_switch then
-		if DeviceA_runtime < DutyA_times & NOT DutyB then
+		IF DeviceA_runtime < DutyA_times AND NOT DutyB THEN
 			DutyA := True;
-		end_if;
-		if FE(DeviceA_running_GT_1s) then
+		END_IF;
+		F_TRIG_0(CLK:= DeviceA_running_GT_1s, Q=> FE_bit_A);
+		IF FE_bit_A THEN
 			DeviceA_runtime := DeviceA_runtime +1;
 		end_if;
 		if DeviceA_runtime >= DutyA_times and NOT Force_dutyA then
@@ -62,10 +67,11 @@ if NOT Force_dutyA and NOT Force_dutyB then
 
 
 	if DeviceB_switch then
-		if DeviceB_runtime < DutyB_times & NOT DutyA then
+		IF DeviceB_runtime < DutyB_times AND NOT DutyA THEN
 			DutyB := True;
-		end_if;
-		if FE(DeviceB_running_GT_1s) then
+		END_IF;
+		F_TRIG_1(CLK:= DeviceB_running_GT_1s, Q=> FE_bit_B);
+		IF FE_bit_B THEN
 			DeviceB_runtime := DeviceB_runtime +1;
 		end_if;
 		if DeviceB_runtime >= DutyB_times and NOT Force_dutyB then
@@ -88,20 +94,14 @@ if Force_dutyB and DeviceB_switch  or (DeviceB_switch and NOT DeviceA_switch) th
 	DutyA := False;
 	DeviceA_runtime := 0;
 	DeviceB_runtime := 0;
-end_if;
+END_IF;
 
-
-
-
-
-
-(* Time delay the run feedback so "No Starts" do not increment the Duty Counters*)
-FBI_2 (IN := DeviceA_running,
+TON_2 (IN := DeviceA_running,
        PT := t#2s,
        Q => DeviceA_running_GT_1s,
        ET => DA_runtime);
 
-FBI_3 (IN := DeviceB_running,
+TON_3 (IN := DeviceB_running,
        PT := t#2s,
        Q => DeviceB_running_GT_1s,
        ET => DB_runtime);]]></ST>
@@ -110,8 +110,14 @@ FBI_3 (IN := DeviceB_running,
     <LineIds Name="FB_Duty">
       <LineId Id="9" Count="0" />
     </LineIds>
-    <LineIds Name="FB_Duty.Duty">
-      <LineId Id="6" Count="66" />
+    <LineIds Name="FB_Duty.M_Duty">
+      <LineId Id="6" Count="12" />
+      <LineId Id="83" Count="0" />
+      <LineId Id="19" Count="14" />
+      <LineId Id="87" Count="1" />
+      <LineId Id="35" Count="22" />
+      <LineId Id="63" Count="0" />
+      <LineId Id="65" Count="7" />
       <LineId Id="5" Count="0" />
     </LineIds>
   </POU>

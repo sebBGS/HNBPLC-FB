@@ -44,11 +44,11 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Mode();
-Mode_faults();]]></ST>
+      <ST><![CDATA[M_Mode();
+M_Mode_faults();]]></ST>
     </Implementation>
-    <Method Name="Mode" Id="{9776f3e0-0065-41d3-a038-eb6103234711}">
-      <Declaration><![CDATA[METHOD Mode
+    <Method Name="M_Mode" Id="{9776f3e0-0065-41d3-a038-eb6103234711}">
+      <Declaration><![CDATA[METHOD M_Mode
 VAR_INPUT
 END_VAR
 
@@ -3154,8 +3154,8 @@ END_VAR]]></Declaration>
         </CFC>
       </Implementation>
     </Method>
-    <Method Name="Mode_faults" Id="{fa5ce039-80cd-4b4e-96dd-1d52d703c3a9}">
-      <Declaration><![CDATA[METHOD Mode_faults
+    <Method Name="M_Mode_faults" Id="{fa5ce039-80cd-4b4e-96dd-1d52d703c3a9}">
+      <Declaration><![CDATA[METHOD M_Mode_faults
 VAR_INPUT
 END_VAR
 ]]></Declaration>

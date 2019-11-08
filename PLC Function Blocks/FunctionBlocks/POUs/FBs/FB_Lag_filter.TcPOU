@@ -10,12 +10,13 @@ VAR_OUTPUT
 	Out: REAL;
 END_VAR
 VAR	
+	fbGetCurTaskIdx  : GETCURTASKINDEX;
 	Scan_time: REAL;
 	T: REAL;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Scan_time:= UINT_TO_REAL(_TaskInfo[1].CycleTime) / 10.0;
+      <ST><![CDATA[Scan_time:= UINT_TO_REAL(_TaskInfo[fbGetCurTaskIdx.index].CycleTime) / 10.0;
 T:= TIME_TO_REAL(Time_const);
 
 Out:= Out + (In - Out) * Scan_Time / (T - Scan_time);

@@ -60,14 +60,14 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Escort_valves();
+      <ST><![CDATA[M_Escort_valves();
 ]]></ST>
     </Implementation>
-    <Method Name="Escort_valves" Id="{d1d1eeab-a8ee-4c07-a484-13efd057e363}">
-      <Declaration><![CDATA[METHOD Escort_valves
+    <Method Name="M_Escort_valves" Id="{d1d1eeab-a8ee-4c07-a484-13efd057e363}">
+      <Declaration><![CDATA[METHOD M_Escort_valves
 VAR_INPUT
 END_VAR
-{warning "TODO: Address %S7 needs to be correctly addressed}]]></Declaration>
+{warning 'TODO: Address %S7 needs to be correctly addressed'}]]></Declaration>
       <Implementation>
         <CFC>
           <XmlArchive>

@@ -50,19 +50,19 @@ VAR
 	Amature_voltage:REAL;
 	Field_current:REAL;
 END_VAR
-{warning "TODO: Var 'Status_word' was set as an INT in the original program. I have set it as a REAL as per our current structure, but should this not be a word?"}
-{warning "TODO: This function block needs to be reworked to work on our new comms"}]]></Declaration>
+{warning 'TODO: Var Status_word was set as an INT in the original program. I have set it as a REAL as per our current structure, but should this not be a word?'}
+{warning 'TODO: This function block needs to be reworked to work on our new comms'}]]></Declaration>
     <Implementation>
-      <ST><![CDATA[DCV_PDO();
-DCV_config();
-Settings();
-DCV_analogues();]]></ST>
+      <ST><![CDATA[M_DCV_PDO();
+M_DCV_config();
+M_Settings();
+M_DCV_analogues();]]></ST>
     </Implementation>
-    <Method Name="DCV_PDO" Id="{42f5b0e0-bb4d-4e0c-88e4-1f41f55fe8f5}">
-      <Declaration><![CDATA[METHOD DCV_PDO
+    <Method Name="M_DCV_PDO" Id="{42f5b0e0-bb4d-4e0c-88e4-1f41f55fe8f5}">
+      <Declaration><![CDATA[METHOD M_DCV_PDO
 VAR_INPUT
 END_VAR
-{warning "TODO: these comms need to be recreated as EtherCat comms I assume? The ADDM FB doesn't exist here."}]]></Declaration>
+{warning 'TODO: these comms need to be recreated as EtherCat comms I assume? The ADDM FB doesn't exist here.'}]]></Declaration>
       <Implementation>
         <CFC>
           <XmlArchive>

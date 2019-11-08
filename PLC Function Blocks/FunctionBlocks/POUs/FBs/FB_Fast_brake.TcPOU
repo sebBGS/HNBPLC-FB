@@ -23,13 +23,13 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Fast_brake();]]></ST>
+      <ST><![CDATA[M_Fast_brake();]]></ST>
     </Implementation>
-    <Method Name="Fast_brake" Id="{e8069fff-640c-44da-9149-5c9af6ec7085}">
-      <Declaration><![CDATA[METHOD Fast_brake
+    <Method Name="M_Fast_brake" Id="{e8069fff-640c-44da-9149-5c9af6ec7085}">
+      <Declaration><![CDATA[METHOD M_Fast_brake
 VAR_INPUT
 END_VAR
-{warning "TODO: HYSTERESIS block needs to be figured out and made to work correctly."}]]></Declaration>
+{warning 'TODO: HYSTERESIS block needs to be figured out and made to work correctly.'}]]></Declaration>
       <Implementation>
         <CFC>
           <XmlArchive>
