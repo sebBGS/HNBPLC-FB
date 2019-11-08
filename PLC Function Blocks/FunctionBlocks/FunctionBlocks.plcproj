@@ -93,7 +93,7 @@
     <Compile Include="POUs\Control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\FBs\FB_Brake_Oil_pump.TcPOU">
+    <Compile Include="POUs\FBs\FB_Brake_oil_pump.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Ctl_cmd_u.TcPOU">
@@ -159,7 +159,13 @@
     <Compile Include="POUs\FBs\FB_Mode.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FBs\FB_Motor_run_time.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\FBs\FB_Moving_average.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_No_start.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Power_lever.TcPOU">

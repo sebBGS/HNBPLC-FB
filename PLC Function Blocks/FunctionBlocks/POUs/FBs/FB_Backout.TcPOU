@@ -38,10 +38,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Backout_main();]]></ST>
+      <ST><![CDATA[M_Backout_main();]]></ST>
     </Implementation>
-    <Method Name="Backout_main" Id="{6617efd7-da41-4b37-a8f0-683ab38bd9c5}">
-      <Declaration><![CDATA[METHOD Backout_main
+    <Method Name="M_Backout_main" Id="{6617efd7-da41-4b37-a8f0-683ab38bd9c5}">
+      <Declaration><![CDATA[METHOD M_Backout_main
 VAR_INPUT
 END_VAR
 ]]></Declaration>
