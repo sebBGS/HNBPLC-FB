@@ -121,5 +121,15 @@
       <From>FB_TPD</From>
       <To>FB_TPD_CANopen</To>
     </RenamedType>
+    <RenamedType>
+      <Type guid="c77d4575-220d-4215-8e46-2b5a3a93054a">DUT_TPD32_BASE_SETTINGS</Type>
+      <From>dut_TPD32_base_settings</From>
+      <To>S_TPD32_base_settings</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="77fb175a-f626-42bc-8ab4-2d99c8d4b0b9">S_DRIVE_CONTROL</Type>
+      <From>dut_Drive_control</From>
+      <To>S_Drive_control_settings</To>
+    </RenamedType>
   </Renames>
 </Refactors>

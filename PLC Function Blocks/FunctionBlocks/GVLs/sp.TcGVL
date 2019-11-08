@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <GVL Name="sp" Id="{05ed3b94-2ab1-48e7-8c78-e3d66c36e2cf}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	Gen: S_General_settings;
+	Drive: S_Drive_control_settings;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

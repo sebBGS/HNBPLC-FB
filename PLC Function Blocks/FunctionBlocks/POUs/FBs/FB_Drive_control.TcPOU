@@ -42,7 +42,6 @@ VAR_OUTPUT
 	hmi_data:dut_hmi_Drive_control;
 END_VAR
 VAR_IN_OUT
-	Settings:dut_Drive_control;
 	Mode:dut_Mode;
 	Brakes:dut_Brake;
 	Clutch:dut_Clutch;
@@ -81,7 +80,7 @@ VAR
 	BIT_TO_WORD_V0_0: FB_BIT_TO_WORD_V0;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Torque_control();
+      <ST><![CDATA[M_Torque_control();
 Speed_scale();
 Speed_ref();
 Torque_ref();

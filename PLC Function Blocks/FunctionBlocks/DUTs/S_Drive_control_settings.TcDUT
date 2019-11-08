@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
-  <DUT Name="dut_Drive_control" Id="{77fb175a-f626-42bc-8ab4-2d99c8d4b0b9}">
-    <Declaration><![CDATA[TYPE dut_Drive_control :
+  <DUT Name="S_Drive_control_settings" Id="{77fb175a-f626-42bc-8ab4-2d99c8d4b0b9}">
+    <Declaration><![CDATA[TYPE S_Drive_control_settings :
 STRUCT
 	Max_drive_speed:INT;
 	Max_drive_torque:INT;

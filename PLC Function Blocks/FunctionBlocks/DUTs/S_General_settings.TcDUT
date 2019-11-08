@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="S_General_settings" Id="{b184e8dc-311f-4adc-b3bc-f4a4e1283ebc}">
+    <Declaration><![CDATA[TYPE S_General_settings :
+STRUCT
+	Full_speed: REAL;
+	Slow_switch_speed: REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
