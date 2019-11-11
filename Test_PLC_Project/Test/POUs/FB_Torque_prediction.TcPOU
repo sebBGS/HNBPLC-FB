@@ -36,40 +36,48 @@ R_TRIG4(CLK:= Torque_prediction.Rh_full_request, Q=> Rh_full_selected);
 IF Lh_full_selected THEN
 	Torque_prediction.Lh_full := 1;
 	Torque_prediction.Lh_half := 0;
-	Torque_prediction.Equal := 0;
 	Torque_prediction.Rh_half := 0;
 	Torque_prediction.Rh_full := 0;
 ELSIF Lh_half_selected THEN
 	Torque_prediction.Lh_full := 0;
 	Torque_prediction.Lh_half := 1;
-	Torque_prediction.Equal := 0;
 	Torque_prediction.Rh_half := 0;
 	Torque_prediction.Rh_full := 0;
 ELSIF Equal_selected THEN
 	Torque_prediction.Lh_full := 0;
 	Torque_prediction.Lh_half := 0;
-	Torque_prediction.Equal := 1;
 	Torque_prediction.Rh_half := 0;
 	Torque_prediction.Rh_full := 0;
 ELSIF Rh_half_selected THEN
 	Torque_prediction.Lh_full := 0;
 	Torque_prediction.Lh_half := 0;
-	Torque_prediction.Equal := 0;
 	Torque_prediction.Rh_half := 1;
 	Torque_prediction.Rh_full := 0;
 ELSIF Rh_full_selected THEN
 	Torque_prediction.Lh_full := 0;
 	Torque_prediction.Lh_half := 0;
-	Torque_prediction.Equal := 0;
 	Torque_prediction.Rh_half := 0;
 	Torque_prediction.Rh_full := 1;
 END_IF
+
+Torque_prediction.Equal:= 
+	NOT Torque_prediction.Lh_full AND 
+	NOT Torque_prediction.Lh_half AND 
+	NOT Torque_prediction.Rh_half AND 
+	NOT Torque_prediction.Rh_full;
 
 Torque_prediction.Lh_full_request := 0;
 Torque_prediction.Lh_half_request := 0;
 Torque_prediction.Equal_request := 0;
 Torque_prediction.Rh_half_request := 0;
 Torque_prediction.Rh_full_request := 0;
+
+IF Torque_prediction.Set THEN
+	Torque_prediction.On:= 1;
+END_IF
+IF Torque_prediction.Reset THEN
+	Torque_prediction.On:= 0;
+END_IF
 ]]></ST>
     </Implementation>
     <LineIds Name="FB_Torque_prediction">
@@ -78,12 +86,23 @@ Torque_prediction.Rh_full_request := 0;
       <LineId Id="26" Count="0" />
       <LineId Id="25" Count="0" />
       <LineId Id="27" Count="0" />
-      <LineId Id="42" Count="3" />
-      <LineId Id="47" Count="16" />
+      <LineId Id="42" Count="0" />
+      <LineId Id="44" Count="1" />
+      <LineId Id="47" Count="2" />
+      <LineId Id="51" Count="4" />
+      <LineId Id="57" Count="4" />
+      <LineId Id="63" Count="0" />
       <LineId Id="46" Count="0" />
-      <LineId Id="70" Count="5" />
+      <LineId Id="70" Count="2" />
+      <LineId Id="74" Count="1" />
       <LineId Id="28" Count="0" />
-      <LineId Id="77" Count="5" />
+      <LineId Id="107" Count="1" />
+      <LineId Id="112" Count="3" />
+      <LineId Id="111" Count="0" />
+      <LineId Id="78" Count="4" />
+      <LineId Id="117" Count="0" />
+      <LineId Id="116" Count="0" />
+      <LineId Id="118" Count="4" />
       <LineId Id="76" Count="0" />
     </LineIds>
   </POU>

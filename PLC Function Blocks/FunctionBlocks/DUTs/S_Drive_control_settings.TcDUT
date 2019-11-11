@@ -18,6 +18,17 @@ STRUCT
 	Single_lever_control:BOOL;
 	Stall_current:INT;
 	Backout_min_speed:INT;
+
+	(*Torque prediction settings*)	
+	Lh_cage_mass_current:REAL;
+	Rh_cage_mass_current:REAL;
+	Lh_rope_mass_current:REAL;
+	Rh_rope_mass_current:REAL;
+	Full_payload_current:REAL;
+	A_s2_per_m:REAL;
+	Accel_torque_lag:TIME;
+	Dynamic_friction_current:REAL;
+
 END_STRUCT
 END_TYPE
 ]]></Declaration>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="FB_DateTime" Id="{573af531-e79a-4b96-9f01-0e28eaf821bb}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_DateTime
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+	sDateTime: STRING;
+END_VAR
+VAR
+	fbTime   : FB_LocalSystemTime := ( bEnable := TRUE, dwCycle := 1 );
+	sTime, sSystemTime, sDate, sMonth, sTemp: STRING;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbTime();
+
+sSystemTime:= SYSTEMTIME_TO_STRING(fbTime.systemTime);
+
+sTime:= RIGHT(CONCAT('0', INT_TO_STRING(fbTime.systemTime.wHour)), 2);
+sTime:= CONCAT(sTime, ':');
+sTemp:= CONCAT('0', INT_TO_STRING(fbTime.systemTime.wMinute));
+sTime:= CONCAT(sTime, RIGHT(sTemp, 2));
+sTime:= CONCAT(sTime, ':');
+sTemp:= CONCAT('0', INT_TO_STRING(fbTime.systemTime.wSecond));
+sTime:= CONCAT(sTime, RIGHT(sTemp, 2));
+
+sDate:= INT_TO_STRING(fbTime.systemTime.wDay);
+sDate:= CONCAT(sDate, ' ');
+CASE fbTime.systemTime.wMonth OF
+	1: sMonth:= 'January';
+	2: sMonth:= 'Febuary';
+	3: sMonth:= 'March';
+	4: sMonth:= 'April';
+	5: sMonth:= 'May';
+	6: sMonth:= 'June';
+	7: sMonth:= 'July';
+	8: sMonth:= 'August';
+	9: sMonth:= 'September';
+	10: sMonth:= 'October';
+	11: sMonth:= 'November';
+	12: sMonth:= 'December';
+ELSE
+	sMonth:= 'Invalid';
+END_CASE
+sDate:= CONCAT(sDate, sMonth);
+sDate:= CONCAT(sDate, ' ');
+sDate:= CONCAT(sDate, WORD_TO_STRING(fbTime.systemTime.wYear));
+
+sDateTime:= CONCAT(sDate, CONCAT('\n', sTime));
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_DateTime">
+      <LineId Id="10" Count="34" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -121,30 +121,6 @@
 </script>
 </div>
 
-<div id="TcHmiButton_2" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="599" data-tchmi-left-unit="px" data-tchmi-text="Torque\nPrediction On" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="14">
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_2.onPressed",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "TcHmi.View.load('Desktop.view');"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]
-</script>
-</div>
-
 <div id="TcHmiRectangle" data-tchmi-type="tchmi-rectangle" data-tchmi-height="113" data-tchmi-height-unit="px" data-tchmi-left="927" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="331" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="3">
 
 
@@ -411,76 +387,6 @@
 }
 </script>
 </div>
-<div id="TcHmiButton_5" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="990" data-tchmi-left-unit="px" data-tchmi-text="Left\nHalf" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="6" data-tchmi-text-font-size="14" data-tchmi-state-symbol="%s%PLC1.Torque_prediction.Lh_half_request%/s%">
-
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(255, 255, 255, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "angle": 180.0,
-  "stopPoints": [
-    {
-      "color": "rgba(186, 80, 14, 1)",
-      "stop": "0%"
-    },
-    {
-      "color": "rgba(229, 111, 37, 1)",
-      "stop": "100%"
-    }
-  ]
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "rgba(224, 123, 62, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-</div>
-
-<div id="TcHmiButton_6" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="923" data-tchmi-left-unit="px" data-tchmi-text="Left\nFull" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="5" data-tchmi-text-font-size="14" data-tchmi-state-symbol="%s%PLC1.Torque_prediction.Lh_full_request%/s%" data-tchmi-visibility="%f%%s%PLC1.Torque_prediction.Lh_full%/s%? 'Hidden' : 'Visible';%/f%">
-
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(214, 214, 214, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-
-
-</div>
 
 <div id="TcHmiTextblock_14" data-tchmi-type="tchmi-textblock" data-tchmi-height="16" data-tchmi-height-unit="px" data-tchmi-left="838" data-tchmi-left-unit="px" data-tchmi-text="1572 A" data-tchmi-top="447" data-tchmi-top-unit="px" data-tchmi-width="71" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-font-size="20" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3" data-tchmi-background-image-horizontal-alignment="Center">
 
@@ -512,7 +418,7 @@
 </script>
 </div>
 
-<div id="TcHmiRectangle_12" data-tchmi-type="tchmi-rectangle" data-tchmi-height="21" data-tchmi-height-unit="px" data-tchmi-left="39" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="3">
+<div id="TcHmiRectangle_12" data-tchmi-type="tchmi-rectangle" data-tchmi-height="5" data-tchmi-height-unit="px" data-tchmi-left="39" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -928,6 +834,19 @@
   "color": "rgba(46, 107, 190, 1)"
 }
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
 </div>
 
 <div id="TcHmiButton_19" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Rope\nCapping Off" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="14" data-tchmi-left="0" data-tchmi-text-font-size-unit="px" data-tchmi-grid-column-index="2">
@@ -955,7 +874,20 @@
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
-  "color": "rgba(170, 170, 170, 1)"
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
 }
 </script>
 </div>
@@ -1007,7 +939,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 0,
+  "bottom": 1,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -1063,7 +995,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 0,
+  "bottom": 1,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -1182,33 +1114,6 @@
 ]
 </script>
 </div>
-
-<div id="TcHmiButton_24" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="990" data-tchmi-left-unit="px" data-tchmi-text="Left\nHalf" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="6" data-tchmi-text-font-size="14" data-tchmi-state-symbol="%s%PLC1.Torque_prediction.Lh_half_request%/s%" data-tchmi-visibility="%f%%s%PLC1.Torque_prediction.Lh_half%/s%? 'Hidden' : 'Visible';%/f%">
-
-
-
-
-
-
-
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-
-
-</div>>{
   "angle": 180.0,
   "stopPoints": [
     {
@@ -1221,53 +1126,6 @@
     }
   ]
 }
-
-<div id="TcHmiButton_25" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="923" data-tchmi-left-unit="px" data-tchmi-text="Left\nFull" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-zindex="0" data-tchmi-text-font-size="14" data-tchmi-state-symbol="%s%PLC1.Torque_prediction.Lh_full_request%/s%">
-
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(255, 255, 255, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "angle": 180.0,
-  "stopPoints": [
-    {
-      "color": "rgba(186, 80, 14, 1)",
-      "stop": "0%"
-    },
-    {
-      "color": "rgba(229, 111, 37, 1)",
-      "stop": "100%"
-    }
-  ]
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "rgba(224, 123, 62, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-</div>
 
 <div id="TcHmiRectangle_17" data-tchmi-type="tchmi-rectangle" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="633" data-tchmi-left-unit="px" data-tchmi-top="303" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-zindex="3">
 
@@ -1295,7 +1153,7 @@
 </script>
 </div>
 
-<div id="TcHmiTextblock_73" data-tchmi-type="tchmi-textblock" data-tchmi-height="39" data-tchmi-height-unit="px" data-tchmi-left="631" data-tchmi-left-unit="px" data-tchmi-text="316 A" data-tchmi-top="358" data-tchmi-top-unit="px" data-tchmi-width="102" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3">
+<div id="TcHmiTextblock_73" data-tchmi-type="tchmi-textblock" data-tchmi-height="39" data-tchmi-height-unit="px" data-tchmi-left="631" data-tchmi-left-unit="px" data-tchmi-text="321 A" data-tchmi-top="358" data-tchmi-top-unit="px" data-tchmi-width="102" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -1419,6 +1277,126 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
+{
+  "color": "rgba(224, 123, 62, 1)"
+}
+</script>
+</div>
+
+<div id="UserControl1_4" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="990" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Left\nHalf" data-tchmi-ontext="Left\nHalf" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.Lh_half%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Lh_half_request%/s%">
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-onbackgroundcolor" type="application/json">
+{
+  "angle": 180.0,
+  "stopPoints": [
+    {
+      "color": "rgba(186, 80, 14, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(229, 111, 37, 1)",
+      "stop": "99.74%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
+{
+  "color": "rgba(224, 123, 62, 1)"
+}
+</script>
+</div>
+
+<div id="UserControl1_5" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="923" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Left\nFull" data-tchmi-ontext="Left\nFull" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.Lh_full%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Lh_full_request%/s%">
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-onbackgroundcolor" type="application/json">
+{
+  "angle": 180.0,
+  "stopPoints": [
+    {
+      "color": "rgba(186, 80, 14, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(229, 111, 37, 1)",
+      "stop": "99.74%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
+{
+  "color": "rgba(224, 123, 62, 1)"
+}
+</script>
+</div>
+
+<div id="UserControl1_6" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="599" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Torque\nPrediction Off" data-tchmi-ontext="Torque\nPrediction On" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.On%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Set%/s%" data-tchmi-oncommandsymbol="%s%PLC1.Torque_prediction.Reset%/s%">
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-offbackgroundcolor" type="application/json">
+{
+  "angle": 180.0,
+  "stopPoints": [
+    {
+      "color": "rgba(186, 80, 14, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(229, 111, 37, 1)",
+      "stop": "99.74%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-offbordercolor" type="application/json">
 {
   "color": "rgba(224, 123, 62, 1)"
 }

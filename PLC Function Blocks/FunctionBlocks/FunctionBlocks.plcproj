@@ -214,7 +214,7 @@
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Winder_data.TcPOU">
+    <Compile Include="POUs\Sections\Winder_data.TcPOU">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -222,6 +222,7 @@
     <Folder Include="DUTs" />
     <Folder Include="GVLs" />
     <Folder Include="POUs\FBs" />
+    <Folder Include="POUs\Sections" />
     <Folder Include="VISUs" />
     <Folder Include="POUs" />
   </ItemGroup>

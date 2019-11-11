@@ -6,7 +6,7 @@
      data-tchmi-min-height="100" data-tchmi-min-height-unit="%"
 
      data-tchmi-background-image-height="100" data-tchmi-background-image-width="100"
-     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-zindex="6" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-creator-viewport-width="1366" data-tchmi-creator-viewport-height="768">
+     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-zindex="6" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-width="1350" data-tchmi-height="58" data-tchmi-creator-viewport-width="1360" data-tchmi-creator-viewport-height="768">
 
 
 <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
@@ -72,7 +72,7 @@
 </script>
 </div>
 
-<div id="TcHmiTextblock_57" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="111" data-tchmi-left-unit="px" data-tchmi-text="%i%sPageName%/i%" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="478" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="40">
+<div id="TcHmiTextblock_57" data-tchmi-type="tchmi-textblock" data-tchmi-height="55" data-tchmi-height-unit="px" data-tchmi-left="111" data-tchmi-left-unit="px" data-tchmi-text="%i%sPageName%/i%" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="478" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="40">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -116,7 +116,7 @@
 </script>
 </div>
 
-<div id="TcHmiTextblock_59" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="1216" data-tchmi-left-unit="px" data-tchmi-text="30 October 2019\n15:42:31" data-tchmi-top="8" data-tchmi-top-unit="px" data-tchmi-width="134" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="16" data-tchmi-text-horizontal-alignment="Left">
+<div id="TcHmiTextblock_59" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="1216" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.sDateTime%/s%" data-tchmi-top="8" data-tchmi-top-unit="px" data-tchmi-width="134" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="16" data-tchmi-text-horizontal-alignment="Left">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">

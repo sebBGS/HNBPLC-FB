@@ -18,34 +18,24 @@ VAR
 	Sum: REAL;
 	Pulse: BOOL;
 	Toggle: BOOL;
-	TON0: TON;
-	TOF0: TOF;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[(* Generate a pulse every 10ms *)
-TOF0(IN:= Pulse, PT:= T#5MS, Q=> Toggle, ET=> );
-TON0(IN:= Toggle, PT:= T#5MS, Q=> Pulse, ET=> );
-
-(* Shift all the array elements one position and add them up while doing so *)
+      <ST><![CDATA[(* Shift all the array elements one position and add them up while doing so *)
 Sum:= 0;
-FOR i:= Array_size - Num_samples TO Array_size - 2 DO
-	Samples[i]:= Samples[i + 1];
-	Sum:= Sum + Samples[i];
+FOR i:= 1 TO Num_samples - 1 DO
+	Samples[Num_samples - i]:= Samples[Num_samples - i - 1];
+	Sum:= Sum + Samples[Num_samples - i];
 END_FOR
 
 (* Insert the new sample into the array and add it to the sum *)
-Samples[Array_size - 1]:= New_sample;
+Samples[0]:= New_sample;
 Sum:= Sum + New_sample;
 
 (* Calculate the average *)
 Out:= Sum / INT_TO_REAL(Num_samples);]]></ST>
     </Implementation>
     <LineIds Name="FB_Moving_average">
-      <LineId Id="61" Count="0" />
-      <LineId Id="38" Count="0" />
-      <LineId Id="33" Count="0" />
-      <LineId Id="62" Count="0" />
       <LineId Id="59" Count="0" />
       <LineId Id="26" Count="0" />
       <LineId Id="9" Count="0" />
