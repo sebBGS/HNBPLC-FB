@@ -8,23 +8,32 @@ VAR
 	
 	X: REAL:= 0;
 	Y: REAL;
+		
+	sDateTime: STRING;
+	FB_DateTime_0: FB_DateTime;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[TP0();
+FB_DateTime_0(sDateTime => sDateTime);
 
-MA0(New_sample:= X, Num_samples:= 200, Out=> Y);
-X:= X + 0.01;
-IF X >= 100 THEN
+MA0(New_sample:= X, Num_samples:= 201, Out=> Y);
+X:= X + 1;
+IF X > 200 + 0.1 THEN
 	X:= 0.0;
 END_IF
+
+
 ]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
+      <LineId Id="108" Count="0" />
       <LineId Id="15" Count="0" />
       <LineId Id="9" Count="0" />
       <LineId Id="18" Count="3" />
+      <LineId Id="107" Count="0" />
+      <LineId Id="31" Count="0" />
       <LineId Id="17" Count="0" />
     </LineIds>
   </POU>

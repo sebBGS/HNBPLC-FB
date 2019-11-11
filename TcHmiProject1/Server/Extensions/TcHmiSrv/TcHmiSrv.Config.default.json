@@ -1794,6 +1794,23 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.MAIN.sDateTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::sDateTime",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "maxLength": 255
+                    },
+                    {
+                        "$ref": "tchmi:general#/definitions/String"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Torque_prediction.Equal": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -1854,6 +1871,26 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Torque_prediction.On": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Torque_prediction::On",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Torque_prediction.Reset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Torque_prediction::Reset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Torque_prediction.Rh_full": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -1889,6 +1926,16 @@
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "MAPPING": "PLC1::Torque_prediction::Rh_half_request",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Torque_prediction.Set": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Torque_prediction::Set",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },

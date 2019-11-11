@@ -3,6 +3,10 @@
   <GVL Name="Torque_prediction" Id="{952ca5e8-2b56-4cc7-bc37-54b78b82d691}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
+	On: BOOL;
+	Set: BOOL;
+	Reset: BOOL;
+	
 	Lh_full: BOOL;
 	Lh_half: BOOL;
 	Equal: BOOL;

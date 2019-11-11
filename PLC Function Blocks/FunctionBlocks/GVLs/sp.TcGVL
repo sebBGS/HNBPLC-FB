@@ -5,6 +5,7 @@
 VAR_GLOBAL
 	Gen: S_General_settings;
 	Drive: S_Drive_control_settings;
+	TPD: S_TPD32_base_settings;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
