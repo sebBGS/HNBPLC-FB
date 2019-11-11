@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="Access_levels" Id="{2195e554-439e-4651-8989-e5b8fde87298}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE Access_levels :
+(
+	Driver := 0,
+	Electrician := 1,
+	Foreman := 2,
+	Engineer := 3,
+	Admin := 4
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

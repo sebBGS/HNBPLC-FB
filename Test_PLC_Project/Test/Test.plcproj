@@ -17,6 +17,9 @@
     <LibraryReferences>{57a2762a-ee1f-4956-a889-2cda26853071}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DUTs\Access_levels.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\S_General.TcDUT">
       <SubType>Code</SubType>
     </Compile>
