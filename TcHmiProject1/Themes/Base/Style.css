@@ -49,3 +49,6 @@ html {
 .tchmi-datagrid-template-row-numbers {
     border-color: #909090;
 }
+.tchmi-class-OrangeGreyButton {
+    background-image: linear-gradient(rgba(186, 80, 14, 1) 50%, rgba(229, 111, 37, 1) 80%);
+}
