@@ -9,6 +9,11 @@
             "ENABLED": true,
             "PASSWORD": "",
             "SALT": ""
+        },
+        "test": {
+            "ENABLED": true,
+            "PASSWORD": "abfef9531b47d58a671beb7d083fa5943ed607995be00d13e9a26c74fcb63aed",
+            "SALT": "aNDm5RLTxRNyMsiOxQepeFOQk4SHywdekR7Cp5quNc3zbHjReNxTAzS9EEAn5FYcFKqvtzSqxFnm6zFiRwDLAA=="
         }
     }
 }

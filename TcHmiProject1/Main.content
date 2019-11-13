@@ -790,7 +790,7 @@
 ]
 </script>
 
-<div id="TcHmiButton_18" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Creep\nSpeed" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="14" data-tchmi-left="0" data-tchmi-text-font-size-unit="px" data-tchmi-grid-column-index="1">
+<div id="TcHmiButton_18" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Creep\nSpeed" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="3" data-tchmi-text-font-size="14" data-tchmi-left="0" data-tchmi-text-font-size-unit="px" data-tchmi-grid-column-index="1" data-tchmi-background-color="%f%btnStateChange(true,%s%PLC1.tst.testBool1%/s%,'blue','blue' )%/f%">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -813,21 +813,7 @@
 ]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "angle": 0.0,
-  "stopPoints": [
-    {
-      "color": "rgba(8, 45, 96, 1)",
-      "stop": "0%"
-    },
-    {
-      "color": "rgba(35, 84, 151, 1)",
-      "stop": "100%"
-    }
-  ]
-}
-</script>
+
 
 <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
 {
@@ -1113,6 +1099,7 @@
   }
 ]
 </script>
+
 </div>
   "angle": 180.0,
   "stopPoints": [
@@ -1163,243 +1150,396 @@
 </script>
 </div>
 
-<div id="UserControl1_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1191" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Right\nFull" data-tchmi-ontext="Right\nFull" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.Rh_full%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Rh_full_request%/s%">
+<div id="leftFullBtn" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="923" data-tchmi-left-unit="px" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-text="Left\nFull" data-tchmi-background-color="%f%btnStateChange(true,%s%PLC1.tst.testBool1%/s%,'blue','grey')%/f%" data-tchmi-is-enabled="True">
 
 
 
 
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
-  "color": "None"
+  "color": "rgba(255, 255, 255, 1)"
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "leftFullBtn.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.tst.testBool1%/s%",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": {
+          "objectType": "FunctionExpression",
+          "functionExpression": "!%s%PLC1.tst.testBool1%/s%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="leftFullBtn_1" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="990" data-tchmi-left-unit="px" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-text="Left\nHalf"  data-tchmi-is-enabled="%i%userAllowed%/i%" data-tchmi-background-color="%f%btnStateChange(true,%s%PLC1.tst.testBool1%/s%,'grey','grey' )%/f%">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
-  "color": "None"
+  "color": "rgba(255, 255, 255, 1)"
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-onbackgroundcolor" type="application/json">
-{
-  "angle": 180.0,
-  "stopPoints": [
-    {
-      "color": "rgba(186, 80, 14, 1)",
-      "stop": "0%"
-    },
-    {
-      "color": "rgba(229, 111, 37, 1)",
-      "stop": "99.74%"
-    }
-  ]
-}
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "leftFullBtn_1.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.tst.testBool1%/s%",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": {
+          "objectType": "FunctionExpression",
+          "functionExpression": "!%s%PLC1.tst.testBool1%/s%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "color": "rgba(224, 123, 62, 1)"
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
 }
 </script>
 </div>
 
-<div id="UserControl1_2" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1124" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Right\nHalf" data-tchmi-ontext="Right\nHalf" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.Rh_half%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Rh_half_request%/s%">
+<div id="leftFullBtn_2" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1057" data-tchmi-left-unit="px" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-text="Equal"  data-tchmi-is-enabled="%i%userAllowed%/i%" data-tchmi-background-color="%f%btnStateChange(true,%s%PLC1.tst.testBool1%/s%,'grey','grey' )%/f%">
 
 
 
 
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
-  "color": "None"
+  "color": "rgba(255, 255, 255, 1)"
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "None"
-}
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "leftFullBtn_2.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%i%active%/i%",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": {
+          "objectType": "FunctionExpression",
+          "functionExpression": "!%i%active%/i%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-onbackgroundcolor" type="application/json">
-{
-  "angle": 180.0,
-  "stopPoints": [
-    {
-      "color": "rgba(186, 80, 14, 1)",
-      "stop": "0%"
-    },
-    {
-      "color": "rgba(229, 111, 37, 1)",
-      "stop": "99.74%"
-    }
-  ]
-}
-</script>
 
-<script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
-{
-  "color": "rgba(224, 123, 62, 1)"
-}
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
-<div id="UserControl1_3" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1057" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Equal" data-tchmi-ontext="Equal" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.Equal%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Equal_request%/s%">
+<div id="leftFullBtn_3" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1124" data-tchmi-left-unit="px" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-text="Right\nHalf"  data-tchmi-is-enabled="%i%userAllowed%/i%" data-tchmi-background-color="%f%btnStateChange(true,%s%PLC1.tst.testBool1%/s%,'grey','grey' )%/f%">
 
 
 
 
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
-  "color": "None"
+  "color": "rgba(255, 255, 255, 1)"
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "None"
-}
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "leftFullBtn_3.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%i%active%/i%",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": {
+          "objectType": "FunctionExpression",
+          "functionExpression": "!%i%active%/i%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-onbackgroundcolor" type="application/json">
-{
-  "angle": 180.0,
-  "stopPoints": [
-    {
-      "color": "rgba(186, 80, 14, 1)",
-      "stop": "0%"
-    },
-    {
-      "color": "rgba(229, 111, 37, 1)",
-      "stop": "99.74%"
-    }
-  ]
-}
-</script>
 
-<script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
-{
-  "color": "rgba(224, 123, 62, 1)"
-}
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
-<div id="UserControl1_4" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="990" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Left\nHalf" data-tchmi-ontext="Left\nHalf" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.Lh_half%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Lh_half_request%/s%">
+<div id="leftFullBtn_4" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1190" data-tchmi-left-unit="px" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-text="Right\nHalf"  data-tchmi-is-enabled="%i%userAllowed%/i%" data-tchmi-background-color="%f%btnStateChange(true,%s%PLC1.tst.testBool1%/s%,'grey','grey' )%/f%">
 
 
 
 
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
-  "color": "None"
+  "color": "rgba(255, 255, 255, 1)"
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "None"
-}
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "leftFullBtn_4.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%i%active%/i%",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": {
+          "objectType": "FunctionExpression",
+          "functionExpression": "!%i%active%/i%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-onbackgroundcolor" type="application/json">
-{
-  "angle": 180.0,
-  "stopPoints": [
-    {
-      "color": "rgba(186, 80, 14, 1)",
-      "stop": "0%"
-    },
-    {
-      "color": "rgba(229, 111, 37, 1)",
-      "stop": "99.74%"
-    }
-  ]
-}
-</script>
 
-<script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
-{
-  "color": "rgba(224, 123, 62, 1)"
-}
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
-<div id="UserControl1_5" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="923" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Left\nFull" data-tchmi-ontext="Left\nFull" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.Lh_full%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Lh_full_request%/s%">
+<div id="leftFullBtn_5" data-tchmi-type="tchmi-button" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="586" data-tchmi-left-unit="px" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-text="Left\nFull"  data-tchmi-is-enabled="%i%userAllowed%/i%" data-tchmi-background-color="%f%btnStateChange(true,%s%PLC1.tst.testBool1%/s%,'orange','orange' )%/f%">
 
 
 
 
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
-  "color": "None"
+  "color": "rgba(255, 255, 255, 1)"
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "None"
-}
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "leftFullBtn_5.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.tst.testBool1%/s%",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": {
+          "objectType": "FunctionExpression",
+          "functionExpression": "!%s%PLC1.tst.testBool1%/s%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-onbackgroundcolor" type="application/json">
-{
-  "angle": 180.0,
-  "stopPoints": [
-    {
-      "color": "rgba(186, 80, 14, 1)",
-      "stop": "0%"
-    },
-    {
-      "color": "rgba(229, 111, 37, 1)",
-      "stop": "99.74%"
-    }
-  ]
-}
-</script>
 
-<script data-tchmi-target-attribute="data-tchmi-onbordercolor" type="application/json">
-{
-  "color": "rgba(224, 123, 62, 1)"
-}
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
-<div id="UserControl1_6" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="599" data-tchmi-left-unit="px" data-tchmi-target-user-control="ButtonWithLamp.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-statesymbol="True" data-tchmi-offtext="Torque\nPrediction Off" data-tchmi-ontext="Torque\nPrediction On" data-tchmi-lampsymbol="%s%PLC1.Torque_prediction.On%/s%" data-tchmi-offcommandsymbol="%s%PLC1.Torque_prediction.Set%/s%" data-tchmi-oncommandsymbol="%s%PLC1.Torque_prediction.Reset%/s%">
+<div id="UserControl1_2" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="630" data-tchmi-left-unit="px" data-tchmi-target-user-control="User Controls/userButton.usercontrol" data-tchmi-top="393" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-ontext="On" data-tchmi-offtext="Off" data-tchmi-statusvar="%s%PLC1.tst.testBool1%/s%" data-tchmi-oncolour="blue" data-tchmi-offcolour="grey" data-tchmi-toggleable="True" data-tchmi-commandvar="True" data-tchmi-is-enabled="True" data-tchmi-enabled="True">
 
 
-
-
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "color": "None"
-}
+<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+[]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-offbackgroundcolor" type="application/json">
-{
-  "angle": 180.0,
-  "stopPoints": [
-    {
-      "color": "rgba(186, 80, 14, 1)",
-      "stop": "0%"
-    },
-    {
-      "color": "rgba(229, 111, 37, 1)",
-      "stop": "99.74%"
-    }
-  ]
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-offbordercolor" type="application/json">
-{
-  "color": "rgba(224, 123, 62, 1)"
-}
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Engineers",
+    "permission": "Deny"
+  }
+]
 </script>
 </div>
 

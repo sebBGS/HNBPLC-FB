@@ -37,7 +37,10 @@
   ],
   "userControls": [
     {
-      "url": "ButtonWithLamp.usercontrol"
+      "url": "User Controls/ButtonWithLamp.usercontrol"
+    },
+    {
+      "url": "User Controls/userButton.usercontrol"
     }
   ],
   "content": [
@@ -73,6 +76,12 @@
     },
     {
       "url": "Functions/FormatReal.js"
+    },
+    {
+      "url": "Functions/btnStateChange.js"
+    },
+    {
+      "url": "Functions/btnBorderChange.js"
     }
   ],
   "symbols": {
@@ -92,6 +101,18 @@
       "sPageName": {
         "value": "Main Page",
         "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      },
+      "active": {
+        "value": true,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "userAllowed": {
+        "value": true,
+        "type": "tchmi:general#/definitions/BOOL",
         "persist": false,
         "readonly": false
       }

@@ -11,11 +11,11 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10104</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10106</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.340</HmiInitial>
-    <HmiRecent>1.10.1336.340</HmiRecent>
+    <HmiRecent>1.10.1336.354</HmiRecent>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -86,6 +86,12 @@
     <Content Include="CodeBehind1.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Functions\btnStateChange.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\btnStateChange.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Functions\fnInvisible.function.json">
       <SubType>Content</SubType>
     </Content>
@@ -96,6 +102,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Functions\FormatReal.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\btnBorderChange.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\btnBorderChange.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\calibrate_inactive.svg">
@@ -137,10 +149,16 @@
     <Content Include="Imports\Images\trafficLight.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ButtonWithLamp.usercontrol">
+    <Content Include="User Controls\ButtonWithLamp.usercontrol">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ButtonWithLamp.usercontrol.json">
+    <Content Include="User Controls\ButtonWithLamp.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User Controls\userButton.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User Controls\userButton.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
     <Folder Include=".hmipkgs" />
@@ -152,6 +170,7 @@
     <Folder Include="Imports\Videos" />
     <Folder Include="Localization" />
     <Folder Include="Functions" />
+    <Folder Include="User Controls" />
     <Folder Include="Server\Extensions\ADS" />
     <Folder Include="Server\Extensions\TcHmiEventLogger" />
     <Folder Include="Server\Extensions\TcHmiLua" />

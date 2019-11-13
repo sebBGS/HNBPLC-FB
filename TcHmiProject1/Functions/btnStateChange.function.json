@@ -1,0 +1,62 @@
+﻿{
+  "function": {
+    "name": "btnStateChange",
+    "displayName": "btnStateChange",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "Changes the colour of the button background by swapping out the class",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String",
+      "description": "Returns the gradient colour object for use as a background colour in different states"
+    },
+    "arguments": [
+      {
+        "name": "enabled",
+        "displayName": "enabled",
+        "type": "tchmi:general#/definitions/BOOL",
+        "description": "Can the button be clicked?",
+        "defaultValue": "False",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "active",
+        "displayName": "active",
+        "type": "tchmi:general#/definitions/BOOL",
+        "description": "On=1 off=0",
+        "defaultValue": "False",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "onColor",
+        "displayName": "onColor",
+        "type": "tchmi:general#/definitions/String",
+        "description": "On Colour",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "offColor",
+        "displayName": "offColor",
+        "type": "tchmi:general#/definitions/String",
+        "description": "Off Colour",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

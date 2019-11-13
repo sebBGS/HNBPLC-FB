@@ -49,3 +49,6 @@ html {
 .tchmi-datagrid-template-row-numbers {
     border-color: #909090;
 }
+.tchmi-control-disabled::after, .tchmi-button.tchmi-control-operate-disallowed::after{
+    background-color: rgba(127, 127, 127, 0) !important;
+}

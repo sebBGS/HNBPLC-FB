@@ -11,8 +11,15 @@ VAR
 		
 	sDateTime: STRING;
 	FB_DateTime_0: FB_DateTime;
+	i: INT;
+	Creep_speed: REAL;
+	Accel: REAL;
+	Distance: REAL;
 END_VAR
-]]></Declaration>
+
+VAR_OUTPUT
+	Allowed_speed: REAL;
+END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[TP0();
 FB_DateTime_0(sDateTime => sDateTime);
@@ -23,6 +30,10 @@ IF X > 200 + 0.1 THEN
 	X:= 0.0;
 END_IF
 
+FOR i := 1 TO 1000 DO
+	Allowed_speed:= SQRT(Creep_speed*Creep_speed + 2*Accel*Distance);
+END_FOR
+
 
 ]]></ST>
     </Implementation>
@@ -32,6 +43,9 @@ END_IF
       <LineId Id="15" Count="0" />
       <LineId Id="9" Count="0" />
       <LineId Id="18" Count="3" />
+      <LineId Id="121" Count="0" />
+      <LineId Id="120" Count="0" />
+      <LineId Id="122" Count="1" />
       <LineId Id="107" Count="0" />
       <LineId Id="31" Count="0" />
       <LineId Id="17" Count="0" />

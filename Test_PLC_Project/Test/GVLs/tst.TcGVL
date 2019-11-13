@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <GVL Name="tst" Id="{7957f011-4c20-422e-9284-5bc3b51d2470}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	testBool1:BOOL := TRUE;
+	testStr1:STRING := 'stringy string';
+	testReal1:REAL := 1520;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
