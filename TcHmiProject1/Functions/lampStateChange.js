@@ -11,163 +11,38 @@
 
     var lampStateChange = function (active,onColor,offColor) {
         //colour assignment
-        const orangeDark = "rgba(186, 80, 14, 1)";
-        const orangeLight = "rgba(229, 111, 37, 1)";
-        const blueDark = "rgba(19, 63, 122, 1)";
-        const blueLight = "rgba(62, 103, 161, 1)";
-        const greenDark = "rgba(52, 158, 12, 1)";
-        const greenLight = "rgba(106, 209, 68, 1)";
-        const redDark = "rgba(120, 15, 15, 1)";
-        const redLight = "rgba(210, 30, 30, 1)";
-        const greyDark = "rgba(44, 44, 44, 1)";
-        const greyLight = "rgba(88, 88, 88, 1)";
+        const orange = "rgba(186, 80, 14, 1)";
+        const blue = "rgba(19, 63, 122, 1)";
+        const green = "rgba(52, 158, 12, 1)";
+        const red = "rgba(120, 15, 15, 1)";
+        const grey = "rgba(44, 44, 44, 1)";
 
         if (active) {
             switch (onColor) {
                 case 'orange':
-                    return {
-                        "angle": 180.0,
-                        "stopPoints": [
-                          {
-                              "color": orangeLight,
-                              "stop": "0%"
-                          },
-                          {
-                              "color": orangeDark,
-                              "stop": "100%"
-                          }
-                        ]
-                    }
+                    return { 'color': orange }
                 case 'blue':
-                    return {
-                        "angle": 180.0,
-                        "stopPoints": [
-                          {
-                              "color": blueLight,
-                              "stop": "0%"
-                          },
-                          {
-                              "color": blueDark,
-                              "stop": "100%"
-                          }
-                        ]
-                    }
+                    return { 'color': blue }
                 case 'green':
-                    return {
-                        "angle": 180.0,
-                        "stopPoints": [
-                          {
-                              "color": greenLight,
-                              "stop": "0%"
-                          },
-                          {
-                              "color": greenDark,
-                              "stop": "100%"
-                          }
-                        ]
-                    }
+                    return { 'color': green }
                 case 'red':
-                    return {
-                        "angle": 180.0,
-                        "stopPoints": [
-                          {
-                              "color": redLight,
-                              "stop": "0%"
-                          },
-                          {
-                              "color": redDark,
-                              "stop": "100%"
-                          }
-                        ]
-                    }
+                    return { 'color': red }
                 case 'grey':
-                    return {
-                        "angle": 180.0,
-                        "stopPoints": [
-                          {
-                              "color": greyLight,
-                              "stop": "0%"
-                          },
-                          {
-                              "color": greyDark,
-                              "stop": "100%"
-                          }
-                        ]
-                    }
+                    return { 'color': grey }
             }
         }
         if (!active) {
             switch (offColor) {
                 case 'orange':
-                    return {
-                        "angle": 180.0,
-                        "stopPoints": [
-                          {
-                              "color": orangeLight,
-                              "stop": "0%"
-                          },
-                          {
-                              "color": orangeDark,
-                              "stop": "100%"
-                          }
-                        ]
-                    }
+                    return { 'color': orange }
                 case 'blue':
-                    return {
-                        "angle": 180.0,
-                        "stopPoints": [
-                          {
-                              "color": blueLight,
-                              "stop": "0%"
-                          },
-                          {
-                              "color": blueDark,
-                              "stop": "100%"
-                          }
-                        ]
-                    }
+                    return { 'color': blue }
                 case 'green':
-                    return {
-                        "angle": 180.0,
-                        "stopPoints": [
-                          {
-                              "color": greenLight,
-                              "stop": "0%"
-                          },
-                          {
-                              "color": greenDark,
-                              "stop": "100%"
-                          }
-                        ]
-                    }
+                    return { 'color': green }
                 case 'red':
-                    return {
-                        "angle": 180.0,
-                        "stopPoints": [
-                          {
-                              "color": redLight,
-                              "stop": "0%"
-                          },
-                          {
-                              "color": redDark,
-                              "stop": "100%"
-                          }
-                        ]
-                    }
+                    return { 'color': red }
                 case 'grey':
-                    return {
-                        "angle": 180.0,
-                        "stopPoints": [
-                          {
-                              "color": greyLight,
-                              "stop": "0%"
-                          },
-                          {
-                              "color": greyDark,
-                              "stop": "100%"
-                          }
-                        ]
-                    }
+                    return { 'color': grey }
             }
         }
     };

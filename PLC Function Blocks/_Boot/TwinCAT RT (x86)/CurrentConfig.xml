@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TcBootProject CreateTime="2019-11-13T15:53:50">
+<TcBootProject CreateTime="2019-11-15T12:47:03">
 	<System>
 		<LockedMemSize>33554432</LockedMemSize>
 		<AffinityMask>#x1</AffinityMask>
@@ -85,7 +85,7 @@
 	<ProjectInfo>
 		<ProjectName>PLC Function Blocks</ProjectName>
 		<ProjectGuid>{D7888C32-8F29-4150-AC7C-70420C2CE2AD}</ProjectGuid>
-		<ConfigurationFile>C:\Users\user\Source\Repos\HNBPLC\PLC Function Blocks\PLC Function Blocks.tsproj</ConfigurationFile>
+		<ConfigurationFile>F:\Repos\PLC Function Blocks\PLC Function Blocks.tsproj</ConfigurationFile>
 		<DataTypes/>
 		<PlcProjects/>
 		<Tasks/>

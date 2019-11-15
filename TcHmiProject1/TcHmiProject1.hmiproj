@@ -110,6 +110,18 @@
     <Content Include="Functions\btnBorderChange.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Functions\lampNStateChange.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\lampNStateChange.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\lampStateChange.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\lampStateChange.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\calibrate_inactive.svg">
       <SubType>Content</SubType>
     </Content>
@@ -155,6 +167,8 @@
     <Content Include="User Controls\ButtonWithLamp.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="User Controls\lampNState.usercontrol.json" />
+    <Content Include="User Controls\lampNState.usercontrol.json" />
     <Content Include="User Controls\userButton.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -165,6 +179,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="User Controls\lampTwoState.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User Controls\lampNState.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User Controls\lampNState.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
     <Folder Include=".hmipkgs" />

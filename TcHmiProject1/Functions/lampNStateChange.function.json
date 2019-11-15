@@ -24,11 +24,22 @@
         "asReference": false
       },
       {
-        "name": "colorTarget",
-        "displayName": "colorTarget",
-        "type": "tchmi:general#/definitions/String",
-        "description": "fill or border",
+        "name": "stateObj",
+        "displayName": "stateObj",
+        "type": "tchmi:general#/definitions/Object",
+        "description": "object containing state config",
         "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "textOrColor",
+        "displayName": "textOrColor",
+        "type": "tchmi:general#/definitions/BOOL",
+        "description": "true=text false=colour",
+        "defaultValue": "False",
         "required": true,
         "bindable": true,
         "restParameter": false,
