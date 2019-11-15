@@ -161,6 +161,12 @@
     <Content Include="User Controls\userButton.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="User Controls\lampTwoState.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User Controls\lampTwoState.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include=".hmipkgs" />
     <Folder Include="Libraries" />
     <Folder Include="Images" />

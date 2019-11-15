@@ -2790,6 +2790,31 @@
                 }
             },
             "USEMAPPING": true
+        },
+        "userGroupsArr": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "TcHmiSrv",
+            "MAPPING": "GetCurrentUser::groups",
+            "SCHEMA": {
+                "function": true,
+                "items": {
+                    "type": "string"
+                },
+                "type": "array"
+            },
+            "USEMAPPING": true
+        },
+        "userName": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "TcHmiSrv",
+            "MAPPING": "GetCurrentUser::name",
+            "SCHEMA": {
+                "function": true,
+                "type": "string"
+            },
+            "USEMAPPING": true
         }
     },
     "TEMPDH": "",
@@ -2871,6 +2896,15 @@
     },
     "USERGROUPUSERS": {
         "TcHmiUserManagement": {
+            "Frikkie": {
+                "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
+                "USERGROUPUSERS_GROUPS": [
+                    "Engineers"
+                ],
+                "USERGROUPUSERS_LOCALE": "client",
+                "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
+                "USERGROUPUSERS_TIMEZONE": "project"
+            },
             "__SystemAdministrator": {
                 "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
                 "USERGROUPUSERS_GROUPS": [
@@ -2886,16 +2920,6 @@
                     "__SystemGuests"
                 ],
                 "USERGROUPUSERS_LOCALE": "project",
-                "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
-                "USERGROUPUSERS_TIMEZONE": "project"
-            },
-            "test": {
-                "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
-                "USERGROUPUSERS_GROUPS": [
-                    "__SystemUsers",
-                    "Engineers"
-                ],
-                "USERGROUPUSERS_LOCALE": "client",
                 "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
                 "USERGROUPUSERS_TIMEZONE": "project"
             }

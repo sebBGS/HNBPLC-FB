@@ -1,0 +1,38 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-statevar",
+      "displayName": "stateVar",
+      "visible": true,
+      "type": "tchmi:general#/definitions/REAL",
+      "category": "",
+      "description": "State Variable",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stateVar",
+      "propertySetterName": "setStateVar",
+      "propertyGetterName": "getStateVar"
+    },
+    {
+      "name": "data-tchmi-text",
+      "displayName": "text",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "text",
+      "defaultValue": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "text",
+      "propertySetterName": "setText",
+      "propertyGetterName": "getText"
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

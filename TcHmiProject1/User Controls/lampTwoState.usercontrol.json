@@ -1,0 +1,82 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-oncolor",
+      "displayName": "onColor",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "On Color",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "onColor",
+      "propertySetterName": "setOnColor",
+      "propertyGetterName": "getOnColor"
+    },
+    {
+      "name": "data-tchmi-offcolor",
+      "displayName": "offColor",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "Off Color",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "offColor",
+      "propertySetterName": "setOffColor",
+      "propertyGetterName": "getOffColor"
+    },
+    {
+      "name": "data-tchmi-ontext",
+      "displayName": "onText",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "Text",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "onText",
+      "propertySetterName": "setOnText",
+      "propertyGetterName": "getOnText"
+    },
+    {
+      "name": "data-tchmi-offtext",
+      "displayName": "offText",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "offText",
+      "propertySetterName": "setOffText",
+      "propertyGetterName": "getOffText"
+    },
+    {
+      "name": "data-tchmi-statevar",
+      "displayName": "stateVar",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "State Var",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stateVar",
+      "propertySetterName": "setStateVar",
+      "propertyGetterName": "getStateVar"
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

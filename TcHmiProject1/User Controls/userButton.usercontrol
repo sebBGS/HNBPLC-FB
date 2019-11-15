@@ -3,7 +3,7 @@
      data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
      data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
 
-<div id="btn" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-text="%f%!%pp%StatusVar%/pp% ? %pp%OffText%/pp% : %pp%OnText%/pp%%/f%" data-tchmi-state-symbol="%pp%CommandVar%/pp%" data-tchmi-text-color="%f%%pp%Enabled%/pp% ? {'color':'rgba(225,225,225,1)'} : {'color':'rgba(225,225,225,0.68)'}%/f%" data-tchmi-is-enabled="%pp%Enabled%/pp%" data-tchmi-background-color="%f%btnStateChange(%pp%Enabled%/pp%,%pp%StatusVar%/pp%,%pp%OnColour%/pp% ,%pp%OffColour%/pp%)%/f%" data-tchmi-border-color="%f%!%pp%StatusVar%/pp% ? btnBorderChange(%pp%OffColour%/pp%) : btnBorderChange(%pp%OnColour%/pp%)%/f%">
+<div id="btn" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text="%f%!%pp%StatusVar%/pp% ? %pp%OffText%/pp% : %pp%OnText%/pp%%/f%" data-tchmi-state-symbol="%pp%CommandVar%/pp%" data-tchmi-text-color="%f%%pp%Enabled%/pp% ? {'color':'rgba(225,225,225,1)'} : {'color':'rgba(225,225,225,0.68)'}%/f%" data-tchmi-is-enabled="%pp%Enabled%/pp%" data-tchmi-background-color="%f%btnStateChange(%pp%Enabled%/pp%,%pp%StatusVar%/pp%,%pp%OnColour%/pp% ,%pp%OffColour%/pp%)%/f%" data-tchmi-border-color="%f%!%pp%StatusVar%/pp% ? btnBorderChange(%pp%OffColour%/pp%) : btnBorderChange(%pp%OnColour%/pp%)%/f%">
 
 
 
@@ -97,6 +97,15 @@
 </script>
 
 
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
 </div>
 
 </div>

@@ -40,6 +40,9 @@
       "url": "User Controls/ButtonWithLamp.usercontrol"
     },
     {
+      "url": "User Controls/lampTwoState.usercontrol"
+    },
+    {
       "url": "User Controls/userButton.usercontrol"
     }
   ],
@@ -82,6 +85,12 @@
     },
     {
       "url": "Functions/btnBorderChange.js"
+    },
+    {
+      "url": "Functions/lampStateChange.js"
+    },
+    {
+      "url": "Functions/lampNStateChange.js"
     }
   ],
   "symbols": {
