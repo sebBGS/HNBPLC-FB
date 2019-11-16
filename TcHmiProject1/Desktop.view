@@ -6,7 +6,7 @@
      data-tchmi-min-height="100" data-tchmi-min-height-unit="%"
 
      data-tchmi-background-image-height="100" data-tchmi-background-image-width="100"
-     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-zindex="6" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-width="1350" data-tchmi-height="58" data-tchmi-creator-viewport-width="1360" data-tchmi-creator-viewport-height="768">
+     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-zindex="6" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-width="1350" data-tchmi-height="60" data-tchmi-creator-viewport-width="1360" data-tchmi-creator-viewport-height="768">
 
 
 <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
@@ -94,7 +94,7 @@
 </script>
 </div>
 
-<div id="TcHmiTextblock_58" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="1007" data-tchmi-left-unit="px" data-tchmi-text="User: Breton Green\nAccess Level: 3" data-tchmi-top="8" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="16" data-tchmi-text-horizontal-alignment="Left">
+<div id="TcHmiTextblock_58" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="1007" data-tchmi-left-unit="px" data-tchmi-text="%f%'User: '+%s%userName%/s%+'\nAccess Level: '+%s%userGroupsArr[0]%/s%%/f%" data-tchmi-top="8" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="16" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -113,6 +113,25 @@
 {
   "color": "None"
 }
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+[]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Engineers",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Engineers",
+    "permission": "Allow"
+  }
+]
 </script>
 </div>
 
@@ -138,7 +157,7 @@
 </script>
 </div>
 
-<div id="TcHmiButton_23" data-tchmi-type="tchmi-button" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="761" data-tchmi-left-unit="px" data-tchmi-text="Regulator Healthy" data-tchmi-top="11" data-tchmi-top-unit="px" data-tchmi-width="190" data-tchmi-width-unit="px" data-tchmi-word-wrap="False" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto"  data-tchmi-text-font-style="Auto">
+<div id="TcHmiButton_23" data-tchmi-type="tchmi-button" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="521" data-tchmi-left-unit="px" data-tchmi-text="Regulator Healthy" data-tchmi-top="12" data-tchmi-top-unit="px" data-tchmi-width="190" data-tchmi-width-unit="px" data-tchmi-word-wrap="False" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto"  data-tchmi-text-font-style="Auto">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -202,6 +221,10 @@
   "bottomUnit": "px"
 }
 </script>
+</div>
+
+<div id="UserControl1_8" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="761" data-tchmi-left-unit="px" data-tchmi-target-user-control="User Controls/lampTwoState.usercontrol" data-tchmi-top="12" data-tchmi-top-unit="px" data-tchmi-width="190" data-tchmi-width-unit="px" data-tchmi-oncolor="green" data-tchmi-offcolor="red" data-tchmi-ontext="Regulator Healthy" data-tchmi-offtext="Regulator Unhealthy" data-tchmi-statevar="True">
+
 </div>
 
 </div>

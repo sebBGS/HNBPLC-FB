@@ -37,7 +37,16 @@
   ],
   "userControls": [
     {
-      "url": "ButtonWithLamp.usercontrol"
+      "url": "User Controls/ButtonWithLamp.usercontrol"
+    },
+    {
+      "url": "User Controls/lampNState.usercontrol"
+    },
+    {
+      "url": "User Controls/lampTwoState.usercontrol"
+    },
+    {
+      "url": "User Controls/userButton.usercontrol"
     }
   ],
   "content": [
@@ -73,6 +82,18 @@
     },
     {
       "url": "Functions/FormatReal.js"
+    },
+    {
+      "url": "Functions/btnStateChange.js"
+    },
+    {
+      "url": "Functions/btnBorderChange.js"
+    },
+    {
+      "url": "Functions/lampStateChange.js"
+    },
+    {
+      "url": "Functions/lampNStateChange.js"
     }
   ],
   "symbols": {
@@ -94,6 +115,76 @@
         "type": "tchmi:general#/definitions/String",
         "persist": false,
         "readonly": false
+      },
+      "active": {
+        "value": true,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "userAllowed": {
+        "value": true,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "brakeStates": {
+        "value": {
+          "states": [
+            {
+              "color": "red",
+              "desc": "Invalid State"
+            },
+            {
+              "color": "red",
+              "desc": "Brake\nWear"
+            },
+            {
+              "color": "orange",
+              "desc": "Brake\nOn"
+            },
+            {
+              "color": "grey",
+              "desc": "Brake\nRubbing"
+            },
+            {
+              "color": "grey",
+              "desc": "Brake Not\nFully Off"
+            },
+            {
+              "color": "green",
+              "desc": "Brake\nOff"
+            }
+          ]
+        },
+        "type": "tchmi:general#/definitions/Object",
+        "persist": true,
+        "readonly": true
+      },
+      "clutchStates": {
+        "value": {
+          "states": [
+            {
+              "color": "red",
+              "desc": "Invalid State"
+            },
+            {
+              "color": "green",
+              "desc": "Clutch\nIn"
+            },
+            {
+              "color": "blue",
+              "desc": "Clutch\nNot In"
+            },
+            {
+              "color": "orange",
+              "desc": "Clutch\nOut"
+            }
+          ]
+        },
+        "type": "tchmi:general#/definitions/Object",
+        "persist": true,
+        "readonly": true
       }
     }
   },

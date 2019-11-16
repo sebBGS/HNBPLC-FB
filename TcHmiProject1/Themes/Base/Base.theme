@@ -15,19 +15,6 @@
         "BorderColor": {
           "color": "rgba(96, 96, 96, 1)"
         },
-        "BackgroundColor": {
-          "angle": 0.0,
-          "stopPoints": [
-            {
-              "color": "rgba(40, 40, 40, 1)",
-              "stop": "0%"
-            },
-            {
-              "color": "rgba(88, 88, 88, 1)",
-              "stop": "100%"
-            }
-          ]
-        },
         "BorderStyle": {
           "left": "Solid",
           "right": "Solid",
@@ -36,6 +23,19 @@
         },
         "TextColor": {
           "color": "rgba(255, 255, 255, 1)"
+        },
+        "BackgroundColor": {
+          "color": "rgba(88, 88, 88, 1)"
+        },
+        "BorderWidth": {
+          "left": 1,
+          "right": 1,
+          "top": 1,
+          "bottom": 1,
+          "leftUnit": "px",
+          "rightUnit": "px",
+          "topUnit": "px",
+          "bottomUnit": "px"
         }
       },
       "themedResources": {}
@@ -74,12 +74,124 @@
     }
   },
   "controlClassValues": {
-    "OrangeGreyButton": {
+    "btnOffBlue": {
+      "attributes": {},
+      "themedResources": {}
+    },
+    "btnOffGreen": {
+      "attributes": {},
+      "themedResources": {}
+    },
+    "btnOffGrey": {
+      "attributes": {},
+      "themedResources": {}
+    },
+    "btnOffOrange": {
       "attributes": {
-        "BackgroundColor": null,
-        "BorderColor": null,
-        "TextColor": null
+        "BackgroundColor": {
+          "angle": 180.0,
+          "stopPoints": [
+            {
+              "color": "rgba(229, 111, 37, 1)",
+              "stop": "0%"
+            },
+            {
+              "color": "rgba(186, 80, 14, 1)",
+              "stop": "100%"
+            }
+          ]
+        },
+        "TextColor": {
+          "color": "rgba(255, 255, 255, 1)"
+        },
+        "BorderRadius": {
+          "topLeft": 8.0,
+          "topRight": 8.0,
+          "bottomLeft": 8.0,
+          "bottomRight": 8.0,
+          "topLeftUnit": "px",
+          "topRightUnit": "px",
+          "bottomLeftUnit": "px",
+          "bottomRightUnit": "px"
+        },
+        "BorderWidth": {
+          "left": 1,
+          "right": 1,
+          "top": 1,
+          "bottom": 1,
+          "leftUnit": "px",
+          "rightUnit": "px",
+          "topUnit": "px",
+          "bottomUnit": "px"
+        },
+        "BorderColor": {
+          "color": "rgba(224, 123, 62, 1)"
+        }
       },
+      "themedResources": {}
+    },
+    "btnOffRed": {
+      "attributes": {},
+      "themedResources": {}
+    },
+    "btnOnBlue": {
+      "attributes": {},
+      "themedResources": {}
+    },
+    "btnOnGreen": {
+      "attributes": {},
+      "themedResources": {}
+    },
+    "btnOnGrey": {
+      "attributes": {},
+      "themedResources": {}
+    },
+    "btnOnOrange": {
+      "attributes": {
+        "BackgroundColor": {
+          "angle": 0.0,
+          "stopPoints": [
+            {
+              "color": "rgba(186, 80, 14, 1)",
+              "stop": "0%"
+            },
+            {
+              "color": "rgba(229, 111, 37, 1)",
+              "stop": "100%"
+            }
+          ]
+        },
+        "TextColor": {
+          "color": "rgba(255, 255, 255, 1)"
+        },
+        "BorderColor": {
+          "color": "rgba(224, 123, 62, 1)"
+        },
+        "BorderRadius": {
+          "topLeft": 8.0,
+          "topRight": 8.0,
+          "bottomLeft": 8.0,
+          "bottomRight": 8.0,
+          "topLeftUnit": "px",
+          "topRightUnit": "px",
+          "bottomLeftUnit": "px",
+          "bottomRightUnit": "px"
+        },
+        "BorderWidth": {
+          "left": 1,
+          "right": 1,
+          "top": 1,
+          "bottom": 1,
+          "leftUnit": "px",
+          "rightUnit": "px",
+          "topUnit": "px",
+          "bottomUnit": "px"
+        }
+      },
+      "themedResources": {}
+    },
+    "btnOnRed": {
+      "attributes": {},
       "themedResources": {}
     }
   },

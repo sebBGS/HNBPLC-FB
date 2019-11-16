@@ -1,0 +1,51 @@
+﻿{
+  "function": {
+    "name": "lampNStateChange",
+    "displayName": "lampNStateChange",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "Handles lamp colour change logic",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String",
+      "description": "Returns a string form of the json array needed to set the background gradient of an element"
+    },
+    "arguments": [
+      {
+        "name": "stateVar",
+        "displayName": "stateVar",
+        "type": "tchmi:general#/definitions/REAL",
+        "description": "current state of variable",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "stateObj",
+        "displayName": "stateObj",
+        "type": "tchmi:general#/definitions/Object",
+        "description": "object containing state config",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "textOrColor",
+        "displayName": "textOrColor",
+        "type": "tchmi:general#/definitions/BOOL",
+        "description": "true=text false=colour",
+        "defaultValue": "False",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

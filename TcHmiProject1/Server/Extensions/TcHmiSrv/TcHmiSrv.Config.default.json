@@ -1951,6 +1951,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.tst.testBool1": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::tst::testBool1",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "RefreshDefinitions": {
             "ACCESS": 3,
             "DOMAIN": "TcHmiSrv",
@@ -2780,12 +2790,48 @@
                 }
             },
             "USEMAPPING": true
+        },
+        "userGroupsArr": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "TcHmiSrv",
+            "MAPPING": "GetCurrentUser::groups",
+            "SCHEMA": {
+                "function": true,
+                "items": {
+                    "type": "string"
+                },
+                "type": "array"
+            },
+            "USEMAPPING": true
+        },
+        "userName": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "TcHmiSrv",
+            "MAPPING": "GetCurrentUser::name",
+            "SCHEMA": {
+                "function": true,
+                "type": "string"
+            },
+            "USEMAPPING": true
         }
     },
     "TEMPDH": "",
     "THREADPOOLSIZE": 12,
     "UPLOADTIMEOUT": "PT5S",
     "USERGROUPS": {
+        "Engineers": {
+            "ENABLED": true,
+            "FILEACCESS": 3,
+            "FILES": {},
+            "SYMBOLACCESS": 3,
+            "SYMBOLS": {
+                "IsAuthRequired": 3,
+                "ListUsers": 3,
+                "Login": 3
+            }
+        },
         "__SystemAdministrators": {
             "ENABLED": true,
             "FILEACCESS": 3,
@@ -2850,6 +2896,15 @@
     },
     "USERGROUPUSERS": {
         "TcHmiUserManagement": {
+            "Frikkie": {
+                "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
+                "USERGROUPUSERS_GROUPS": [
+                    "Engineers"
+                ],
+                "USERGROUPUSERS_LOCALE": "client",
+                "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
+                "USERGROUPUSERS_TIMEZONE": "project"
+            },
             "__SystemAdministrator": {
                 "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
                 "USERGROUPUSERS_GROUPS": [
@@ -2874,6 +2929,6 @@
     "VIDEOSEGMENTSIZE": 1048576,
     "VIRTUALDIRECTORIES": {
         "/": "..\\..\\TcHmiProject1",
-        "/framework": "..\\..\\..\\..\\..\\..\\..\\TwinCAT\\Functions\\TE2000-HMI-Engineering\\Infrastructure\\TcHmiFramework\\1.10.1336.0"
+        "/framework": "C:\\TwinCAT\\Functions\\TE2000-HMI-Engineering\\Infrastructure\\TcHmiFramework\\1.10.1336.0"
     }
 }

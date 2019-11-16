@@ -1,5 +1,10 @@
 {
     "USERS": {
+        "Frikkie": {
+            "ENABLED": true,
+            "PASSWORD": "0676cbaaa02f7336800e5e0a4c8eec6f27064fbce6470a6244cb80a9f291b72e",
+            "SALT": "E+t3FijGQqLExn98Ffte9iUp6dK2/MXAxdfgWW2tc3jROWweFc6tU3xa9Wcd1PqcjTO9LPQl4n6/wDKgoH6kAA=="
+        },
         "__SystemAdministrator": {
             "ENABLED": false,
             "PASSWORD": "",

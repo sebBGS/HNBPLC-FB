@@ -1,0 +1,28 @@
+﻿{
+  "function": {
+    "name": "btnBorderChange",
+    "displayName": "btnBorderChange",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "arguments": [
+      {
+        "name": "lightColor",
+        "displayName": "lightColor",
+        "type": "tchmi:general#/definitions/String",
+        "description": "Lighter color of the color gradient",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

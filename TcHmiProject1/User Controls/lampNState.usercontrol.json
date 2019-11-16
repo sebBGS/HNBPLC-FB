@@ -1,0 +1,52 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-statevar",
+      "displayName": "stateVar",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "State Variable",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stateVar",
+      "propertySetterName": "setStateVar",
+      "propertyGetterName": "getStateVar"
+    },
+    {
+      "name": "data-tchmi-stateobj",
+      "displayName": "stateObj",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "States config object",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stateObj",
+      "propertySetterName": "setStateObj",
+      "propertyGetterName": "getStateObj"
+    },
+    {
+      "name": "data-tchmi-addedtext",
+      "displayName": "addedText",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "Added Text",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "addedText",
+      "propertySetterName": "setAddedText",
+      "propertyGetterName": "getAddedText"
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}
