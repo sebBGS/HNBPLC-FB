@@ -65,6 +65,12 @@
         }
       },
       "themedResources": {}
+    },
+    "tchmi-textblock": {
+      "attributes": {
+        "IsEnabled": true
+      },
+      "themedResources": {}
     }
   },
   "controlClassValues": {

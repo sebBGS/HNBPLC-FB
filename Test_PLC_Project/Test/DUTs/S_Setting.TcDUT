@@ -7,6 +7,11 @@ STRUCT
 	Description: STRING[256];
 	Value: REAL;
 	Unit: STRING[10];
+	Minimum:INT;
+	Maximum:INT;
+	Default: STRING;
+	Read_access: BOOL;
+	Write_access:ENUM;
 END_STRUCT
 END_TYPE
 ]]></Declaration>

@@ -9,23 +9,25 @@ VAR_OUTPUT
 END_VAR
 VAR
 	fbTime   : FB_LocalSystemTime := ( bEnable := TRUE, dwCycle := 1 );
+	//fbSystemTimeToDT: SYSTEMTIME_TO_DT;
 	sTime, sSystemTime, sDate, sMonth, sTemp: STRING;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[fbTime();
+Gen.DateTime:= SYSTEMTIME_TO_DT(fbTime.systemTime); 
 
 sSystemTime:= SYSTEMTIME_TO_STRING(fbTime.systemTime);
 
-sTime:= RIGHT(CONCAT('0', INT_TO_STRING(fbTime.systemTime.wHour)), 2);
+sTime:= RIGHT(CONCAT('0', WORD_TO_STRING(fbTime.systemTime.wHour)), 2);
 sTime:= CONCAT(sTime, ':');
-sTemp:= CONCAT('0', INT_TO_STRING(fbTime.systemTime.wMinute));
+sTemp:= CONCAT('0', WORD_TO_STRING(fbTime.systemTime.wMinute));
 sTime:= CONCAT(sTime, RIGHT(sTemp, 2));
 sTime:= CONCAT(sTime, ':');
-sTemp:= CONCAT('0', INT_TO_STRING(fbTime.systemTime.wSecond));
+sTemp:= CONCAT('0', WORD_TO_STRING(fbTime.systemTime.wSecond));
 sTime:= CONCAT(sTime, RIGHT(sTemp, 2));
 
-sDate:= INT_TO_STRING(fbTime.systemTime.wDay);
+sDate:= WORD_TO_STRING(fbTime.systemTime.wDay);
 sDate:= CONCAT(sDate, ' ');
 CASE fbTime.systemTime.wMonth OF
 	1: sMonth:= 'January';
@@ -51,7 +53,9 @@ sDateTime:= CONCAT(sDate, CONCAT('\n', sTime));
 ]]></ST>
     </Implementation>
     <LineIds Name="FB_DateTime">
-      <LineId Id="10" Count="34" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="11" Count="33" />
       <LineId Id="9" Count="0" />
     </LineIds>
   </POU>
