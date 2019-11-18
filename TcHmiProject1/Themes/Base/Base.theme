@@ -36,7 +36,9 @@
           "rightUnit": "px",
           "topUnit": "px",
           "bottomUnit": "px"
-        }
+        },
+        "TextFontFamily": "Calibri",
+        "TextFontSize": 15.0
       },
       "themedResources": {}
     },
@@ -68,7 +70,8 @@
     },
     "tchmi-textblock": {
       "attributes": {
-        "IsEnabled": true
+        "IsEnabled": true,
+        "TextFontFamily": "Helvetica"
       },
       "themedResources": {}
     }

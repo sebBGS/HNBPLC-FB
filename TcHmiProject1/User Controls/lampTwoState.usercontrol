@@ -3,7 +3,7 @@
      data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
      data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
 
-<div id="TcHmiTextblock_74" data-tchmi-type="tchmi-textblock" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%!%pp%stateVar%/pp% ? %pp%offText%/pp% : %pp%onText%/pp%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-background-color="%f%lampStateChange(%pp%stateVar%/pp%,%pp%onColor%/pp%,%pp%offColor%/pp%)%/f%" data-tchmi-border-color="%f%!%pp%stateVar%/pp% ? btnBorderChange(%pp%offColor%/pp%) : btnBorderChange(%pp%onColor%/pp%)%/f%" data-tchmi-text-font-size="16">
+<div id="TcHmiTextblock_74" data-tchmi-type="tchmi-textblock" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%!%pp%stateVar%/pp% ? %pp%offText%/pp% : %pp%onText%/pp%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-background-color="%f%lampStateChange(%pp%stateVar%/pp%,%pp%onColor%/pp%,%pp%offColor%/pp%)%/f%" data-tchmi-border-color="%f%!%pp%stateVar%/pp% ? btnBorderChange(%pp%offColor%/pp%) : btnBorderChange(%pp%onColor%/pp%)%/f%" data-tchmi-text-font-size="15">
 
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">

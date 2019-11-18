@@ -444,7 +444,7 @@
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Settings.content"
+          "value": "SpeedGuardian.content"
         },
         "asyncWait": true
       },
@@ -456,7 +456,7 @@
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:general#/definitions/String",
-          "value": "Settings"
+          "value": "Speed Guardian"
         },
         "asyncWait": true
       },

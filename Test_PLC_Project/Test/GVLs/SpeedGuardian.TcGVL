@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <GVL Name="SpeedGuardian" Id="{8818a755-b9b7-4927-b81b-81f499964e4e}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+		Lh_overwind: BOOL;
+		Lh_underwind: BOOL;
+		Rh_overwind: BOOL;
+		Rh_underwind: BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

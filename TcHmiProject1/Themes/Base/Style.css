@@ -52,3 +52,6 @@ html {
 .tchmi-control-disabled::after, .tchmi-button.tchmi-control-operate-disallowed::after{
     background-color: rgba(127, 127, 127, 0) !important;
 }
+.tchmi-trend-line-chart-template-chart {
+    background-color: rgba(0, 0, 0, 0);
+}

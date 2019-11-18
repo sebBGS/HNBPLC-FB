@@ -15,7 +15,7 @@
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.340</HmiInitial>
-    <HmiRecent>1.10.1336.354</HmiRecent>
+    <HmiRecent>1.10.1336.340</HmiRecent>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -84,6 +84,9 @@
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
     <Content Include="CodeBehind1.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SpeedGuardian.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Functions\btnStateChange.function.json">
@@ -168,7 +171,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="User Controls\lampNState.usercontrol.json" />
-    <Content Include="User Controls\lampNState.usercontrol.json" />
     <Content Include="User Controls\userButton.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -182,9 +184,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="User Controls\lampNState.usercontrol">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="User Controls\lampNState.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
     <Folder Include=".hmipkgs" />

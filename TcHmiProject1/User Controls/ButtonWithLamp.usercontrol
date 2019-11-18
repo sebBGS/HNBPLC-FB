@@ -41,7 +41,7 @@
 </script>
 </div>
 
-<div id="OffState" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%pp%OffText%/pp%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="6" data-tchmi-text-font-size="16" data-tchmi-state-symbol="%pp%OffCommandSymbol%/pp%" data-tchmi-visibility="%f%%pp%LampSymbol%/pp%? 'Collapsed' : 'Visible';%/f%" data-tchmi-background-color="%pp%OffBackgroundColor%/pp%" data-tchmi-text-color="%pp%OffTextColor%/pp%" data-tchmi-border-color="%pp%OffBorderColor%/pp%">
+<div id="OffState" data-tchmi-type="tchmi-button" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%pp%OffText%/pp%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-zindex="6" data-tchmi-state-symbol="%pp%OffCommandSymbol%/pp%" data-tchmi-visibility="%f%%pp%LampSymbol%/pp%? 'Collapsed' : 'Visible';%/f%" data-tchmi-background-color="%pp%OffBackgroundColor%/pp%" data-tchmi-text-color="%pp%OffTextColor%/pp%" data-tchmi-border-color="%pp%OffBorderColor%/pp%">
 
 
 
