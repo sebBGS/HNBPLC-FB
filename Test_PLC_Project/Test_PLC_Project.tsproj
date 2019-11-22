@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4023.119">
-	<Project ProjectGUID="{86F11BA3-26EC-42A2-A8D2-FDAE288AEF3C}" TargetNetId="192.168.1.196.1.1" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{86F11BA3-26EC-42A2-A8D2-FDAE288AEF3C}" TargetNetId="192.168.1.109.1.1" Target64Bit="true" ShowHideConfigurations="#x106">
 		<System>
+			<Settings MaxCpus="8" NonWinCpus="2">
+				<Cpu CpuId="6"/>
+				<Cpu CpuId="7"/>
+			</Settings>
 			<Licenses>
 				<Target BkhfOrder="HMISERVER">
 					<ManualSelect>{648F394E-7DD1-499C-8112-7C38E161A94C}</ManualSelect>

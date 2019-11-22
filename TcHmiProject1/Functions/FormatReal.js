@@ -9,9 +9,9 @@
 
 (function (TcHmi) {
 
-    var FormatReal = function (par1,Decimals) {
-        f = parseFloat(par1);
-        return f.toFixed(Decimals) + " m/s";
+    var FormatReal = function (num,decimals,unit) {
+        f = parseFloat(num);
+        return f.toFixed(decimals) + unit;
     };
     
     TcHmi.Functions.registerFunction('FormatReal', FormatReal);

@@ -1,5 +1,17 @@
 {
     "historizedSymbolList": {
+        "PLC1.Gen.Lh_speed": {
+            "interval": "PT3H20M",
+            "maxEntries": 100000,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
+        "PLC1.Gen.Rh_speed": {
+            "interval": "PT3H20M",
+            "maxEntries": 100000,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
         "PLC1.Globals.Speed": {
             "interval": "PT0.1S",
             "maxEntries": 10000,
