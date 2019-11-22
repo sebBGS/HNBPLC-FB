@@ -37,7 +37,7 @@
           "topUnit": "px",
           "bottomUnit": "px"
         },
-        "TextFontFamily": "Calibri",
+        "TextFontFamily": "Helvetica",
         "TextFontSize": 15.0
       },
       "themedResources": {}

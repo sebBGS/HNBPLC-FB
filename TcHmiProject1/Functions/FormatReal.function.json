@@ -23,11 +23,22 @@
         "asReference": false
       },
       {
-        "name": "Decimals",
-        "displayName": "Decimals",
+        "name": "decimals",
+        "displayName": "decimals",
         "type": "tchmi:general#/definitions/INT",
         "description": "",
         "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "unit",
+        "displayName": "unit",
+        "type": "tchmi:general#/definitions/String",
+        "description": "",
+        "defaultValue": "\"\"",
         "required": true,
         "bindable": true,
         "restParameter": false,

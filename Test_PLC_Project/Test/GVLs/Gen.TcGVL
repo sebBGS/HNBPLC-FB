@@ -4,6 +4,13 @@
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
 	DateTime: DATE_AND_TIME;
+	
+	Lh_depth: REAL;
+	Rh_depth: REAL;
+	Lh_speed: REAL;
+	Rh_speed: REAL;
+	
+	Rh_up: BOOL;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

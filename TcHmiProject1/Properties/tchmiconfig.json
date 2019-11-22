@@ -2,14 +2,9 @@
   "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/TchmiConfig.Schema.json",
   "basePath": "./Libraries",
   "locale": "client",
-  "scaleMode": "ScaleToFit",
+  "scaleMode": "ScaleToFitWidth",
   "startupView": "Desktop.view",
   "loginPage": null,
-  "tcHmiServer": {
-    "websocketIntervalTime": 500,
-    "websocketTimeout": 5000,
-    "websocketSubscriptionMode": "Change"
-  },
   "activeTheme": "Base",
   "themes": {
     "Base": {
@@ -79,7 +74,7 @@
   ],
   "userFunctions": [
     {
-      "url": "LoadSettings.js"
+      "url": "Functions/btnStateChange.js"
     },
     {
       "url": "Functions/fnInvisible.js"
@@ -88,121 +83,20 @@
       "url": "Functions/FormatReal.js"
     },
     {
-      "url": "Functions/btnStateChange.js"
-    },
-    {
       "url": "Functions/btnBorderChange.js"
-    },
-    {
-      "url": "Functions/lampStateChange.js"
     },
     {
       "url": "Functions/lampNStateChange.js"
     },
     {
-      "url": "Functions/decodeFromArray.js"
+      "url": "Functions/lampStateChange.js"
     },
     {
-      "url": "Functions/encodeToDispArr.js"
+      "url": "LoadSettings.js"
     }
   ],
   "symbols": {
-    "internal": {
-      "Amps": {
-        "value": 0.0,
-        "type": "tchmi:general#/definitions/Number",
-        "persist": false,
-        "readonly": false
-      },
-      "sSettings": {
-        "value": "",
-        "type": "tchmi:general#/definitions/String",
-        "persist": false,
-        "readonly": false
-      },
-      "sPageName": {
-        "value": "Main Page",
-        "type": "tchmi:general#/definitions/String",
-        "persist": false,
-        "readonly": false
-      },
-      "active": {
-        "value": true,
-        "type": "tchmi:general#/definitions/BOOL",
-        "persist": false,
-        "readonly": false
-      },
-      "userAllowed": {
-        "value": true,
-        "type": "tchmi:general#/definitions/BOOL",
-        "persist": false,
-        "readonly": false
-      },
-      "brakeStates": {
-        "value": {
-          "states": [
-            {
-              "color": "red",
-              "desc": "Invalid State"
-            },
-            {
-              "color": "red",
-              "desc": "Brake\nWear"
-            },
-            {
-              "color": "orange",
-              "desc": "Brake\nOn"
-            },
-            {
-              "color": "grey",
-              "desc": "Brake\nRubbing"
-            },
-            {
-              "color": "grey",
-              "desc": "Brake Not\nFully Off"
-            },
-            {
-              "color": "green",
-              "desc": "Brake\nOff"
-            }
-          ]
-        },
-        "type": "tchmi:general#/definitions/Object",
-        "persist": true,
-        "readonly": true
-      },
-      "clutchStates": {
-        "value": {
-          "states": [
-            {
-              "color": "red",
-              "desc": "Invalid State"
-            },
-            {
-              "color": "green",
-              "desc": "Clutch\nIn"
-            },
-            {
-              "color": "blue",
-              "desc": "Clutch\nNot In"
-            },
-            {
-              "color": "orange",
-              "desc": "Clutch\nOut"
-            }
-          ]
-        },
-        "type": "tchmi:general#/definitions/Object",
-        "persist": true,
-        "readonly": true
-      },
-      "Lh_overwind": {
-        "value": false,
-        "type": "tchmi:general#/definitions/BOOL",
-        "persist": false,
-        "readonly": false
-      }
-    }
+    "internal": {}
   },
   "trigger": [],
   "actionTemplates": [],
@@ -212,8 +106,8 @@
   },
   "creatorSettings": {
     "viewport": {
-      "defaultWidth": 1366,
-      "defaultHeight": 768
+      "defaultWidth": 0,
+      "defaultHeight": 0
     }
   }
 }

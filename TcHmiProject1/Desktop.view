@@ -6,7 +6,7 @@
      data-tchmi-min-height="100" data-tchmi-min-height-unit="%"
 
      data-tchmi-background-image-height="100" data-tchmi-background-image-width="100"
-     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-zindex="6" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-width="1350" data-tchmi-height="60" data-tchmi-creator-viewport-width="1360" data-tchmi-creator-viewport-height="768">
+     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-zindex="6" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-width="1360" data-tchmi-height="60" data-tchmi-creator-viewport-width="1360" data-tchmi-creator-viewport-height="768">
 
 
 <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
@@ -72,7 +72,7 @@
 </script>
 </div>
 
-<div id="TcHmiTextblock_57" data-tchmi-type="tchmi-textblock" data-tchmi-height="55" data-tchmi-height-unit="px" data-tchmi-left="111" data-tchmi-left-unit="px" data-tchmi-text="%i%sPageName%/i%" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="478" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="40">
+<div id="TcHmiTextblock_57" data-tchmi-type="tchmi-textblock" data-tchmi-height="55" data-tchmi-height-unit="px" data-tchmi-left="80" data-tchmi-left-unit="px" data-tchmi-text="%i%sPageName%/i%" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="400" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="40" data-tchmi-text-vertical-alignment="Center">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -94,7 +94,7 @@
 </script>
 </div>
 
-<div id="TcHmiTextblock_58" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="1007" data-tchmi-left-unit="px" data-tchmi-text="%f%'User: '+%s%userName%/s%+'\nAccess Level: '+%s%userGroupsArr[0]%/s%%/f%" data-tchmi-top="8" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="16" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="">
+<div id="TcHmiTextblock_58" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="920" data-tchmi-left-unit="px" data-tchmi-text="%f%'User: '+%s%userName%/s%+'\nAccess Level: '+%s%userGroupsArr[0]%/s%%/f%" data-tchmi-top="8" data-tchmi-top-unit="px" data-tchmi-width="250" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="16" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="" data-tchmi-text-vertical-alignment="Center">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -135,7 +135,7 @@
 </script>
 </div>
 
-<div id="TcHmiTextblock_59" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="1216" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.sDateTime%/s%" data-tchmi-top="8" data-tchmi-top-unit="px" data-tchmi-width="134" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="16" data-tchmi-text-horizontal-alignment="Left">
+<div id="TcHmiTextblock_59" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="1180" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.sDateTime%/s%" data-tchmi-top="8" data-tchmi-top-unit="px" data-tchmi-width="180" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="16" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -157,7 +157,7 @@
 </script>
 </div>
 
-<div id="TcHmiButton_23" data-tchmi-type="tchmi-button" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="521" data-tchmi-left-unit="px" data-tchmi-text="Regulator Healthy" data-tchmi-top="12" data-tchmi-top-unit="px" data-tchmi-width="190" data-tchmi-width-unit="px" data-tchmi-word-wrap="False" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto"  data-tchmi-text-font-style="Auto">
+<div id="TcHmiButton_23" data-tchmi-type="tchmi-button" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="687" data-tchmi-left-unit="px" data-tchmi-text="PLC2 Healthy" data-tchmi-top="12" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-word-wrap="False" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto"  data-tchmi-text-font-style="Auto">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -166,14 +166,16 @@
     "event": "TcHmiButton_23.onPressed",
     "actions": [
       {
-        "objectType": "JavaScript",
+        "objectType": "WriteToSymbol",
         "active": true,
-        "sourceLines": [
-          "TcHmi.View.load('View1.view');"
-        ],
-        "injectContextObject": true,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
+        "symbolExpression": "%ctrl%TcHmiRegion::TargetContent%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/ContentPath",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "SpeedGuardian.content"
+        },
+        "asyncWait": true
       }
     ],
     "displayName": "LoadView"
@@ -223,8 +225,72 @@
 </script>
 </div>
 
-<div id="UserControl1_8" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="761" data-tchmi-left-unit="px" data-tchmi-target-user-control="User Controls/lampTwoState.usercontrol" data-tchmi-top="12" data-tchmi-top-unit="px" data-tchmi-width="190" data-tchmi-width-unit="px" data-tchmi-oncolor="green" data-tchmi-offcolor="red" data-tchmi-ontext="Regulator Healthy" data-tchmi-offtext="Regulator Unhealthy" data-tchmi-statevar="True">
+<div id="TcHmiButton_24" data-tchmi-type="tchmi-button" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="553" data-tchmi-left-unit="px" data-tchmi-text="PLC1 Healthy" data-tchmi-top="12" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-word-wrap="False" data-tchmi-zindex="3" data-tchmi-text-font-size="15" data-tchmi-text-font-weight="Auto"  data-tchmi-text-font-style="Auto">
 
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_24.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiRegion::TargetContent%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/ContentPath",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "Main.content"
+        },
+        "asyncWait": true
+      }
+    ],
+    "displayName": "LoadView"
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "angle": 0.0,
+  "stopPoints": [
+    {
+      "color": "rgba(34, 125, 0, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(76, 196, 32, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(76, 196, 32, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
 </div>
 
 </div>

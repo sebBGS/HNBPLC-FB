@@ -1,5 +1,10 @@
 {
     "USERS": {
+        "Default": {
+            "ENABLED": true,
+            "PASSWORD": "5408f42c485c6061537d6b16ccd44da48b72c2e9d9054422930d29c64e6e6978",
+            "SALT": "e4566u46XSR1mSo7Z7G/bEEO5aMhz1I7+1YnWg16XnoFaDygxBWx9xG7fcdqxVBLUTBVhFyyFYRI75Vq+OdqAA=="
+        },
         "Frikkie": {
             "ENABLED": true,
             "PASSWORD": "0676cbaaa02f7336800e5e0a4c8eec6f27064fbce6470a6244cb80a9f291b72e",
