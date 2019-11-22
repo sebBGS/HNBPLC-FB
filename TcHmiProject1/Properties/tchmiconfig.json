@@ -93,6 +93,12 @@
     },
     {
       "url": "LoadSettings.js"
+    },
+    {
+      "url": "Functions/encodeToDispArr.js"
+    },
+    {
+      "url": "Functions/decodeFromArray.js"
     }
   ],
   "symbols": {

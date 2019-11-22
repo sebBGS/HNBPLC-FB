@@ -3,8 +3,13 @@
   <POU Name="P_TextModeWrite" Id="{ce862901-aca6-45bd-85ab-7d18f5b82037}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM P_TextModeWrite
 (* Writing of CSV file in text mode. None of the field value is containing any non-printing control characters like line feed, carriage return, quotation marks, semicolon... *)
-VAR
+VAR_INPUT
 	bWrite			: BOOL := FALSE;(* Rising edge starts program execution *)
+END_VAR
+VAR_IN_OUT
+	database		: ARRAY[*,*] OF STRING(MAX_CSV_FIELD_LENGTH);
+END_VAR
+VAR
 	sNetId			: T_AmsNetId := '';	(* TwinCAT system network address *)
 	sFileName	: T_MaxString := 'C:\Temp\TextModeGen.csv';(* CSV destination file path and name *)
 	sCSVLine		: T_MaxString := '';(* Single CSV text line (row, record), we are using string as record buffer (your are able to see created fields) *)
@@ -20,8 +25,6 @@ VAR
 	fbFileClose	: FB_FileClose;(* Closes file *)
 	fbFilePuts		: FB_FilePuts;(* Writes one record (line) *)
 	fbWriter		: FB_CSVMemBufferWriter;(* Helper function block used to create CSV data bytes (single record line) *)
-
-	database		: ARRAY[0..2, 0..5 ] OF STRING(MAX_CSV_FIELD_LENGTH);
 
 END_VAR]]></Declaration>
     <Implementation>
