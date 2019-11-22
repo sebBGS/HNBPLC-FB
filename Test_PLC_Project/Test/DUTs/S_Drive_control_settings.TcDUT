@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="S_Drive_control_settings" Id="{369bb2b0-55d8-47aa-9cba-d7cdca13d88c}">
+    <Declaration><![CDATA[TYPE S_Drive_control_settings :
+STRUCT
+	Max_drive_speed:dut_Setting := (Val:=0,Desc:='Maximum drive speed',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Max_drive_torque:dut_Setting := (Val:=0,Desc:='Maximum drive torque',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Speed_S_func_scans:dut_Setting := (Val:=0,Desc:='Speed S function scans',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Current_S_func_scans:dut_Setting := (Val:=0,Desc:='Current S function scans',Unit:='m/s',Minimum:=0,Maximum:=7);
+	No_start_time:dut_Setting := (Val:=0,Desc:='No-start time',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Motor_fed_delay:dut_Setting := (Val:=0,Desc:='Motor fed delay',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Stall_time:dut_Setting := (Val:=0,Desc:='Stall time',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Stall_speed:dut_Setting := (Val:=0,Desc:='Stall speed',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Torque_ctrl_max_speed:dut_Setting := (Val:=0,Desc:='Torque control maximum speed',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Brake_apply_speed:dut_Setting := (Val:=0,Desc:='Brake apply speed',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Trail_brake_speed:dut_Setting := (Val:=0,Desc:='Trail brake speed',Unit:='m/s',Minimum:=0,Maximum:=7);
+	De_energise_to_trail:BOOL;
+	Single_lever_control:BOOL;
+	Stall_current:dut_Setting := (Val:=0,Desc:='Stall current',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Backout_min_speed:dut_Setting := (Val:=0,Desc:='Backout minimum speed',Unit:='m/s',Minimum:=0,Maximum:=7);
+
+	(*Torque prediction settings*)	
+	Lh_cage_mass_current:dut_Setting := (Val:=0,Desc:='Left-hand cage mass current',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Rh_cage_mass_current:dut_Setting := (Val:=0,Desc:='Right-hand cage mass current',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Lh_rope_mass_current:dut_Setting := (Val:=0,Desc:='Left-hand rope mass current',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Rh_rope_mass_current:dut_Setting := (Val:=0,Desc:='Right-hand rope mass current',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Full_payload_current:dut_Setting := (Val:=0,Desc:='Full payload current',Unit:='m/s',Minimum:=0,Maximum:=7);
+	A_s2_per_m:dut_Setting := (Val:=0,Desc:='A S2 per meter',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Accel_torque_lag:dut_Setting := (Val:=0,Desc:='Accelleration torque lag',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Dynamic_friction_current:dut_Setting := (Val:=0,Desc:='Dynamic friction current',Unit:='m/s',Minimum:=0,Maximum:=7);
+
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

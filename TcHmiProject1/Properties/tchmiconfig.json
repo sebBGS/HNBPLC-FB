@@ -98,12 +98,18 @@
     },
     {
       "url": "Functions/lampNStateChange.js"
+    },
+    {
+      "url": "Functions/decodeFromArray.js"
+    },
+    {
+      "url": "Functions/encodeToDispArr.js"
     }
   ],
   "symbols": {
     "internal": {
       "Amps": {
-        "value": "0",
+        "value": 0.0,
         "type": "tchmi:general#/definitions/Number",
         "persist": false,
         "readonly": false
@@ -121,31 +127,77 @@
         "readonly": false
       },
       "active": {
-        "value": "True",
+        "value": true,
         "type": "tchmi:general#/definitions/BOOL",
         "persist": false,
         "readonly": false
       },
       "userAllowed": {
-        "value": "True",
+        "value": true,
         "type": "tchmi:general#/definitions/BOOL",
         "persist": false,
         "readonly": false
       },
       "brakeStates": {
-        "value": "{\r\n  \"states\": [\r\n    {\r\n      \"color\": \"red\",\r\n      \"desc\": \"Invalid State\"\r\n    },\r\n    {\r\n      \"color\": \"red\",\r\n      \"desc\": \"Brake\\nWear\"\r\n    },\r\n    {\r\n      \"color\": \"orange\",\r\n      \"desc\": \"Brake\\nOn\"\r\n    },\r\n    {\r\n      \"color\": \"grey\",\r\n      \"desc\": \"Brake\\nRubbing\"\r\n    },\r\n    {\r\n      \"color\": \"grey\",\r\n      \"desc\": \"Brake Not\\nFully Off\"\r\n    },\r\n    {\r\n      \"color\": \"green\",\r\n      \"desc\": \"Brake\\nOff\"\r\n    }\r\n  ]\r\n}",
+        "value": {
+          "states": [
+            {
+              "color": "red",
+              "desc": "Invalid State"
+            },
+            {
+              "color": "red",
+              "desc": "Brake\nWear"
+            },
+            {
+              "color": "orange",
+              "desc": "Brake\nOn"
+            },
+            {
+              "color": "grey",
+              "desc": "Brake\nRubbing"
+            },
+            {
+              "color": "grey",
+              "desc": "Brake Not\nFully Off"
+            },
+            {
+              "color": "green",
+              "desc": "Brake\nOff"
+            }
+          ]
+        },
         "type": "tchmi:general#/definitions/Object",
         "persist": true,
         "readonly": true
       },
       "clutchStates": {
-        "value": "{\r\n  \"states\": [\r\n    {\r\n      \"color\": \"red\",\r\n      \"desc\": \"Invalid State\"\r\n    },\r\n    {\r\n      \"color\": \"green\",\r\n      \"desc\": \"Clutch\\nIn\"\r\n    },\r\n    {\r\n      \"color\": \"blue\",\r\n      \"desc\": \"Clutch\\nNot In\"\r\n    },\r\n    {\r\n      \"color\": \"orange\",\r\n      \"desc\": \"Clutch\\nOut\"\r\n    }\r\n  ]\r\n}",
+        "value": {
+          "states": [
+            {
+              "color": "red",
+              "desc": "Invalid State"
+            },
+            {
+              "color": "green",
+              "desc": "Clutch\nIn"
+            },
+            {
+              "color": "blue",
+              "desc": "Clutch\nNot In"
+            },
+            {
+              "color": "orange",
+              "desc": "Clutch\nOut"
+            }
+          ]
+        },
         "type": "tchmi:general#/definitions/Object",
         "persist": true,
         "readonly": true
       },
       "Lh_overwind": {
-        "value": "False",
+        "value": false,
         "type": "tchmi:general#/definitions/BOOL",
         "persist": false,
         "readonly": false

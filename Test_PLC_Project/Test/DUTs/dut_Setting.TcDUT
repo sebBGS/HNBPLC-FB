@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="dut_Setting" Id="{ad366624-746e-4f94-9b8d-813fc1b5cb3c}">
+    <Declaration><![CDATA[TYPE dut_Setting :
+STRUCT
+	Val: REAL;
+	Desc: STRING;
+	Unit: STRING;
+	Minimum: REAL;
+	Maximum: REAL;
+	Write_level:REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -11,11 +11,11 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10106</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10108</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.340</HmiInitial>
-    <HmiRecent>1.10.1336.340</HmiRecent>
+    <HmiRecent>1.10.1336.354</HmiRecent>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -84,6 +84,18 @@
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
     <Content Include="CodeBehind1.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\encodeToDispArr.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\encodeToDispArr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\decodeFromArray.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\decodeFromArray.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="SpeedGuardian.content">

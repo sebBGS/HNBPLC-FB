@@ -20,13 +20,23 @@
     <Compile Include="DUTs\Access_levels.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\S_General.TcDUT">
+    <Compile Include="DUTs\dut_Setting.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\S_Setting.TcDUT">
+    <Compile Include="DUTs\S_Drive_control_settings.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\S_General_settings.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\S_TPD32_base_settings.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GVLs\Gen.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="GVLs\SpeedGuardian.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
@@ -34,7 +44,7 @@
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
-    <Compile Include="GVLs\SpeedGuardian.TcGVL">
+    <Compile Include="GVLs\spHMI.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>

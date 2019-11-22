@@ -12,8 +12,8 @@
     },
     "arguments": [
       {
-        "name": "par1",
-        "displayName": "par1",
+        "name": "num",
+        "displayName": "num",
         "type": "tchmi:general#/definitions/String",
         "description": "",
         "defaultValue": "",

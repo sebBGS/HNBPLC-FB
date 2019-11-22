@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="S_TPD32_base_settings" Id="{e4d2739f-b383-495b-96b4-a3d7de81e4b0}">
+    <Declaration><![CDATA[TYPE S_TPD32_base_settings :
+STRUCT
+	Motor_base_rpm:dut_Setting := (Val:=0,Desc:='Rated rpm of the motor',Unit:='m/s',Minimum:=0,Maximum:=7); (*Rated rpm of the motor*)
+	Max_output_voltage:dut_Setting := (Val:=0,Desc:='Maximum DC armature voltage',Unit:='m/s',Minimum:=0,Maximum:=7); (*Maximum DC armature voltage*)
+	Full_load_curr:dut_Setting := (Val:=0,Desc:='Rated armature amps of the motor',Unit:='m/s',Minimum:=0,Maximum:=7); (*Rated armature amps of the motor*)
+	DCV_nominal_flux_current:dut_Setting := (Val:=0,Desc:='Nominal flux current of the DCV according to S14 DIP switches',Unit:='m/s',Minimum:=0,Maximum:=7); (*Nominal flux current of the DCV according to S14 DIP switches*)
+	Motor_nominal_flux_current:dut_Setting := (Val:=0,Desc:='Nominal flux current of the DCV according to S14 DIP switches',Unit:='m/s',Minimum:=0,Maximum:=7); (*Nominal flux current of the DCV according to S14 DIP switches*)
+	Flux_current_min:dut_Setting := (Val:=0,Desc:='Percentage of rated motor field current for field weakening',Unit:='m/s',Minimum:=0,Maximum:=7); (*Percentage of rated motor field current for field weakening*)
+	Acc_delta_time:dut_Setting := (Val:=0,Desc:='Acceleration time from zero to rated motor rpm in seconds',Unit:='m/s',Minimum:=0,Maximum:=7); (*Acceleration time from zero to rated motor rpm in seconds*)
+	Dec_delta_time:dut_Setting := (Val:=0,Desc:='Deceleration time from rated motor rpm to zero in seconds',Unit:='m/s',Minimum:=0,Maximum:=7); (*Deceleration time from rated motor rpm to zero in seconds*)
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

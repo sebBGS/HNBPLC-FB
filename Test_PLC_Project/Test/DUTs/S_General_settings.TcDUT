@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <DUT Name="S_General_settings" Id="{d4b04031-8272-4500-83d2-a739922a4015}">
+    <Declaration><![CDATA[TYPE S_General_settings :
+STRUCT
+	Full_speed: dut_Setting := (Val:=0,Desc:='Full Speed',Unit:='m/s',Minimum:=0,Maximum:=7);
+	Slow_switch_speed: dut_Setting  := (Val:=0,Desc:='Slow switch speed',Unit:='m/s',Minimum:=0,Maximum:=7);
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,36 +1,17 @@
 ﻿<div id="Content1_1" data-tchmi-type="tchmi-content" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-height="768" data-tchmi-zindex="1" data-tchmi-creator-visibility="Visible">
 
-<div id="TcHmiDatagrid" data-tchmi-type="tchmi-datagrid" data-tchmi-height="668" data-tchmi-height-unit="px" data-tchmi-left="12" data-tchmi-left-unit="px"    data-tchmi-top="11" data-tchmi-top-unit="px" data-tchmi-width="1341" data-tchmi-width-unit="px" data-tchmi-grid-font-size="16" data-tchmi-header-font-size="18" data-tchmi-header-height="35" data-tchmi-row-height="35" data-tchmi-src-data="%s%PLC1.sp.Settings%/s%" data-tchmi-zindex="1" data-tchmi-creator-visibility="Visible">
+<div id="TcHmiDatagrid" data-tchmi-type="tchmi-datagrid" data-tchmi-height="668" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px"    data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="1341" data-tchmi-width-unit="px" data-tchmi-grid-font-size="16" data-tchmi-header-font-size="18" data-tchmi-header-height="35" data-tchmi-row-height="35" data-tchmi-zindex="1" data-tchmi-creator-visibility="Visible" data-tchmi-src-data="%f%encodeToDispArr(%s%PLC1.spHMI.Drive%/s%)%/f%">
 <script data-tchmi-target-attribute="data-tchmi-src-column" type="application/json">
 [
   {
-    "name": "Code",
-    "label": "Code",
-    "control": "TextBlock",
-    "width": 8,
-    "widthUnit": "%",
-    "resize": false,
-    "sortable": true,
-    "minWidth": 100,
-    "minWidthUnit": "px",
-    "cellBackground": null,
-    "textColor": {
-      "color": "rgba(255, 255, 255, 1)"
-    },
-    "editable": false,
-    "horizontalAlignment": "Center",
-    "verticalAlignment": "Center",
-    "format": null
-  },
-  {
-    "name": "Description",
+    "name": "::Desc",
     "label": "Description",
     "control": "TextBlock",
     "width": 65,
     "widthUnit": "%",
     "resize": true,
     "sortable": true,
-    "minWidth": 70,
+    "minWidth": 100,
     "minWidthUnit": "px",
     "cellBackground": null,
     "textColor": {
@@ -42,19 +23,21 @@
     "format": null
   },
   {
-    "name": "Value",
+    "name": "::Val",
     "label": "Value",
     "control": "TextBox",
-    "width": 15,
+    "width": 10,
     "widthUnit": "%",
     "resize": true,
     "sortable": false,
-    "minWidth": 70,
+    "minWidth": 20,
     "minWidthUnit": "px",
-    "cellBackground": null,
+    "cellBackground": {
+      "color": "rgba(42, 42, 42, 1)"
+    },
     "textColor": null,
     "editable": true,
-    "horizontalAlignment": "Center",
+    "horizontalAlignment": "Right",
     "verticalAlignment": "Center",
     "format": {
       "objectType": "Function",
@@ -70,19 +53,53 @@
     }
   },
   {
-    "name": "Unit",
+    "name": "::Unit",
     "label": "Unit",
-    "control": "TextBlock",
-    "width": 10,
+    "control": "TextBox",
+    "width": 5,
     "widthUnit": "%",
-    "resize": true,
+    "resize": false,
     "sortable": false,
-    "minWidth": 70,
+    "minWidth": 20,
     "minWidthUnit": "px",
     "cellBackground": null,
     "textColor": null,
     "editable": false,
-    "horizontalAlignment": "Center",
+    "horizontalAlignment": "Left",
+    "verticalAlignment": "Center",
+    "format": null
+  },
+  {
+    "name": "::Minimum",
+    "label": "Min",
+    "control": "TextBox",
+    "width": 10,
+    "widthUnit": "%",
+    "resize": false,
+    "sortable": false,
+    "minWidth": 20,
+    "minWidthUnit": "px",
+    "cellBackground": null,
+    "textColor": null,
+    "editable": false,
+    "horizontalAlignment": "Left",
+    "verticalAlignment": "Center",
+    "format": null
+  },
+  {
+    "name": "::Maximum",
+    "label": "Max",
+    "control": "TextBox",
+    "width": 10,
+    "widthUnit": "%",
+    "resize": false,
+    "sortable": false,
+    "minWidth": 20,
+    "minWidthUnit": "px",
+    "cellBackground": null,
+    "textColor": null,
+    "editable": false,
+    "horizontalAlignment": "Left",
     "verticalAlignment": "Center",
     "format": null
   }
@@ -106,43 +123,16 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "TcHmiDatagrid.onAttached",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%s%PLC1.sp.Settings[0]::Code%/s%",
-        "valueType": "tchmi:general#/definitions/String",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:general#/definitions/String",
-          "value": "S0"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "\n\nTcHmi.Symbol.writeEx('%s%PLC1.sp.Setting[1]::Code%/s%', 'Test', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        // Handle success... \n    } else {\n        // Handle error... \n    }\n});"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  },
-  {
     "event": "TcHmiDatagrid.onDataChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%s%PLC1.sp.Settings%/s%",
-        "valueType": "tchmi:server#/definitions/PLC1.ARRAY (1..100) OF S_Setting",
+        "symbolExpression": "%s%PLC1.spHMI.Drive%/s%",
+        "valueType": "tchmi:server#/definitions/PLC1.S_Drive_control_settings",
         "value": {
-          "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiDatagrid::SrcData%/ctrl%"
+          "objectType": "FunctionExpression",
+          "functionExpression": "decodeFromArray(%ctrl%TcHmiDatagrid::SrcData%/ctrl%,%s%PLC1.spHMI.Drive%/s%)"
         },
         "asyncWait": true
       }

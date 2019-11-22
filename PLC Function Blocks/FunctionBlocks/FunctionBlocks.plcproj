@@ -29,6 +29,9 @@
     <Compile Include="DUTs\dut_Dol_Starter.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\ST_CSV_Record.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\S_Drive_control_settings.TcDUT">
       <SubType>Code</SubType>
     </Compile>
@@ -182,6 +185,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Ref_ramp.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\FBs\FB_sp_write.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\FBs\FB_Standard_stuff.TcPOU">

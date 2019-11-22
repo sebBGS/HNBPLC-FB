@@ -34,6 +34,91 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.S_Drive_control_settings": {
+            "properties": {
+                "A_s2_per_m": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Accel_torque_lag": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Backout_min_speed": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Brake_apply_speed": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Current_S_func_scans": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "De_energise_to_trail": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "Dynamic_friction_current": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Full_payload_current": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Lh_cage_mass_current": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Lh_rope_mass_current": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Max_drive_speed": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Max_drive_torque": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Motor_fed_delay": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "No_start_time": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Rh_cage_mass_current": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Rh_rope_mass_current": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Single_lever_control": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "Speed_S_func_scans": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Stall_current": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Stall_speed": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Stall_time": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Torque_ctrl_max_speed": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Trail_brake_speed": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.S_General_settings": {
+            "properties": {
+                "Full_speed": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Slow_switch_speed": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                }
+            },
+            "type": "object"
+        },
         "PLC1.S_Setting": {
             "properties": {
                 "Code": {
@@ -72,12 +157,61 @@
             },
             "type": "object"
         },
+        "PLC1.S_TPD32_base_settings": {
+            "properties": {
+                "Acc_delta_time": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "DCV_nominal_flux_current": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Dec_delta_time": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Flux_current_min": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Full_load_curr": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Max_output_voltage": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Motor_base_rpm": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                },
+                "Motor_nominal_flux_current": {
+                    "$ref": "#/definitions/PLC1.dut_Setting"
+                }
+            },
+            "type": "object"
+        },
         "PLC1.Settings": {
             "properties": {
                 "Var1": {
                     "$ref": "tchmi:general#/definitions/REAL"
                 },
                 "Var2": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.dut_Setting": {
+            "properties": {
+                "Desc": {
+                    "$ref": "tchmi:general#/definitions/STRING(80)"
+                },
+                "Maximum": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "Minimum": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "Unit": {
+                    "$ref": "tchmi:general#/definitions/STRING(80)"
+                },
+                "Val": {
                     "$ref": "tchmi:general#/definitions/REAL"
                 }
             },
@@ -1941,13 +2075,33 @@
             },
             "USEMAPPING": true
         },
-        "PLC1.sp.Settings": {
+        "PLC1.spHMI.Drive": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::sp::Settings",
+            "MAPPING": "PLC1::spHMI::Drive",
             "SCHEMA": {
-                "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..100) OF S_Setting"
+                "$ref": "tchmi:server#/definitions/PLC1.S_Drive_control_settings"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.spHMI.Gen": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::spHMI::Gen",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.S_General_settings"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.spHMI.TPD": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::spHMI::TPD",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.S_TPD32_base_settings"
             },
             "USEMAPPING": true
         },
@@ -2929,6 +3083,6 @@
     "VIDEOSEGMENTSIZE": 1048576,
     "VIRTUALDIRECTORIES": {
         "/": "..\\..\\TcHmiProject1",
-        "/framework": "..\\..\\..\\..\\..\\..\\..\\TwinCAT\\Functions\\TE2000-HMI-Engineering\\Infrastructure\\TcHmiFramework\\1.10.1336.0"
+        "/framework": "C:\\TwinCAT\\Functions\\TE2000-HMI-Engineering\\Infrastructure\\TcHmiFramework\\1.10.1336.0"
     }
 }

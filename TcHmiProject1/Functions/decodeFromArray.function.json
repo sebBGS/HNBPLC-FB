@@ -1,0 +1,39 @@
+﻿{
+  "function": {
+    "name": "decodeFromArray",
+    "displayName": "decodeFromArray",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/BOOL"
+    },
+    "arguments": [
+      {
+        "name": "arr",
+        "displayName": "arr",
+        "type": "tchmi:general#/definitions/Array",
+        "description": "Array to be decoded",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "obj",
+        "displayName": "obj",
+        "type": "tchmi:general#/definitions/Object",
+        "description": "Object to write to",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

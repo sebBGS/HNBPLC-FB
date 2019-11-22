@@ -131,5 +131,15 @@
       <From>dut_Drive_control</From>
       <To>S_Drive_control_settings</To>
     </RenamedType>
+    <RenamedType>
+      <Type guid="a6568463-e03c-454d-ae91-19a02ccdf9fb">P_TEXTMODEREAD</Type>
+      <From>P_TextModeRead</From>
+      <To>FB_TextModeRead</To>
+    </RenamedType>
+    <RenamedType>
+      <Type guid="651ae562-ea34-46cd-ae2e-8befe9bfbbba">P_TEXTMODEWRITE</Type>
+      <From>P_TextModeWrite</From>
+      <To>FB_TextModeWrite</To>
+    </RenamedType>
   </Renames>
 </Refactors>

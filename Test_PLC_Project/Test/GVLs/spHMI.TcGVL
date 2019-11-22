@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <GVL Name="spHMI" Id="{c77e8092-42c5-4de1-bb9c-28f653465657}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	Gen: S_General_settings;
+	Drive: S_Drive_control_settings;
+	TPD: S_TPD32_base_settings;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
