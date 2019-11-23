@@ -1,0 +1,35 @@
+﻿<div id="UserControl1_41" data-tchmi-type="tchmi-user-control" 
+     data-tchmi-top="0" data-tchmi-left="0" 
+     data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
+     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
+
+<div id="TcHmiRectangle_39" data-tchmi-type="tchmi-rectangle" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-radius-x="8" data-tchmi-radius-y="8" data-tchmi-stroke-thickness="2" data-tchmi-zindex="4" data-tchmi-stroke-color="%f%!%pp%smallIndicator%/pp% ? btnBorderChange('blue') : (%pp%percentage%/pp%< 0 ? btnBorderChange('blue') : btnBorderChange('orange'))%/f%" data-tchmi-fill-color="%f%depthIndicator(%pp%percentage%/pp%,%pp%smallIndicator%/pp%,%pp%fillOrigin%/pp%)%/f%">
+
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+        
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+
+
+        
+    </div>
+
+</div>

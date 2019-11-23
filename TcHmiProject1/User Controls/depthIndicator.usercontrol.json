@@ -1,0 +1,52 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-percentage",
+      "displayName": "percentage",
+      "visible": true,
+      "type": "tchmi:general#/definitions/REAL",
+      "category": "",
+      "description": "Percentage",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "percentage",
+      "propertySetterName": "setPercentage",
+      "propertyGetterName": "getPercentage"
+    },
+    {
+      "name": "data-tchmi-smallindicator",
+      "displayName": "smallIndicator",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "Small indicator?",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "smallIndicator",
+      "propertySetterName": "setSmallIndicator",
+      "propertyGetterName": "getSmallIndicator"
+    },
+    {
+      "name": "data-tchmi-fillorigin",
+      "displayName": "fillOrigin",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "Top or bottom (top=false,bottom=true)",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "fillOrigin",
+      "propertySetterName": "setFillOrigin",
+      "propertyGetterName": "getFillOrigin"
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

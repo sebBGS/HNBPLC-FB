@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4023.119">
-	<Project ProjectGUID="{86F11BA3-26EC-42A2-A8D2-FDAE288AEF3C}" TargetNetId="192.168.1.109.1.1" Target64Bit="true" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{86F11BA3-26EC-42A2-A8D2-FDAE288AEF3C}" Target64Bit="true" ShowHideConfigurations="#x106">
 		<System>
 			<Settings MaxCpus="8" NonWinCpus="2">
 				<Cpu CpuId="6"/>
@@ -25,6 +25,12 @@
 					<TaskPouOids>
 						<TaskPouOid Prio="20" OTCID="#x08502001"/>
 					</TaskPouOids>
+				</Instance>
+			</Project>
+			<Project GUID="{EAA48E5E-DE36-46F6-B596-264501749F26}" Name="CSVExample" PrjFilePath="CSVExample\CSVExample.plcproj" TmcFilePath="CSVExample\CSVExample.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+					<Name>CSVExample Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 				</Instance>
 			</Project>
 		</Plc>

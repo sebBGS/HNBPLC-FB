@@ -35,6 +35,9 @@
       "url": "User Controls/ButtonWithLamp.usercontrol"
     },
     {
+      "url": "User Controls/depthIndicator.usercontrol"
+    },
+    {
       "url": "User Controls/lampNState.usercontrol"
     },
     {
@@ -99,6 +102,9 @@
     },
     {
       "url": "Functions/decodeFromArray.js"
+    },
+    {
+      "url": "Functions/depthIndicator.js"
     }
   ],
   "symbols": {
