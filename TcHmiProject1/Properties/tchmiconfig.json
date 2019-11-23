@@ -108,7 +108,66 @@
     }
   ],
   "symbols": {
-    "internal": {}
+    "internal": {
+      "brakeStates": {
+        "value": {
+          "states": [
+            {
+              "color": "red",
+              "desc": "Invalid State"
+            },
+            {
+              "color": "red",
+              "desc": "Brake\nWear"
+            },
+            {
+              "color": "orange",
+              "desc": "Brake\nOn"
+            },
+            {
+              "color": "grey",
+              "desc": "Brake\nRubbing"
+            },
+            {
+              "color": "grey",
+              "desc": "Brake Not\nFully Off"
+            },
+            {
+              "color": "green",
+              "desc": "Brake\nOff"
+            }
+          ]
+        },
+        "type": "tchmi:general#/definitions/Object",
+        "persist": true,
+        "readonly": true
+      },
+      "clutchStates": {
+        "value": {
+          "states": [
+            {
+              "color": "red",
+              "desc": "Invalid State"
+            },
+            {
+              "color": "green",
+              "desc": "Clutch\nIn"
+            },
+            {
+              "color": "blue",
+              "desc": "Clutch\nNot In"
+            },
+            {
+              "color": "orange",
+              "desc": "Clutch\nOut"
+            }
+          ]
+        },
+        "type": "tchmi:general#/definitions/Object",
+        "persist": true,
+        "readonly": true
+      }
+    }
   },
   "trigger": [],
   "actionTemplates": [],
